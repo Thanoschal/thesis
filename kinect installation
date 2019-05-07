@@ -1,0 +1,31 @@
+mkdir ~/kinectdriver 
+cd ~/kinectdriver 
+git clone https://github.com/avin2/SensorKinect 
+cd SensorKinect/Bin/
+tar xvjf SensorKinect093-Bin-Linux-x64-v5.1.2.1.tar.bz2
+cd Sensor-Bin-Linux-x64-v5.1.2.1/
+sudo ./install.sh
+
+export TURTLEBOT_BASE=create
+export TURTLEBOT_STACKS=circles
+export TURTLEBOT_3D_SENSOR=kinect
+export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
+export TURTLEBOT_BATTERY=/proc/acpi/battery/BAT1
+
+
+sudo apt-get install ros-kinetic-openni-camera
+
+sudo apt-get install ros-kinetic-openni-launch
+
+sudo apt-get install libfreenect-dev
+
+sudo apt-get install ros-kinetic-freenect-launch
+
+sudo apt-get install g++ python libusb-1.0-0-dev freeglut3-dev
+sudo apt-get install doxygen graphviz mono-complete
+sudo apt-get install openjdk-7-jdk
+
+roslaunch freenect_launch freenect.launch
+
+rosrun image_view image_view image:=/camera/rgb/image_color
+rosrun image_view image_view image:=/camera/depth/image

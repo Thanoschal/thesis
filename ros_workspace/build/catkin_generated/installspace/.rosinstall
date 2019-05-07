@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/Desktop/ros_workspace/install/setup.sh

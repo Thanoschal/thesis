@@ -1,0 +1,12 @@
+roslaunch turtlebot_bringup minimal.launch
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/pi/Desktop/little_map.yaml
+
+roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
+
+Estimate the points that you want to go, with publish points.
+
+rosrun position go_to_specific_point_on_map.py
+
+
+ssh -X  pi@192.168.43.207
+

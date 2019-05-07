@@ -1,0 +1,43 @@
+VM IP 195.134.71.250
+user achalv
+paswrd rawfie123!@#
+
+############PORTS#######################
+
+Apache Kafka brokers (plain text) 	9092
+Confluent Control Center 			9021
+Kafka Connect REST API 				8083
+REST Proxy 							8082
+Schema Registry REST API 			8081
+ZooKeeper 							2181
+
+########################################
+
+#######STARTING KAFKA#########
+
+confluent start
+
+##############################
+
+
+#######LISTING TOPICS#########################
+
+kafka-topics --list --zookeeper localhost:2181
+
+##############################################
+
+#######CREATE TOPICS#####################################################################
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_location
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_battery
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_cpu
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_memory
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_net
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic turtle_goto
+
+########################################################################################

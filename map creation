@@ -1,0 +1,16 @@
+On TurtleBot, open a terminal window and run:
+
+roslaunch turtlebot_bringup minimal.launch
+roslaunch turtlebot_navigation gmapping_demo.launch
+
+On the workstation, open a terminal window and run:
+
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+roslaunch turtlebot_teleop keyboard_teleop.launch
+
+rosrun map_server map_saver -f /tmp/my_map
+ls /tmp/
+
+
+
+ssh -X  pi@192.168.43.207

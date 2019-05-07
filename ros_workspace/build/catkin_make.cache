@@ -1,0 +1,2 @@
+position:sysinfo:tbot
+-DCATKIN_DEVEL_PREFIX=/home/pi/Desktop/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/pi/Desktop/ros_workspace/install -G Unix Makefiles

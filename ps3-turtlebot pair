@@ -1,0 +1,30 @@
+https://github.com/RetroPie/sixad
+
+cd /path/to/extracted/src
+sudo make
+sudo make install
+
+Connect with USB
+
+sudo sixpair
+Disconnect sixaxis from USB
+
+sudo sixad -s
+press PS button to connect over bluetooth
+
+
+Connect USB
+sudo apt-get install ros-indigo-ps3joy
+roscd ps3joy
+sudo /usr/sbin/sixpair
+
+Disconnect USB
+
+On alive turtlebot:
+roslaunch turtlebot_teleop ps3_teleop.launch
+
+sudo hciconfig hci0 reset
+
+
+
+ssh -X  pi@192.168.43.207

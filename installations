@@ -1,0 +1,51 @@
+sudo apt-get update
+
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+
+sudo apt-get update
+
+sudo apt-get install ros-kinetic-desktop-full
+
+sudo rosdep init
+
+rosdep update
+
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+sudo apt-get install python-rosinstall
+
+sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
+
+sudo apt-get install ros-kinetic-rviz
+
+
+rosrun kobuki_ftdi create_udev_rules
+
+mkdir ~/kinectdriver 
+cd ~/kinectdriver 
+git clone https://github.com/avin2/SensorKinect 
+cd SensorKinect/Bin/
+tar xvjf SensorKinect093-Bin-Linux-x64-v5.1.2.1.tar.bz2
+cd Sensor-Bin-Linux-x64-v5.1.2.1/
+sudo ./install.sh
+
+export TURTLEBOT_BASE=create
+export TURTLEBOT_STACKS=circles
+export TURTLEBOT_3D_SENSOR=kinect
+export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
+export TURTLEBOT_BATTERY=/proc/acpi/battery/BAT1
+
+
+roslaunch turtlebot_bringup minimal.launch 
+roslaunch turtlebot_teleop keyboard_teleop.launch
+
+
+//rviz
+export LIBGL_ALWAYS_SOFTWARE=1
+
+//lidar
+https://github.com/robopeak/rplidar_ros/wiki
+sudo chmod 666 /dev/ttyUSB*

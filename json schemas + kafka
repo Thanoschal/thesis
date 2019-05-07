@@ -1,0 +1,116 @@
+##############################
+kafka server ip + ports
+##############################
+
+ip: 195.134.71.250
+Apache Kafka brokers (plain text) 	9092
+Confluent Control Center 			9021
+Kafka Connect REST API 				8083
+REST Proxy 							8082
+Schema Registry REST API 			8081
+ZooKeeper 							2181
+
+
+###################
+position schema
+###################
+
+{
+	"orientationz": 0, 
+	"orientationx": 0, 
+	"orientationy": 0, 
+	"orientationw": 0, 
+	"positionx": 0, 
+	"positiony": 0,
+	"tst": "2019-02-08 11:31:47"
+}
+
+kafka topic : turtle_location
+
+
+###################
+
+###################
+battery schema
+###################
+
+{
+
+    "battery": 150, 
+    "ts": "2019-02-08 11:43:54"
+
+}
+
+kafka topic : turtle_battery
+
+###################
+
+###################
+cpu schema
+###################
+
+{
+
+    "ts": "2019-02-08 11:43:54", 
+    "memory": 1.3398818969726562
+
+}
+
+kafka topic : turtle_cpu
+
+###################
+
+###################
+memory schema
+###################
+
+{
+
+    "cpu": 14.5, 
+    "ts": "2019-02-08 11:43:54"
+
+}
+
+kafka topic : turtle_memory
+
+
+###################
+
+###################
+net schema
+###################
+
+{
+
+    "loss": 0,
+    "recei": 0,
+    "ts": "2019-02-08 11:43:54"
+    "qual": 0,
+    "snr": 0,
+    "trans": 0
+
+}
+
+kafka topic : turtle_net
+
+###################
+
+###################
+goto schema
+###################
+
+{
+	"orientationz": 0, 
+	"orientationx": 0, 
+	"orientationy": 0, 
+	"orientationw": 0, 
+	"positionx": 0, 
+	"positiony": 0,
+	"tst": "2019-02-08 11:31:47"
+}
+
+kafka topic : turtle_goto
+
+
+
+

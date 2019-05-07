@@ -1,0 +1,961 @@
+12:07:10.412938 ARP, Request who-has stratos.di.uoa.gr tell sofia.di.uoa.gr, length 46
+12:07:10.474765 ARP, Request who-has 195.134.66.102 tell 195.134.66.1, length 46
+12:07:10.616812 ARP, Request who-has 195.134.66.110 tell 195.134.66.1, length 46
+12:07:10.638369 ARP, Request who-has 195.134.66.192 tell 195.134.66.1, length 46
+12:07:10.746821 ARP, Request who-has galactica.di.uoa.gr tell 195.134.66.1, length 46
+12:07:10.746838 ARP, Request who-has kthnos.di.uoa.gr tell 195.134.66.1, length 46
+12:07:10.797014 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [S], seq 3429698680, win 29200, options [mss 1460,sackOK,TS val 1323925222 ecr 0,nop,wscale 7], length 0
+12:07:11.061376 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:11.108612 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [S.], seq 2755710181, ack 3429698681, win 28960, options [mss 1360,sackOK,TS val 581060005 ecr 1323925222,nop,wscale 1], length 0
+12:07:11.108696 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [.], ack 1, win 229, options [nop,nop,TS val 1323925534 ecr 581060005], length 0
+12:07:11.110185 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1:42, ack 1, win 229, options [nop,nop,TS val 1323925535 ecr 581060005], length 41
+12:07:11.145096 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [.], ack 42, win 14480, options [nop,nop,TS val 581060031 ecr 1323925535], length 0
+12:07:11.147462 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [.], seq 1:1349, ack 42, win 14480, options [nop,nop,TS val 581060031 ecr 1323925535], length 1348
+12:07:11.147531 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [.], ack 1349, win 251, options [nop,nop,TS val 1323925573 ecr 581060031], length 0
+12:07:11.148243 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [.], seq 1349:2697, ack 42, win 14480, options [nop,nop,TS val 581060031 ecr 1323925535], length 1348
+12:07:11.148274 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [.], ack 2697, win 274, options [nop,nop,TS val 1323925573 ecr 581060031], length 0
+12:07:11.151187 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [P.], seq 2697:2713, ack 42, win 14480, options [nop,nop,TS val 581060031 ecr 1323925535], length 16
+12:07:11.151234 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [.], ack 2713, win 274, options [nop,nop,TS val 1323925576 ecr 581060031], length 0
+12:07:11.157067 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [F.], seq 42, ack 2713, win 274, options [nop,nop,TS val 1323925582 ecr 581060031], length 0
+12:07:11.159913 IP localhost.42619 > voyager.domain: 25290+ A? fabulous.di.uoa.gr. (36)
+12:07:11.159922 IP localhost.42619 > voyager.domain: 37739+ AAAA? fabulous.di.uoa.gr. (36)
+12:07:11.159959 IP 192.168.43.12.44957 > 192.168.43.1.domain: 13503+ A? fabulous.di.uoa.gr. (36)
+12:07:11.159978 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 13503+ A? fabulous.di.uoa.gr. (36)
+12:07:11.159984 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns2.cosmote.net.domain: 13503+ A? fabulous.di.uoa.gr. (36)
+12:07:11.159998 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 60148+ AAAA? fabulous.di.uoa.gr. (36)
+12:07:11.197531 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 13503 1/0/0 A 195.134.71.250 (52)
+12:07:11.197684 IP voyager.domain > localhost.42619: 25290 1/0/0 A 195.134.71.250 (52)
+12:07:11.201101 IP6 anycastdns2.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 13503 1/0/0 A 195.134.71.250 (52)
+12:07:11.201432 IP 192.168.43.1.domain > 192.168.43.12.44957: 13503 1/0/0 A 195.134.71.250 (52)
+12:07:11.203059 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46750: Flags [F.], seq 2713, ack 43, win 14480, options [nop,nop,TS val 581060045 ecr 1323925582], length 0
+12:07:11.203119 IP 192.168.43.12.46750 > fabulous.di.uoa.gr.9092: Flags [.], ack 2714, win 274, options [nop,nop,TS val 1323925628 ecr 581060045], length 0
+12:07:11.204388 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 60148 0/1/0 (87)
+12:07:11.204605 IP voyager.domain > localhost.42619: 37739 0/1/0 (87)
+12:07:11.205199 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [S], seq 977870937, win 29200, options [mss 1460,sackOK,TS val 1323925630 ecr 0,nop,wscale 7], length 0
+12:07:11.205904 IP localhost.51423 > voyager.domain: 43095+ A? fabulous.di.uoa.gr. (36)
+12:07:11.205931 IP localhost.51423 > voyager.domain: 44384+ AAAA? fabulous.di.uoa.gr. (36)
+12:07:11.206091 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 36349+ A? fabulous.di.uoa.gr. (36)
+12:07:11.206174 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 60485+ AAAA? fabulous.di.uoa.gr. (36)
+12:07:11.267006 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 36349 1/0/0 A 195.134.71.250 (52)
+12:07:11.267230 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 60485 0/1/0 (87)
+12:07:11.267381 IP voyager.domain > localhost.51423: 43095 1/0/0 A 195.134.71.250 (52)
+12:07:11.267483 IP voyager.domain > localhost.51423: 44384 0/1/0 (87)
+12:07:11.267985 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [S.], seq 2252989353, ack 977870938, win 28960, options [mss 1360,sackOK,TS val 581060060 ecr 1323925630,nop,wscale 1], length 0
+12:07:11.268063 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 1, win 229, options [nop,nop,TS val 1323925693 ecr 581060060], length 0
+12:07:11.268909 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1:38, ack 1, win 229, options [nop,nop,TS val 1323925694 ecr 581060060], length 37
+12:07:11.307933 IP localhost.37181 > voyager.domain: 50315+ PTR? 31.66.134.195.in-addr.arpa. (44)
+12:07:11.308203 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 11717+ PTR? 31.66.134.195.in-addr.arpa. (44)
+12:07:11.309994 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 1:219, ack 38, win 14480, options [nop,nop,TS val 581060072 ecr 1323925694], length 218
+12:07:11.310058 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 219, win 237, options [nop,nop,TS val 1323925735 ecr 581060072], length 0
+12:07:11.310512 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [.], ack 38, win 14480, options [nop,nop,TS val 581060072 ecr 1323925694], length 0
+12:07:11.310562 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 219, win 237, options [nop,nop,TS val 1323925736 ecr 581060072], length 0
+12:07:11.349644 IP yperionas.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 240
+12:07:11.359317 IP yperionas.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 240
+12:07:11.359334 IP yperionas.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 240
+12:07:11.359871 IP yperionas.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 240
+12:07:11.359886 IP yperionas.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 240
+12:07:11.360430 IP yperionas.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 240
+12:07:11.370043 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 38:79, ack 219, win 237, options [nop,nop,TS val 1323925795 ecr 581060072], length 41
+12:07:11.392501 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 11717 1/0/0 PTR stratos.di.uoa.gr. (75)
+12:07:11.392746 IP voyager.domain > localhost.37181: 50315 1/0/0 PTR stratos.di.uoa.gr. (75)
+12:07:11.393248 IP localhost.57701 > voyager.domain: 40096+ PTR? 40.66.134.195.in-addr.arpa. (44)
+12:07:11.393497 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 750+ PTR? 40.66.134.195.in-addr.arpa. (44)
+12:07:11.417639 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [.], seq 219:1567, ack 79, win 14480, options [nop,nop,TS val 581060098 ecr 1323925795], length 1348
+12:07:11.417698 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 1567, win 260, options [nop,nop,TS val 1323925843 ecr 581060098], length 0
+12:07:11.418208 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [.], seq 1567:2915, ack 79, win 14480, options [nop,nop,TS val 581060098 ecr 1323925795], length 1348
+12:07:11.418246 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 2915, win 282, options [nop,nop,TS val 1323925843 ecr 581060098], length 0
+12:07:11.418654 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 2915:2931, ack 79, win 14480, options [nop,nop,TS val 581060098 ecr 1323925795], length 16
+12:07:11.418690 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 2931, win 282, options [nop,nop,TS val 1323925844 ecr 581060098], length 0
+12:07:11.423950 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 79:116, ack 2931, win 282, options [nop,nop,TS val 1323925849 ecr 581060098], length 37
+12:07:11.451355 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 750 1/0/0 PTR sofia.di.uoa.gr. (73)
+12:07:11.451463 IP voyager.domain > localhost.57701: 40096 1/0/0 PTR sofia.di.uoa.gr. (73)
+12:07:11.451677 IP localhost.50010 > voyager.domain: 19244+ PTR? 102.66.134.195.in-addr.arpa. (45)
+12:07:11.451801 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 43672+ PTR? 102.66.134.195.in-addr.arpa. (45)
+12:07:11.480461 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 2931:3149, ack 116, win 14480, options [nop,nop,TS val 581060114 ecr 1323925849], length 218
+12:07:11.488358 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 43672 NXDomain 0/1/0 (102)
+12:07:11.488595 IP voyager.domain > localhost.50010: 19244 NXDomain 0/1/0 (102)
+12:07:11.489009 IP localhost.56527 > voyager.domain: 20111+ PTR? 1.66.134.195.in-addr.arpa. (43)
+12:07:11.489251 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 62191+ PTR? 1.66.134.195.in-addr.arpa. (43)
+12:07:11.521559 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 3149, win 303, options [nop,nop,TS val 1323925947 ecr 581060114], length 0
+12:07:11.524828 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 116:157, ack 3149, win 303, options [nop,nop,TS val 1323925950 ecr 581060114], length 41
+12:07:11.535367 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 62191 NXDomain 0/1/0 (100)
+12:07:11.535615 IP voyager.domain > localhost.56527: 20111 NXDomain 0/1/0 (100)
+12:07:11.536048 IP localhost.38844 > voyager.domain: 28247+ PTR? 110.66.134.195.in-addr.arpa. (45)
+12:07:11.536281 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 19302+ PTR? 110.66.134.195.in-addr.arpa. (45)
+12:07:11.545501 ARP, Request who-has spiderman.di.uoa.gr tell 195.134.66.1, length 46
+12:07:11.582430 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [.], seq 3149:4497, ack 157, win 14480, options [nop,nop,TS val 581060138 ecr 1323925950], length 1348
+12:07:11.582503 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 4497, win 326, options [nop,nop,TS val 1323926008 ecr 581060138], length 0
+12:07:11.582976 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [.], seq 4497:5845, ack 157, win 14480, options [nop,nop,TS val 581060138 ecr 1323925950], length 1348
+12:07:11.583003 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 5845, win 349, options [nop,nop,TS val 1323926008 ecr 581060138], length 0
+12:07:11.583619 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 5845:5861, ack 157, win 14480, options [nop,nop,TS val 581060138 ecr 1323925950], length 16
+12:07:11.583643 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 5861, win 349, options [nop,nop,TS val 1323926009 ecr 581060138], length 0
+12:07:11.583706 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 19302 NXDomain 0/1/0 (102)
+12:07:11.584017 IP voyager.domain > localhost.38844: 28247 NXDomain 0/1/0 (102)
+12:07:11.584457 IP localhost.51415 > voyager.domain: 58767+ PTR? 192.66.134.195.in-addr.arpa. (45)
+12:07:11.584588 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 34441+ PTR? 192.66.134.195.in-addr.arpa. (45)
+12:07:11.604835 IP localhost > localhost: ICMP echo request, id 12774, seq 1, length 520
+12:07:11.604858 IP localhost > localhost: ICMP echo reply, id 12774, seq 1, length 520
+12:07:11.651910 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 34441 NXDomain 0/1/0 (102)
+12:07:11.652161 IP voyager.domain > localhost.51415: 58767 NXDomain 0/1/0 (102)
+12:07:11.652596 IP localhost.34824 > voyager.domain: 58102+ PTR? 168.66.134.195.in-addr.arpa. (45)
+12:07:11.652831 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 28939+ PTR? 168.66.134.195.in-addr.arpa. (45)
+12:07:11.714566 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 28939 1/0/0 PTR galactica.di.uoa.gr. (78)
+12:07:11.714804 IP voyager.domain > localhost.34824: 58102 1/0/0 PTR galactica.di.uoa.gr. (78)
+12:07:11.715286 IP localhost.40238 > voyager.domain: 21499+ PTR? 238.66.134.195.in-addr.arpa. (45)
+12:07:11.715523 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 63617+ PTR? 238.66.134.195.in-addr.arpa. (45)
+12:07:11.805762 IP localhost > localhost: ICMP echo request, id 12774, seq 2, length 520
+12:07:11.805787 IP localhost > localhost: ICMP echo reply, id 12774, seq 2, length 520
+12:07:11.827814 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 63617 1/0/0 PTR kthnos.di.uoa.gr. (75)
+12:07:11.828064 IP voyager.domain > localhost.40238: 21499 1/0/0 PTR kthnos.di.uoa.gr. (75)
+12:07:11.829465 IP localhost.56299 > voyager.domain: 32148+ PTR? 250.71.134.195.in-addr.arpa. (45)
+12:07:11.829697 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 64825+ PTR? 250.71.134.195.in-addr.arpa. (45)
+12:07:11.910036 IP 195.134.66.217.17500 > 255.255.255.255.17500: UDP, length 206
+12:07:11.910995 IP 195.134.66.217.17500 > 255.255.255.255.17500: UDP, length 206
+12:07:11.911016 IP 195.134.66.217.17500 > 195.134.66.255.17500: UDP, length 206
+12:07:11.992350 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 64825 1/0/0 PTR fabulous.di.uoa.gr. (77)
+12:07:11.992600 IP voyager.domain > localhost.56299: 32148 1/0/0 PTR fabulous.di.uoa.gr. (77)
+12:07:11.993064 IP localhost.59738 > voyager.domain: 63095+ PTR? 12.43.168.192.in-addr.arpa. (44)
+12:07:11.993372 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 25381+ PTR? 12.43.168.192.in-addr.arpa. (44)
+12:07:12.009654 IP localhost > localhost: ICMP echo request, id 12774, seq 3, length 520
+12:07:12.009682 IP localhost > localhost: ICMP echo reply, id 12774, seq 3, length 520
+12:07:12.032306 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 25381 NXDomain 0/1/0 (121)
+12:07:12.032557 IP voyager.domain > localhost.59738: 63095 NXDomain 0/1/0 (121)
+12:07:12.033045 IP localhost.34583 > voyager.domain: 18927+ PTR? 214.66.134.195.in-addr.arpa. (45)
+12:07:12.033342 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 41306+ PTR? 214.66.134.195.in-addr.arpa. (45)
+12:07:12.061407 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:12.089107 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 41306 NXDomain 0/1/0 (102)
+12:07:12.089403 IP voyager.domain > localhost.34583: 18927 NXDomain 0/1/0 (102)
+12:07:12.089822 IP localhost.41569 > voyager.domain: 11870+ PTR? 96.66.134.195.in-addr.arpa. (44)
+12:07:12.090062 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 64206+ PTR? 96.66.134.195.in-addr.arpa. (44)
+12:07:12.146886 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 64206 1/0/0 PTR esperos.di.uoa.gr. (75)
+12:07:12.147132 IP voyager.domain > localhost.41569: 11870 1/0/0 PTR esperos.di.uoa.gr. (75)
+12:07:12.147889 IP localhost.54264 > voyager.domain: 8126+ PTR? 1.43.168.192.in-addr.arpa. (43)
+12:07:12.148121 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 21988+ PTR? 1.43.168.192.in-addr.arpa. (43)
+12:07:12.181505 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 21988 NXDomain 0/1/0 (120)
+12:07:12.181831 IP voyager.domain > localhost.54264: 8126 NXDomain 0/1/0 (120)
+12:07:12.182357 IP localhost.59304 > voyager.domain: 26063+ PTR? 3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0.0.1.0.0.0.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.182535 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 54759+ PTR? 3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0.0.1.0.0.0.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.184367 ARP, Request who-has 195.134.66.2 tell 195.134.66.1, length 46
+12:07:12.190630 ARP, Request who-has chloe.di.uoa.gr tell 195.134.66.1, length 46
+12:07:12.197302 ARP, Request who-has thalis-3.di.uoa.gr tell 195.134.66.1, length 46
+12:07:12.213597 IP localhost > localhost: ICMP echo request, id 12774, seq 4, length 520
+12:07:12.213624 IP localhost > localhost: ICMP echo reply, id 12774, seq 4, length 520
+12:07:12.222510 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 54759 1/0/0 PTR anycastdns1.cosmote.net. (127)
+12:07:12.222791 IP voyager.domain > localhost.59304: 26063 1/0/0 PTR anycastdns1.cosmote.net. (127)
+12:07:12.223250 IP localhost.55437 > voyager.domain: 38543+ PTR? 4.7.d.7.8.7.6.5.0.7.1.d.4.6.4.3.c.7.3.a.e.9.0.0.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.223498 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 34393+ PTR? 4.7.d.7.8.7.6.5.0.7.1.d.4.6.4.3.c.7.3.a.e.9.0.0.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.306636 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 34393 NXDomain 0/1/0 (156)
+12:07:12.306901 IP voyager.domain > localhost.55437: 38543 NXDomain 0/1/0 (156)
+12:07:12.307328 IP localhost.51661 > voyager.domain: 20245+ PTR? 3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0.0.1.0.0.2.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.307517 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 59463+ PTR? 3.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0.0.1.0.0.2.8.8.3.1.2.0.a.2.ip6.arpa. (90)
+12:07:12.387359 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 59463 1/0/0 PTR anycastdns2.cosmote.net. (127)
+12:07:12.387650 IP voyager.domain > localhost.51661: 20245 1/0/0 PTR anycastdns2.cosmote.net. (127)
+12:07:12.388695 IP localhost.37932 > voyager.domain: 58395+ PTR? 255.255.255.255.in-addr.arpa. (46)
+12:07:12.388902 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 27362+ PTR? 255.255.255.255.in-addr.arpa. (46)
+12:07:12.417556 IP localhost > localhost: ICMP echo request, id 12774, seq 5, length 520
+12:07:12.417570 IP localhost > localhost: ICMP echo reply, id 12774, seq 5, length 520
+12:07:12.461093 ARP, Request who-has vasso.di.uoa.gr tell 195.134.66.1, length 46
+12:07:12.483412 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 27362 NXDomain 0/1/0 (114)
+12:07:12.483663 IP voyager.domain > localhost.37932: 58395 NXDomain 0/1/0 (114)
+12:07:12.484073 IP localhost.36221 > voyager.domain: 51042+ PTR? 164.66.134.195.in-addr.arpa. (45)
+12:07:12.484303 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 7923+ PTR? 164.66.134.195.in-addr.arpa. (45)
+12:07:12.525082 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 7923 1/0/0 PTR yperionas.di.uoa.gr. (78)
+12:07:12.525371 IP voyager.domain > localhost.36221: 51042 1/0/0 PTR yperionas.di.uoa.gr. (78)
+12:07:12.525813 IP localhost.60460 > voyager.domain: 24610+ PTR? 255.66.134.195.in-addr.arpa. (45)
+12:07:12.526051 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 57560+ PTR? 255.66.134.195.in-addr.arpa. (45)
+12:07:12.568919 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 57560 NXDomain 0/1/0 (102)
+12:07:12.569164 IP voyager.domain > localhost.60460: 24610 NXDomain 0/1/0 (102)
+12:07:12.570278 IP localhost.56741 > voyager.domain: 55846+ PTR? 107.66.134.195.in-addr.arpa. (45)
+12:07:12.570525 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 8766+ PTR? 107.66.134.195.in-addr.arpa. (45)
+12:07:12.580823 ARP, Request who-has 195.134.66.221 tell 195.134.66.1, length 46
+12:07:12.621414 IP localhost > localhost: ICMP echo request, id 12774, seq 6, length 520
+12:07:12.621443 IP localhost > localhost: ICMP echo reply, id 12774, seq 6, length 520
+12:07:12.631007 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 8766 1/0/0 PTR spiderman.di.uoa.gr. (78)
+12:07:12.631259 IP voyager.domain > localhost.56741: 55846 1/0/0 PTR spiderman.di.uoa.gr. (78)
+12:07:12.632245 IP localhost.37177 > voyager.domain: 26344+ PTR? 217.66.134.195.in-addr.arpa. (45)
+12:07:12.632490 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 56699+ PTR? 217.66.134.195.in-addr.arpa. (45)
+12:07:12.687256 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 56699 NXDomain 0/1/0 (102)
+12:07:12.687530 IP voyager.domain > localhost.37177: 26344 NXDomain 0/1/0 (102)
+12:07:12.688431 IP localhost.57011 > voyager.domain: 61841+ PTR? 2.66.134.195.in-addr.arpa. (43)
+12:07:12.688657 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 17239+ PTR? 2.66.134.195.in-addr.arpa. (43)
+12:07:12.724801 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 17239 NXDomain 0/1/0 (100)
+12:07:12.725052 IP voyager.domain > localhost.57011: 61841 NXDomain 0/1/0 (100)
+12:07:12.725501 IP localhost.40929 > voyager.domain: 49913+ PTR? 20.66.134.195.in-addr.arpa. (44)
+12:07:12.725680 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 14919+ PTR? 20.66.134.195.in-addr.arpa. (44)
+12:07:12.746485 IP moon.di.uoa.gr.57621 > 195.134.66.255.57621: UDP, length 44
+12:07:12.788869 ARP, Request who-has ivan.di.uoa.gr tell 195.134.66.1, length 46
+12:07:12.795452 ARP, Request who-has 195.134.66.197 tell 195.134.66.1, length 46
+12:07:12.802129 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 14919 1/0/0 PTR chloe.di.uoa.gr. (73)
+12:07:12.802374 IP voyager.domain > localhost.40929: 49913 1/0/0 PTR chloe.di.uoa.gr. (73)
+12:07:12.802776 IP localhost.45151 > voyager.domain: 1185+ PTR? 93.66.134.195.in-addr.arpa. (44)
+12:07:12.802955 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 20452+ PTR? 93.66.134.195.in-addr.arpa. (44)
+12:07:12.825651 IP localhost > localhost: ICMP echo request, id 12774, seq 7, length 520
+12:07:12.825678 IP localhost > localhost: ICMP echo reply, id 12774, seq 7, length 520
+12:07:12.863877 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 20452 1/0/0 PTR thalis-3.di.uoa.gr. (76)
+12:07:12.864107 IP voyager.domain > localhost.45151: 1185 1/0/0 PTR thalis-3.di.uoa.gr. (76)
+12:07:13.029637 IP localhost > localhost: ICMP echo request, id 12774, seq 8, length 520
+12:07:13.029663 IP localhost > localhost: ICMP echo reply, id 12774, seq 8, length 520
+12:07:13.233681 IP localhost > localhost: ICMP echo request, id 12774, seq 9, length 520
+12:07:13.233707 IP localhost > localhost: ICMP echo reply, id 12774, seq 9, length 520
+12:07:13.353674 IP localhost.58918 > voyager.domain: 47557+ PTR? 37.66.134.195.in-addr.arpa. (44)
+12:07:13.353911 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 57780+ PTR? 37.66.134.195.in-addr.arpa. (44)
+12:07:13.399872 IP jupiter.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 330
+12:07:13.399895 IP jupiter.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 330
+12:07:13.411011 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 57780 1/0/0 PTR vasso.di.uoa.gr. (73)
+12:07:13.411250 IP voyager.domain > localhost.58918: 47557 1/0/0 PTR vasso.di.uoa.gr. (73)
+12:07:13.412043 IP localhost.36368 > voyager.domain: 37823+ PTR? 221.66.134.195.in-addr.arpa. (45)
+12:07:13.412249 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 17304+ PTR? 221.66.134.195.in-addr.arpa. (45)
+12:07:13.437445 IP localhost > localhost: ICMP echo request, id 12774, seq 10, length 520
+12:07:13.437470 IP localhost > localhost: ICMP echo reply, id 12774, seq 10, length 520
+12:07:13.445428 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 157:210, ack 5861, win 349, options [nop,nop,TS val 1323927871 ecr 581060138], length 53
+12:07:13.447118 IP localhost > localhost: ICMP echo request, id 12777, seq 1, length 520
+12:07:13.447123 IP localhost > localhost: ICMP echo reply, id 12777, seq 1, length 520
+12:07:13.450921 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 17304 NXDomain 0/1/0 (102)
+12:07:13.450974 IP voyager.domain > localhost.36368: 37823 NXDomain 0/1/0 (102)
+12:07:13.451086 IP localhost.55954 > voyager.domain: 8125+ PTR? 122.66.134.195.in-addr.arpa. (45)
+12:07:13.451114 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 42179+ PTR? 122.66.134.195.in-addr.arpa. (45)
+12:07:13.509500 IP 192.168.43.12.40018 > fra16s18-in-f4.1e100.net.https: Flags [P.], seq 1438784578:1438784624, ack 177021642, win 567, options [nop,nop,TS val 2596020692 ecr 1210786438], length 46
+12:07:13.510168 IP 192.168.43.12.40018 > fra16s18-in-f4.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 567, options [nop,nop,TS val 2596020692 ecr 1210786438], length 31
+12:07:13.510223 IP 192.168.43.12.40018 > fra16s18-in-f4.1e100.net.https: Flags [F.], seq 77, ack 1, win 567, options [nop,nop,TS val 2596020692 ecr 1210786438], length 0
+12:07:13.544333 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 5861:5956, ack 210, win 14480, options [nop,nop,TS val 581060627 ecr 1323927871], length 95
+12:07:13.544411 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 5956, win 349, options [nop,nop,TS val 1323927970 ecr 581060627], length 0
+12:07:13.544591 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 42179 1/0/0 PTR moon.di.uoa.gr. (73)
+12:07:13.544838 IP voyager.domain > localhost.55954: 8125 1/0/0 PTR moon.di.uoa.gr. (73)
+12:07:13.545409 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40018: Flags [.], ack 0, win 1537, options [nop,nop,TS val 1210839900 ecr 2595967317], length 0
+12:07:13.545430 IP localhost.59248 > voyager.domain: 51795+ PTR? 173.66.134.195.in-addr.arpa. (45)
+12:07:13.545627 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 54429+ PTR? 173.66.134.195.in-addr.arpa. (45)
+12:07:13.550066 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 210:484, ack 5956, win 349, options [nop,nop,TS val 1323927975 ecr 581060627], length 274
+12:07:13.554129 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40018: Flags [.], ack 46, win 1540, options [nop,nop,TS val 1210839916 ecr 2596020692], length 0
+12:07:13.555143 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40018: Flags [.], ack 78, win 1542, options [nop,nop,TS val 1210839917 ecr 2596020692], length 0
+12:07:13.597709 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40018: Flags [F.], seq 1, ack 78, win 1542, options [nop,nop,TS val 1210839954 ecr 2596020692], length 0
+12:07:13.597744 IP 192.168.43.12.40018 > fra16s18-in-f4.1e100.net.https: Flags [.], ack 2, win 567, options [nop,nop,TS val 2596020780 ecr 1210839954], length 0
+12:07:13.602645 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 54429 1/0/0 PTR ivan.di.uoa.gr. (73)
+12:07:13.602835 IP voyager.domain > localhost.59248: 51795 1/0/0 PTR ivan.di.uoa.gr. (73)
+12:07:13.603138 IP localhost.36582 > voyager.domain: 52472+ PTR? 197.66.134.195.in-addr.arpa. (45)
+12:07:13.603298 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 63753+ PTR? 197.66.134.195.in-addr.arpa. (45)
+12:07:13.622343 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 5956:6010, ack 484, win 15016, options [nop,nop,TS val 581060649 ecr 1323927975], length 54
+12:07:13.649685 IP localhost > localhost: ICMP echo request, id 12777, seq 2, length 520
+12:07:13.649713 IP localhost > localhost: ICMP echo reply, id 12777, seq 2, length 520
+12:07:13.662503 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 63753 NXDomain 0/1/0 (102)
+12:07:13.662755 IP voyager.domain > localhost.36582: 52472 NXDomain 0/1/0 (102)
+12:07:13.665515 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6010, win 349, options [nop,nop,TS val 1323928091 ecr 581060649], length 0
+12:07:13.824029 IP 195.134.66.9.38040 > 195.134.66.255.21027: UDP, length 283
+12:07:13.853462 IP localhost > localhost: ICMP echo request, id 12777, seq 3, length 520
+12:07:13.853496 IP localhost > localhost: ICMP echo reply, id 12777, seq 3, length 520
+12:07:14.057652 IP localhost > localhost: ICMP echo request, id 12777, seq 4, length 520
+12:07:14.057679 IP localhost > localhost: ICMP echo reply, id 12777, seq 4, length 520
+12:07:14.261811 IP localhost > localhost: ICMP echo request, id 12777, seq 5, length 520
+12:07:14.261839 IP localhost > localhost: ICMP echo reply, id 12777, seq 5, length 520
+12:07:14.378042 IP localhost.33104 > voyager.domain: 34476+ PTR? 85.66.134.195.in-addr.arpa. (44)
+12:07:14.378317 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 23732+ PTR? 85.66.134.195.in-addr.arpa. (44)
+12:07:14.422331 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 23732 1/0/0 PTR jupiter.di.uoa.gr. (75)
+12:07:14.422570 IP voyager.domain > localhost.33104: 34476 1/0/0 PTR jupiter.di.uoa.gr. (75)
+12:07:14.423464 IP localhost.36016 > voyager.domain: 18573+ PTR? 132.23.217.172.in-addr.arpa. (45)
+12:07:14.423714 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 3192+ PTR? 132.23.217.172.in-addr.arpa. (45)
+12:07:14.462157 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 3192 2/0/0 PTR fra16s18-in-f4.1e100.net., PTR fra16s18-in-f132.1e100.net. (114)
+12:07:14.462400 IP voyager.domain > localhost.36016: 18573 2/0/0 PTR fra16s18-in-f4.1e100.net., PTR fra16s18-in-f132.1e100.net. (114)
+12:07:14.463362 IP localhost.47604 > voyager.domain: 924+ PTR? 9.66.134.195.in-addr.arpa. (43)
+12:07:14.463604 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 5776+ PTR? 9.66.134.195.in-addr.arpa. (43)
+12:07:14.465584 IP localhost > localhost: ICMP echo request, id 12777, seq 6, length 520
+12:07:14.465611 IP localhost > localhost: ICMP echo reply, id 12777, seq 6, length 520
+12:07:14.502292 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 5776 NXDomain 0/1/0 (100)
+12:07:14.502532 IP voyager.domain > localhost.47604: 924 NXDomain 0/1/0 (100)
+12:07:14.507964 IP 192.168.43.12.36608 > ec2-34-237-73-95.compute-1.amazonaws.com.https: Flags [P.], seq 1957686709:1957686997, ack 1058426743, win 590, options [nop,nop,TS val 3885825668 ecr 1210804012], length 288
+12:07:14.509888 IP 192.168.43.12.40328 > fra15s18-in-f110.1e100.net.https: Flags [P.], seq 4012225223:4012225269, ack 554062201, win 295, options [nop,nop,TS val 828982632 ecr 1210788465], length 46
+12:07:14.510124 IP 192.168.43.12.44592 > fra15s16-in-f35.1e100.net.https: Flags [P.], seq 1361454062:1361454108, ack 3359718707, win 316, options [nop,nop,TS val 916032849 ecr 1210788472], length 46
+12:07:14.510627 IP 192.168.43.12.40328 > fra15s18-in-f110.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 295, options [nop,nop,TS val 828982633 ecr 1210788465], length 31
+12:07:14.510693 IP 192.168.43.12.40328 > fra15s18-in-f110.1e100.net.https: Flags [F.], seq 77, ack 1, win 295, options [nop,nop,TS val 828982633 ecr 1210788465], length 0
+12:07:14.511116 IP 192.168.43.12.44592 > fra15s16-in-f35.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 316, options [nop,nop,TS val 916032850 ecr 1210788472], length 31
+12:07:14.511175 IP 192.168.43.12.44592 > fra15s16-in-f35.1e100.net.https: Flags [F.], seq 77, ack 1, win 316, options [nop,nop,TS val 916032850 ecr 1210788472], length 0
+12:07:14.552168 IP fra15s18-in-f110.1e100.net.https > 192.168.43.12.40328: Flags [.], ack 0, win 1417, options [nop,nop,TS val 1210840915 ecr 828930234], length 0
+12:07:14.556906 IP 195.134.66.1 > all-systems.mcast.net: igmp query v3
+12:07:14.560068 IP ec2-34-237-73-95.compute-1.amazonaws.com.https > 192.168.43.12.36608: Flags [.], ack 288, win 1830, options [nop,nop,TS val 1210840922 ecr 3885825668], length 0
+12:07:14.562704 IP fra15s16-in-f35.1e100.net.https > 192.168.43.12.44592: Flags [.], ack 0, win 1417, options [nop,nop,TS val 1210840923 ecr 915980456], length 0
+12:07:14.566033 IP fra15s18-in-f110.1e100.net.https > 192.168.43.12.40328: Flags [.], ack 46, win 1420, options [nop,nop,TS val 1210840925 ecr 828982632], length 0
+12:07:14.566379 IP fra15s16-in-f35.1e100.net.https > 192.168.43.12.44592: Flags [.], ack 46, win 1420, options [nop,nop,TS val 1210840927 ecr 916032849], length 0
+12:07:14.567352 IP fra15s18-in-f110.1e100.net.https > 192.168.43.12.40328: Flags [.], ack 78, win 1422, options [nop,nop,TS val 1210840928 ecr 828982633], length 0
+12:07:14.567432 IP fra15s16-in-f35.1e100.net.https > 192.168.43.12.44592: Flags [.], ack 78, win 1422, options [nop,nop,TS val 1210840929 ecr 916032850], length 0
+12:07:14.602396 IP fra15s18-in-f110.1e100.net.https > 192.168.43.12.40328: Flags [F.], seq 1, ack 78, win 1422, options [nop,nop,TS val 1210840965 ecr 828982633], length 0
+12:07:14.602483 IP 192.168.43.12.40328 > fra15s18-in-f110.1e100.net.https: Flags [.], ack 2, win 295, options [nop,nop,TS val 828982725 ecr 1210840965], length 0
+12:07:14.611151 IP fra15s16-in-f35.1e100.net.https > 192.168.43.12.44592: Flags [F.], seq 1, ack 78, win 1422, options [nop,nop,TS val 1210840973 ecr 916032850], length 0
+12:07:14.611211 IP 192.168.43.12.44592 > fra15s16-in-f35.1e100.net.https: Flags [.], ack 2, win 316, options [nop,nop,TS val 916032950 ecr 1210840973], length 0
+12:07:14.633429 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:14.662862 ARP, Request who-has survey.di.uoa.gr tell 195.134.66.1, length 46
+12:07:14.669645 IP localhost > localhost: ICMP echo request, id 12777, seq 7, length 520
+12:07:14.669671 IP localhost > localhost: ICMP echo reply, id 12777, seq 7, length 520
+12:07:14.704005 IP ec2-34-237-73-95.compute-1.amazonaws.com.https > 192.168.43.12.36608: Flags [P.], seq 1:326, ack 288, win 1830, options [nop,nop,TS val 1210841058 ecr 3885825668], length 325
+12:07:14.704057 IP 192.168.43.12.36608 > ec2-34-237-73-95.compute-1.amazonaws.com.https: Flags [.], ack 326, win 611, options [nop,nop,TS val 3885825864 ecr 1210841058], length 0
+12:07:14.873765 IP localhost > localhost: ICMP echo request, id 12777, seq 8, length 520
+12:07:14.873792 IP localhost > localhost: ICMP echo reply, id 12777, seq 8, length 520
+12:07:15.077391 IP localhost > localhost: ICMP echo request, id 12777, seq 9, length 520
+12:07:15.077425 IP localhost > localhost: ICMP echo reply, id 12777, seq 9, length 520
+12:07:15.281841 IP localhost > localhost: ICMP echo request, id 12777, seq 10, length 520
+12:07:15.281871 IP localhost > localhost: ICMP echo reply, id 12777, seq 10, length 520
+12:07:15.291267 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 484:758, ack 6010, win 349, options [nop,nop,TS val 1323929716 ecr 581060649], length 274
+12:07:15.292056 IP localhost > localhost: ICMP echo request, id 12780, seq 1, length 520
+12:07:15.292063 IP localhost > localhost: ICMP echo reply, id 12780, seq 1, length 520
+12:07:15.365736 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6010:6064, ack 758, win 15552, options [nop,nop,TS val 581061085 ecr 1323929716], length 54
+12:07:15.365828 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6064, win 349, options [nop,nop,TS val 1323929791 ecr 581061085], length 0
+12:07:15.402219 IP localhost.59442 > voyager.domain: 51179+ PTR? 95.73.237.34.in-addr.arpa. (43)
+12:07:15.402491 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 53158+ PTR? 95.73.237.34.in-addr.arpa. (43)
+12:07:15.414504 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:15.493842 IP localhost > localhost: ICMP echo request, id 12780, seq 2, length 520
+12:07:15.493874 IP localhost > localhost: ICMP echo reply, id 12780, seq 2, length 520
+12:07:15.509140 IP 192.168.43.12.39596 > ec2-100-26-125-169.compute-1.amazonaws.com.https: Flags [P.], seq 4042867944:4042868232, ack 1505004195, win 569, options [nop,nop,TS val 976600353 ecr 1210806915], length 288
+12:07:15.510754 IP 192.168.43.12.37360 > fra15s29-in-f14.1e100.net.https: Flags [P.], seq 1073000971:1073001017, ack 1955393032, win 358, options [nop,nop,TS val 2905590252 ecr 1210788465], length 46
+12:07:15.511195 IP 192.168.43.12.37360 > fra15s29-in-f14.1e100.net.https: Flags [FP.], seq 46:77, ack 1, win 358, options [nop,nop,TS val 2905590252 ecr 1210788465], length 31
+12:07:15.543684 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 53158 1/0/0 PTR ec2-34-237-73-95.compute-1.amazonaws.com. (97)
+12:07:15.543933 IP voyager.domain > localhost.59442: 51179 1/0/0 PTR ec2-34-237-73-95.compute-1.amazonaws.com. (97)
+12:07:15.544439 IP localhost.37039 > voyager.domain: 8356+ PTR? 110.22.217.172.in-addr.arpa. (45)
+12:07:15.544681 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 21213+ PTR? 110.22.217.172.in-addr.arpa. (45)
+12:07:15.566023 IP ec2-100-26-125-169.compute-1.amazonaws.com.https > 192.168.43.12.39596: Flags [.], ack 288, win 1830, options [nop,nop,TS val 1210841929 ecr 976600353], length 0
+12:07:15.566327 IP fra15s29-in-f14.1e100.net.https > 192.168.43.12.37360: Flags [.], ack 46, win 1480, options [nop,nop,TS val 1210841929 ecr 2905590252], length 0
+12:07:15.581983 IP fra15s29-in-f14.1e100.net.https > 192.168.43.12.37360: Flags [.], ack 78, win 1482, options [nop,nop,TS val 1210841929 ecr 2905590252], length 0
+12:07:15.582060 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 21213 2/0/0 PTR fra15s18-in-f110.1e100.net., PTR fra15s18-in-f14.1e100.net. (115)
+12:07:15.582407 IP voyager.domain > localhost.37039: 8356 2/0/0 PTR fra15s18-in-f110.1e100.net., PTR fra15s18-in-f14.1e100.net. (115)
+12:07:15.582875 IP localhost.50129 > voyager.domain: 29626+ PTR? 35.22.217.172.in-addr.arpa. (44)
+12:07:15.583108 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 15831+ PTR? 35.22.217.172.in-addr.arpa. (44)
+12:07:15.603489 IP fra15s29-in-f14.1e100.net.https > 192.168.43.12.37360: Flags [F.], seq 1, ack 78, win 1482, options [nop,nop,TS val 1210841966 ecr 2905590252], length 0
+12:07:15.603562 IP 192.168.43.12.37360 > fra15s29-in-f14.1e100.net.https: Flags [.], ack 2, win 358, options [nop,nop,TS val 2905590345 ecr 1210841966], length 0
+12:07:15.623648 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 15831 2/0/0 PTR fra15s16-in-f35.1e100.net., PTR fra15s16-in-f3.1e100.net. (112)
+12:07:15.623897 IP voyager.domain > localhost.50129: 29626 2/0/0 PTR fra15s16-in-f35.1e100.net., PTR fra15s16-in-f3.1e100.net. (112)
+12:07:15.624647 IP localhost.43383 > voyager.domain: 21928+ PTR? 1.0.0.224.in-addr.arpa. (40)
+12:07:15.624950 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 40508+ PTR? 1.0.0.224.in-addr.arpa. (40)
+12:07:15.683773 IP ec2-100-26-125-169.compute-1.amazonaws.com.https > 192.168.43.12.39596: Flags [P.], seq 1:326, ack 288, win 1830, options [nop,nop,TS val 1210842046 ecr 976600353], length 325
+12:07:15.683824 IP 192.168.43.12.39596 > ec2-100-26-125-169.compute-1.amazonaws.com.https: Flags [.], ack 326, win 590, options [nop,nop,TS val 976600528 ecr 1210842046], length 0
+12:07:15.697620 IP localhost > localhost: ICMP echo request, id 12780, seq 3, length 520
+12:07:15.697648 IP localhost > localhost: ICMP echo reply, id 12780, seq 3, length 520
+12:07:15.703232 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 40508 1/0/0 PTR all-systems.mcast.net. (75)
+12:07:15.703478 IP voyager.domain > localhost.43383: 21928 1/0/0 PTR all-systems.mcast.net. (75)
+12:07:15.704067 IP localhost.38002 > voyager.domain: 54229+ PTR? 78.66.134.195.in-addr.arpa. (44)
+12:07:15.704302 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 15949+ PTR? 78.66.134.195.in-addr.arpa. (44)
+12:07:15.744579 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 15949 1/0/0 PTR maya.di.uoa.gr. (72)
+12:07:15.744816 IP voyager.domain > localhost.38002: 54229 1/0/0 PTR maya.di.uoa.gr. (72)
+12:07:15.745249 IP localhost.48117 > voyager.domain: 53713+ PTR? 62.66.134.195.in-addr.arpa. (44)
+12:07:15.745501 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 53319+ PTR? 62.66.134.195.in-addr.arpa. (44)
+12:07:15.802437 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 53319 1/0/0 PTR survey.di.uoa.gr. (74)
+12:07:15.802690 IP voyager.domain > localhost.48117: 53713 1/0/0 PTR survey.di.uoa.gr. (74)
+12:07:15.832398 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:15.832421 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:15.897768 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:15.901655 IP localhost > localhost: ICMP echo request, id 12780, seq 4, length 520
+12:07:15.901683 IP localhost > localhost: ICMP echo reply, id 12780, seq 4, length 520
+12:07:16.061824 IP georgepap.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 168
+12:07:16.061846 IP georgepap.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 168
+12:07:16.105695 IP localhost > localhost: ICMP echo request, id 12780, seq 5, length 520
+12:07:16.105726 IP localhost > localhost: ICMP echo reply, id 12780, seq 5, length 520
+12:07:16.225039 ARP, Request who-has donald.di.uoa.gr tell 195.134.66.1, length 46
+12:07:16.286978 ARP, Request who-has 195.134.66.194 tell 195.134.66.1, length 46
+12:07:16.309658 IP localhost > localhost: ICMP echo request, id 12780, seq 6, length 520
+12:07:16.309684 IP localhost > localhost: ICMP echo reply, id 12780, seq 6, length 520
+12:07:16.370345 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:16.370369 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:16.425432 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:16.426032 IP localhost.36301 > voyager.domain: 55214+ PTR? 169.125.26.100.in-addr.arpa. (45)
+12:07:16.426305 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 8722+ PTR? 169.125.26.100.in-addr.arpa. (45)
+12:07:16.480230 IP pamvotis.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 281
+12:07:16.480252 IP pamvotis.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 281
+12:07:16.484968 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:16.491971 ARP, Request who-has metis.di.uoa.gr tell 195.134.66.1, length 46
+12:07:16.511539 IP 192.168.43.12.40008 > fra16s18-in-f4.1e100.net.https: Flags [P.], seq 1913216808:1913216854, ack 3373829269, win 1952, options [nop,nop,TS val 2596023694 ecr 1210790435], length 46
+12:07:16.511893 IP 192.168.43.12.56682 > zrh04s05-in-f106.1e100.net.https: Flags [P.], seq 3196107819:3196107865, ack 928834377, win 316, options [nop,nop,TS val 3331248709 ecr 1210790451], length 46
+12:07:16.512419 IP 192.168.43.12.56682 > zrh04s05-in-f106.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 316, options [nop,nop,TS val 3331248710 ecr 1210790451], length 31
+12:07:16.512469 IP 192.168.43.12.56682 > zrh04s05-in-f106.1e100.net.https: Flags [F.], seq 77, ack 1, win 316, options [nop,nop,TS val 3331248710 ecr 1210790451], length 0
+12:07:16.513118 IP 192.168.43.12.40008 > fra16s18-in-f4.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 1952, options [nop,nop,TS val 2596023695 ecr 1210790435], length 31
+12:07:16.513162 IP 192.168.43.12.40008 > fra16s18-in-f4.1e100.net.https: Flags [F.], seq 77, ack 1, win 1952, options [nop,nop,TS val 2596023695 ecr 1210790435], length 0
+12:07:16.513405 IP localhost > localhost: ICMP echo request, id 12780, seq 7, length 520
+12:07:16.513440 IP localhost > localhost: ICMP echo reply, id 12780, seq 7, length 520
+12:07:16.553997 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 8722 1/0/0 PTR ec2-100-26-125-169.compute-1.amazonaws.com. (101)
+12:07:16.554245 IP voyager.domain > localhost.36301: 55214 1/0/0 PTR ec2-100-26-125-169.compute-1.amazonaws.com. (101)
+12:07:16.554756 IP localhost.39121 > voyager.domain: 57844+ PTR? 174.18.217.172.in-addr.arpa. (45)
+12:07:16.555002 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 51842+ PTR? 174.18.217.172.in-addr.arpa. (45)
+12:07:16.561631 IP zrh04s05-in-f106.1e100.net.https > 192.168.43.12.56682: Flags [.], ack 0, win 1417, options [nop,nop,TS val 1210842923 ecr 3331196288], length 0
+12:07:16.562653 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40008: Flags [.], ack 0, win 1779, options [nop,nop,TS val 1210842925 ecr 2595971264], length 0
+12:07:16.583444 IP zrh04s05-in-f106.1e100.net.https > 192.168.43.12.56682: Flags [.], ack 46, win 1420, options [nop,nop,TS val 1210842935 ecr 3331248709], length 0
+12:07:16.584973 ARP, Request who-has 195.134.66.221 tell 195.134.66.1, length 46
+12:07:16.585084 IP zrh04s05-in-f106.1e100.net.https > 192.168.43.12.56682: Flags [.], ack 78, win 1422, options [nop,nop,TS val 1210842935 ecr 3331248710], length 0
+12:07:16.586717 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40008: Flags [.], ack 46, win 1782, options [nop,nop,TS val 1210842935 ecr 2596023694], length 0
+12:07:16.587576 ARP, Request who-has 195.134.66.130 tell 195.134.66.1, length 46
+12:07:16.591501 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40008: Flags [.], ack 78, win 1784, options [nop,nop,TS val 1210842941 ecr 2596023695], length 0
+12:07:16.597495 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:16.604021 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 51842 1/0/0 PTR fra15s29-in-f14.1e100.net. (84)
+12:07:16.604266 IP voyager.domain > localhost.39121: 57844 1/0/0 PTR fra15s29-in-f14.1e100.net. (84)
+12:07:16.605430 IP localhost.46388 > voyager.domain: 18459+ PTR? 38.66.134.195.in-addr.arpa. (44)
+12:07:16.605685 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 4815+ PTR? 38.66.134.195.in-addr.arpa. (44)
+12:07:16.624091 IP zrh04s05-in-f106.1e100.net.https > 192.168.43.12.56682: Flags [F.], seq 1, ack 78, win 1422, options [nop,nop,TS val 1210842979 ecr 3331248710], length 0
+12:07:16.624150 IP 192.168.43.12.56682 > zrh04s05-in-f106.1e100.net.https: Flags [.], ack 2, win 316, options [nop,nop,TS val 3331248821 ecr 1210842979], length 0
+12:07:16.624203 IP fra16s18-in-f4.1e100.net.https > 192.168.43.12.40008: Flags [F.], seq 1, ack 78, win 1784, options [nop,nop,TS val 1210842979 ecr 2596023695], length 0
+12:07:16.624216 IP 192.168.43.12.40008 > fra16s18-in-f4.1e100.net.https: Flags [.], ack 2, win 1952, options [nop,nop,TS val 2596023806 ecr 1210842979], length 0
+12:07:16.647373 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 4815 1/0/0 PTR stella.di.uoa.gr. (74)
+12:07:16.647621 IP voyager.domain > localhost.46388: 18459 1/0/0 PTR stella.di.uoa.gr. (74)
+12:07:16.648067 IP localhost.43748 > voyager.domain: 61227+ PTR? 43.66.134.195.in-addr.arpa. (44)
+12:07:16.648305 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 34334+ PTR? 43.66.134.195.in-addr.arpa. (44)
+12:07:16.702159 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 34334 1/0/0 PTR library.di.uoa.gr. (75)
+12:07:16.702400 IP voyager.domain > localhost.43748: 61227 1/0/0 PTR library.di.uoa.gr. (75)
+12:07:16.702866 IP localhost.53199 > voyager.domain: 31865+ PTR? 16.66.134.195.in-addr.arpa. (44)
+12:07:16.703105 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 49909+ PTR? 16.66.134.195.in-addr.arpa. (44)
+12:07:16.708110 IP sofia.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 318
+12:07:16.708132 IP sofia.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 318
+12:07:16.717607 IP localhost > localhost: ICMP echo request, id 12780, seq 8, length 520
+12:07:16.717633 IP localhost > localhost: ICMP echo reply, id 12780, seq 8, length 520
+12:07:16.726466 ARP, Request who-has 195.134.66.3 tell 195.134.66.1, length 46
+12:07:16.744090 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 49909 1/0/0 PTR georgepap.di.uoa.gr. (77)
+12:07:16.744328 IP voyager.domain > localhost.53199: 31865 1/0/0 PTR georgepap.di.uoa.gr. (77)
+12:07:16.744805 IP localhost.48693 > voyager.domain: 17450+ PTR? 19.66.134.195.in-addr.arpa. (44)
+12:07:16.745046 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 980+ PTR? 19.66.134.195.in-addr.arpa. (44)
+12:07:16.796375 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 980 1/0/0 PTR donald.di.uoa.gr. (74)
+12:07:16.796615 IP voyager.domain > localhost.48693: 17450 1/0/0 PTR donald.di.uoa.gr. (74)
+12:07:16.797061 IP localhost.43291 > voyager.domain: 7006+ PTR? 194.66.134.195.in-addr.arpa. (45)
+12:07:16.797351 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 44763+ PTR? 194.66.134.195.in-addr.arpa. (45)
+12:07:16.844535 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 44763 NXDomain 0/1/0 (102)
+12:07:16.844787 IP voyager.domain > localhost.43291: 7006 NXDomain 0/1/0 (102)
+12:07:16.921815 IP localhost > localhost: ICMP echo request, id 12780, seq 9, length 520
+12:07:16.921841 IP localhost > localhost: ICMP echo reply, id 12780, seq 9, length 520
+12:07:17.125416 IP localhost > localhost: ICMP echo request, id 12780, seq 10, length 520
+12:07:17.125443 IP localhost > localhost: ICMP echo reply, id 12780, seq 10, length 520
+12:07:17.144067 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 758:1032, ack 6064, win 349, options [nop,nop,TS val 1323931569 ecr 581061085], length 274
+12:07:17.146465 IP localhost > localhost: ICMP echo request, id 12783, seq 1, length 520
+12:07:17.146488 IP localhost > localhost: ICMP echo reply, id 12783, seq 1, length 520
+12:07:17.223676 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6064:6118, ack 1032, win 16088, options [nop,nop,TS val 581061549 ecr 1323931569], length 54
+12:07:17.223763 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6118, win 349, options [nop,nop,TS val 1323931649 ecr 581061549], length 0
+12:07:17.349648 IP localhost > localhost: ICMP echo request, id 12783, seq 2, length 520
+12:07:17.349675 IP localhost > localhost: ICMP echo reply, id 12783, seq 2, length 520
+12:07:17.370214 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:17.370237 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:17.449935 IP localhost.51061 > voyager.domain: 63624+ PTR? 42.66.134.195.in-addr.arpa. (44)
+12:07:17.450194 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 30524+ PTR? 42.66.134.195.in-addr.arpa. (44)
+12:07:17.484458 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:17.490652 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 30524 1/0/0 PTR pamvotis.di.uoa.gr. (76)
+12:07:17.490888 IP voyager.domain > localhost.51061: 63624 1/0/0 PTR pamvotis.di.uoa.gr. (76)
+12:07:17.491357 IP localhost.37648 > voyager.domain: 25814+ PTR? 251.66.134.195.in-addr.arpa. (45)
+12:07:17.491592 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 1124+ PTR? 251.66.134.195.in-addr.arpa. (45)
+12:07:17.512308 IP 192.168.43.12.34072 > fra15s12-in-f42.1e100.net.https: Flags [P.], seq 1939075313:1939075359, ack 1497293056, win 379, options [nop,nop,TS val 2275766921 ecr 1210791525], length 46
+12:07:17.512659 IP 192.168.43.12.41948 > 192.0.73.2.https: Flags [P.], seq 2748890449:2748890488, ack 4199548941, win 381, options [nop,nop,TS val 3748581444 ecr 1210791542], length 39
+12:07:17.513195 IP 192.168.43.12.41948 > 192.0.73.2.https: Flags [P.], seq 39:63, ack 1, win 381, options [nop,nop,TS val 3748581444 ecr 1210791542], length 24
+12:07:17.513245 IP 192.168.43.12.41948 > 192.0.73.2.https: Flags [F.], seq 63, ack 1, win 381, options [nop,nop,TS val 3748581444 ecr 1210791542], length 0
+12:07:17.513948 IP 192.168.43.12.34072 > fra15s12-in-f42.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 379, options [nop,nop,TS val 2275766923 ecr 1210791525], length 31
+12:07:17.513994 IP 192.168.43.12.34072 > fra15s12-in-f42.1e100.net.https: Flags [F.], seq 77, ack 1, win 379, options [nop,nop,TS val 2275766923 ecr 1210791525], length 0
+12:07:17.529111 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 1124 1/0/0 PTR metis.di.uoa.gr. (74)
+12:07:17.529415 IP voyager.domain > localhost.37648: 25814 1/0/0 PTR metis.di.uoa.gr. (74)
+12:07:17.529890 IP localhost.58323 > voyager.domain: 60566+ PTR? 106.18.217.172.in-addr.arpa. (45)
+12:07:17.530122 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 52396+ PTR? 106.18.217.172.in-addr.arpa. (45)
+12:07:17.553643 IP localhost > localhost: ICMP echo request, id 12783, seq 3, length 520
+12:07:17.553669 IP localhost > localhost: ICMP echo reply, id 12783, seq 3, length 520
+12:07:17.560327 IP 192.0.73.2.https > 192.168.43.12.41948: Flags [.], ack 0, win 1457, options [nop,nop,TS val 1210843923 ecr 3748529110], length 0
+12:07:17.568457 ARP, Request who-has chloe.di.uoa.gr tell 195.134.66.1, length 46
+12:07:17.568560 IP fra15s12-in-f42.1e100.net.https > 192.168.43.12.34072: Flags [.], ack 0, win 1470, options [nop,nop,TS val 1210843931 ecr 2275714581], length 0
+12:07:17.582231 IP fra15s12-in-f42.1e100.net.https > 192.168.43.12.34072: Flags [.], ack 46, win 1473, options [nop,nop,TS val 1210843936 ecr 2275766921], length 0
+12:07:17.597336 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:17.599769 IP 192.0.73.2.https > 192.168.43.12.41948: Flags [.], ack 64, win 1461, options [nop,nop,TS val 1210843962 ecr 3748581444], length 0
+12:07:17.622452 IP fra15s12-in-f42.1e100.net.https > 192.168.43.12.34072: Flags [.], ack 78, win 1475, options [nop,nop,TS val 1210843971 ecr 2275766923], length 0
+12:07:17.622637 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 52396 2/0/0 PTR zrh04s05-in-f106.1e100.net., PTR fra16s42-in-f10.1e100.net. (115)
+12:07:17.622866 IP voyager.domain > localhost.58323: 60566 2/0/0 PTR zrh04s05-in-f106.1e100.net., PTR fra16s42-in-f10.1e100.net. (115)
+12:07:17.623710 IP localhost.37598 > voyager.domain: 7190+ PTR? 130.66.134.195.in-addr.arpa. (45)
+12:07:17.623923 IP 192.168.43.12.44957 > 192.168.43.1.domain: 51719+ PTR? 130.66.134.195.in-addr.arpa. (45)
+12:07:17.624014 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 51719+ PTR? 130.66.134.195.in-addr.arpa. (45)
+12:07:17.624047 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns2.cosmote.net.domain: 51719+ PTR? 130.66.134.195.in-addr.arpa. (45)
+12:07:17.645510 IP fra15s12-in-f42.1e100.net.https > 192.168.43.12.34072: Flags [F.], seq 1, ack 78, win 1475, options [nop,nop,TS val 1210844008 ecr 2275766923], length 0
+12:07:17.645571 IP 192.168.43.12.34072 > fra15s12-in-f42.1e100.net.https: Flags [.], ack 2, win 379, options [nop,nop,TS val 2275767055 ecr 1210844008], length 0
+12:07:17.645795 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:17.662283 IP 192.0.73.2.https > 192.168.43.12.41948: Flags [F.], seq 1, ack 64, win 1461, options [nop,nop,TS val 1210844015 ecr 3748581444], length 0
+12:07:17.662343 IP 192.168.43.12.41948 > 192.0.73.2.https: Flags [.], ack 2, win 381, options [nop,nop,TS val 3748581593 ecr 1210844015], length 0
+12:07:17.704676 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 51719 NXDomain 0/1/0 (102)
+12:07:17.704953 IP voyager.domain > localhost.37598: 7190 NXDomain 0/1/0 (102)
+12:07:17.705919 IP localhost.53439 > voyager.domain: 18130+ PTR? 3.66.134.195.in-addr.arpa. (43)
+12:07:17.706144 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 19374+ PTR? 3.66.134.195.in-addr.arpa. (43)
+12:07:17.714855 IP6 anycastdns2.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 51719 NXDomain 0/1/0 (102)
+12:07:17.727195 IP 192.168.43.1.domain > 192.168.43.12.44957: 51719 NXDomain 0/1/0 (102)
+12:07:17.757654 IP localhost > localhost: ICMP echo request, id 12783, seq 4, length 520
+12:07:17.757680 IP localhost > localhost: ICMP echo reply, id 12783, seq 4, length 520
+12:07:17.765575 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 19374 NXDomain 0/1/0 (100)
+12:07:17.765826 IP voyager.domain > localhost.53439: 18130 NXDomain 0/1/0 (100)
+12:07:17.961586 IP localhost > localhost: ICMP echo request, id 12783, seq 5, length 520
+12:07:17.961612 IP localhost > localhost: ICMP echo reply, id 12783, seq 5, length 520
+12:07:18.165686 IP localhost > localhost: ICMP echo request, id 12783, seq 6, length 520
+12:07:18.165713 IP localhost > localhost: ICMP echo reply, id 12783, seq 6, length 520
+12:07:18.200155 ARP, Request who-has cassandra.di.uoa.gr tell 195.134.66.1, length 46
+12:07:18.232165 ARP, Request who-has olympia.di.uoa.gr tell 195.134.66.1, length 46
+12:07:18.232674 ARP, Request who-has euklides.di.uoa.gr tell 195.134.66.1, length 46
+12:07:18.369654 IP localhost > localhost: ICMP echo request, id 12783, seq 7, length 520
+12:07:18.369681 IP localhost > localhost: ICMP echo reply, id 12783, seq 7, length 520
+12:07:18.413637 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:18.448779 ARP, Request who-has 195.134.66.92 tell 195.134.66.1, length 46
+12:07:18.474079 IP localhost.54997 > voyager.domain: 28946+ PTR? 42.208.58.216.in-addr.arpa. (44)
+12:07:18.474352 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 16379+ PTR? 42.208.58.216.in-addr.arpa. (44)
+12:07:18.513198 IP 192.168.43.12.36616 > 104.16.2.35.https: Flags [P.], seq 3130573812:3130573858, ack 3227994341, win 468, options [nop,nop,TS val 3641885237 ecr 1210792414], length 46
+12:07:18.513496 IP 192.168.43.12.40576 > fra16s18-in-f1.1e100.net.https: Flags [P.], seq 2827903059:2827903105, ack 2710289489, win 360, options [nop,nop,TS val 1794441368 ecr 1210794681], length 46
+12:07:18.514791 IP 192.168.43.12.40576 > fra16s18-in-f1.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 360, options [nop,nop,TS val 1794441369 ecr 1210794681], length 31
+12:07:18.514858 IP 192.168.43.12.40576 > fra16s18-in-f1.1e100.net.https: Flags [F.], seq 77, ack 1, win 360, options [nop,nop,TS val 1794441369 ecr 1210794681], length 0
+12:07:18.515497 IP 192.168.43.12.36616 > 104.16.2.35.https: Flags [P.], seq 46:77, ack 1, win 468, options [nop,nop,TS val 3641885240 ecr 1210792414], length 31
+12:07:18.515557 IP 192.168.43.12.36616 > 104.16.2.35.https: Flags [F.], seq 77, ack 1, win 468, options [nop,nop,TS val 3641885240 ecr 1210792414], length 0
+12:07:18.529957 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 16379 2/0/0 PTR fra15s12-in-f42.1e100.net., PTR fra15s12-in-f10.1e100.net. (113)
+12:07:18.530197 IP voyager.domain > localhost.54997: 28946 2/0/0 PTR fra15s12-in-f42.1e100.net., PTR fra15s12-in-f10.1e100.net. (113)
+12:07:18.530672 IP localhost.51941 > voyager.domain: 24740+ PTR? 2.73.0.192.in-addr.arpa. (41)
+12:07:18.530910 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 28266+ PTR? 2.73.0.192.in-addr.arpa. (41)
+12:07:18.562230 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40576: Flags [.], ack 0, win 1438, options [nop,nop,TS val 1210844925 ecr 1794391247], length 0
+12:07:18.567871 IP 104.16.2.35.https > 192.168.43.12.36616: Flags [.], ack 0, win 1445, options [nop,nop,TS val 1210844928 ecr 3641832777], length 0
+12:07:18.573651 IP localhost > localhost: ICMP echo request, id 12783, seq 8, length 520
+12:07:18.573677 IP localhost > localhost: ICMP echo reply, id 12783, seq 8, length 520
+12:07:18.582323 IP 104.16.2.35.https > 192.168.43.12.36616: Flags [.], ack 46, win 1448, options [nop,nop,TS val 1210844934 ecr 3641885237], length 0
+12:07:18.582862 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40576: Flags [.], ack 46, win 1441, options [nop,nop,TS val 1210844944 ecr 1794441368], length 0
+12:07:18.592358 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40576: Flags [.], ack 78, win 1443, options [nop,nop,TS val 1210844955 ecr 1794441369], length 0
+12:07:18.597496 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:18.598002 IP 104.16.2.35.https > 192.168.43.12.36616: Flags [.], ack 78, win 1450, options [nop,nop,TS val 1210844961 ecr 3641885240], length 0
+12:07:18.599850 IP 104.16.2.35.https > 192.168.43.12.36616: Flags [F.], seq 1, ack 78, win 1450, options [nop,nop,TS val 1210844963 ecr 3641885240], length 0
+12:07:18.599912 IP 192.168.43.12.36616 > 104.16.2.35.https: Flags [.], ack 2, win 468, options [nop,nop,TS val 3641885324 ecr 1210844963], length 0
+12:07:18.627285 ARP, Request who-has 195.134.66.81 tell 195.134.66.1, length 46
+12:07:18.630224 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40576: Flags [F.], seq 1, ack 78, win 1443, options [nop,nop,TS val 1210844993 ecr 1794441369], length 0
+12:07:18.630285 IP 192.168.43.12.40576 > fra16s18-in-f1.1e100.net.https: Flags [.], ack 2, win 360, options [nop,nop,TS val 1794441484 ecr 1210844993], length 0
+12:07:18.688292 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 28266 NXDomain 0/1/0 (106)
+12:07:18.688541 IP voyager.domain > localhost.51941: 24740 NXDomain 0/1/0 (106)
+12:07:18.689880 IP localhost.50750 > voyager.domain: 51672+ PTR? 185.66.134.195.in-addr.arpa. (45)
+12:07:18.690127 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 30308+ PTR? 185.66.134.195.in-addr.arpa. (45)
+12:07:18.728549 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 30308 1/0/0 PTR cassandra.di.uoa.gr. (78)
+12:07:18.728826 IP voyager.domain > localhost.50750: 51672 1/0/0 PTR cassandra.di.uoa.gr. (78)
+12:07:18.729343 IP localhost.58386 > voyager.domain: 21550+ PTR? 149.66.134.195.in-addr.arpa. (45)
+12:07:18.729579 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 54371+ PTR? 149.66.134.195.in-addr.arpa. (45)
+12:07:18.777692 IP localhost > localhost: ICMP echo request, id 12783, seq 9, length 520
+12:07:18.777719 IP localhost > localhost: ICMP echo reply, id 12783, seq 9, length 520
+12:07:18.782836 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 54371 1/0/0 PTR olympia.di.uoa.gr. (76)
+12:07:18.783095 IP voyager.domain > localhost.58386: 21550 1/0/0 PTR olympia.di.uoa.gr. (76)
+12:07:18.783507 IP localhost.44885 > voyager.domain: 27751+ PTR? 91.66.134.195.in-addr.arpa. (44)
+12:07:18.783734 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 58217+ PTR? 91.66.134.195.in-addr.arpa. (44)
+12:07:18.830885 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 58217 1/0/0 PTR euklides.di.uoa.gr. (76)
+12:07:18.831155 IP voyager.domain > localhost.44885: 27751 1/0/0 PTR euklides.di.uoa.gr. (76)
+12:07:18.831632 IP localhost.42884 > voyager.domain: 32272+ PTR? 92.66.134.195.in-addr.arpa. (44)
+12:07:18.831871 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 12386+ PTR? 92.66.134.195.in-addr.arpa. (44)
+12:07:18.882273 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 12386 NXDomain 0/1/0 (101)
+12:07:18.882537 IP voyager.domain > localhost.42884: 32272 NXDomain 0/1/0 (101)
+12:07:18.981384 IP localhost > localhost: ICMP echo request, id 12783, seq 10, length 520
+12:07:18.981408 IP localhost > localhost: ICMP echo reply, id 12783, seq 10, length 520
+12:07:18.997037 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1032:1306, ack 6118, win 349, options [nop,nop,TS val 1323933422 ecr 581061549], length 274
+12:07:18.997447 IP localhost > localhost: ICMP echo request, id 12786, seq 1, length 520
+12:07:18.997452 IP localhost > localhost: ICMP echo reply, id 12786, seq 1, length 520
+12:07:19.069256 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6118:6172, ack 1306, win 16624, options [nop,nop,TS val 581062008 ecr 1323933422], length 54
+12:07:19.069350 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6172, win 349, options [nop,nop,TS val 1323933494 ecr 581062008], length 0
+12:07:19.201779 IP localhost > localhost: ICMP echo request, id 12786, seq 2, length 520
+12:07:19.201806 IP localhost > localhost: ICMP echo reply, id 12786, seq 2, length 520
+12:07:19.221133 ARP, Request who-has 195.134.66.130 tell 195.134.66.1, length 46
+12:07:19.405400 IP localhost > localhost: ICMP echo request, id 12786, seq 3, length 520
+12:07:19.405426 IP localhost > localhost: ICMP echo reply, id 12786, seq 3, length 520
+12:07:19.417522 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:19.498090 IP localhost.48698 > voyager.domain: 7318+ PTR? 35.2.16.104.in-addr.arpa. (42)
+12:07:19.498319 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 29365+ PTR? 35.2.16.104.in-addr.arpa. (42)
+12:07:19.513756 IP 192.168.43.12.33826 > server-143-204-101-110.fra50.r.cloudfront.net.https: Flags [P.], seq 4032242354:4032242400, ack 3711595232, win 316, options [nop,nop,TS val 1189100264 ecr 1210793669], length 46
+12:07:19.513886 IP 192.168.43.12.33656 > edge-star-shv-01-ams3.facebook.com.https: Flags [P.], seq 1671193878:1671193917, ack 1498108029, win 337, options [nop,nop,TS val 1466340864 ecr 1210793664], length 39
+12:07:19.514265 IP 192.168.43.12.59132 > fra16s14-in-f2.1e100.net.https: Flags [P.], seq 2886397646:2886397692, ack 1698939388, win 314, options [nop,nop,TS val 2899662459 ecr 1210793671], length 46
+12:07:19.514360 IP 192.168.43.12.40580 > fra16s18-in-f1.1e100.net.https: Flags [P.], seq 1013056219:1013056265, ack 3517148651, win 358, options [nop,nop,TS val 1794442369 ecr 1210793679], length 46
+12:07:19.514870 IP 192.168.43.12.40580 > fra16s18-in-f1.1e100.net.https: Flags [FP.], seq 46:77, ack 1, win 358, options [nop,nop,TS val 1794442369 ecr 1210793679], length 31
+12:07:19.515638 IP 192.168.43.12.33826 > server-143-204-101-110.fra50.r.cloudfront.net.https: Flags [P.], seq 46:77, ack 1, win 316, options [nop,nop,TS val 1189100266 ecr 1210793669], length 31
+12:07:19.515687 IP 192.168.43.12.33826 > server-143-204-101-110.fra50.r.cloudfront.net.https: Flags [F.], seq 77, ack 1, win 316, options [nop,nop,TS val 1189100266 ecr 1210793669], length 0
+12:07:19.516237 IP 192.168.43.12.33656 > edge-star-shv-01-ams3.facebook.com.https: Flags [P.], seq 39:63, ack 1, win 337, options [nop,nop,TS val 1466340866 ecr 1210793664], length 24
+12:07:19.516288 IP 192.168.43.12.33656 > edge-star-shv-01-ams3.facebook.com.https: Flags [F.], seq 63, ack 1, win 337, options [nop,nop,TS val 1466340866 ecr 1210793664], length 0
+12:07:19.517619 IP 192.168.43.12.59132 > fra16s14-in-f2.1e100.net.https: Flags [P.], seq 46:77, ack 1, win 314, options [nop,nop,TS val 2899662463 ecr 1210793671], length 31
+12:07:19.517678 IP 192.168.43.12.59132 > fra16s14-in-f2.1e100.net.https: Flags [F.], seq 77, ack 1, win 314, options [nop,nop,TS val 2899662463 ecr 1210793671], length 0
+12:07:19.541865 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 29365 ServFail 0/0/0 (42)
+12:07:19.542091 IP voyager.domain > localhost.48698: 7318 ServFail 0/0/0 (42)
+12:07:19.542330 IP localhost.47951 > voyager.domain: 7318+ PTR? 35.2.16.104.in-addr.arpa. (42)
+12:07:19.542557 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 11840+ PTR? 35.2.16.104.in-addr.arpa. (42)
+12:07:19.553471 IP server-143-204-101-110.fra50.r.cloudfront.net.https > 192.168.43.12.33826: Flags [.], ack 46, win 1422, options [nop,nop,TS val 1210845916 ecr 1189100264], length 0
+12:07:19.563773 IP server-143-204-101-110.fra50.r.cloudfront.net.https > 192.168.43.12.33826: Flags [.], ack 46, win 1422, options [nop,nop,TS val 1210845917 ecr 1189100264], length 0
+12:07:19.565101 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [.], ack 0, win 1462, options [nop,nop,TS val 1210845926 ecr 1466288651], length 0
+12:07:19.565285 IP fra16s14-in-f2.1e100.net.https > 192.168.43.12.59132: Flags [.], ack 0, win 1437, options [nop,nop,TS val 1210845926 ecr 2899610253], length 0
+12:07:19.565303 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [.], ack 39, win 1464, options [nop,nop,TS val 1210845927 ecr 1466340864], length 0
+12:07:19.571107 IP fra16s14-in-f2.1e100.net.https > 192.168.43.12.59132: Flags [.], ack 46, win 1440, options [nop,nop,TS val 1210845929 ecr 2899662459], length 0
+12:07:19.582461 IP fra16s14-in-f2.1e100.net.https > 192.168.43.12.59132: Flags [.], ack 78, win 1442, options [nop,nop,TS val 1210845940 ecr 2899662463], length 0
+12:07:19.582539 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40580: Flags [.], ack 46, win 1441, options [nop,nop,TS val 1210845939 ecr 1794442369], length 0
+12:07:19.583613 IP server-143-204-101-110.fra50.r.cloudfront.net.https > 192.168.43.12.33826: Flags [.], ack 78, win 1424, options [nop,nop,TS val 1210845940 ecr 1189100266], length 0
+12:07:19.583690 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [.], ack 64, win 1466, options [nop,nop,TS val 1210845940 ecr 1466340866], length 0
+12:07:19.583716 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40580: Flags [.], ack 78, win 1443, options [nop,nop,TS val 1210845940 ecr 1794442369], length 0
+12:07:19.586749 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 11840 ServFail 0/0/0 (42)
+12:07:19.586984 IP voyager.domain > localhost.47951: 7318 ServFail 0/0/0 (42)
+12:07:19.587444 IP localhost.59767 > voyager.domain: 64544+ PTR? 129.23.217.172.in-addr.arpa. (45)
+12:07:19.587683 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 56569+ PTR? 129.23.217.172.in-addr.arpa. (45)
+12:07:19.600743 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [P.], seq 1:40, ack 64, win 1466, options [nop,nop,TS val 1210845964 ecr 1466340866], length 39
+12:07:19.600801 IP 192.168.43.12.33656 > edge-star-shv-01-ams3.facebook.com.https: Flags [R], seq 1671193942, win 0, length 0
+12:07:19.603108 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [F.], seq 40, ack 64, win 1466, options [nop,nop,TS val 1210845964 ecr 1466340866], length 0
+12:07:19.603167 IP 192.168.43.12.33656 > edge-star-shv-01-ams3.facebook.com.https: Flags [R], seq 1671193942, win 0, length 0
+12:07:19.609651 IP localhost > localhost: ICMP echo request, id 12786, seq 4, length 520
+12:07:19.609676 IP localhost > localhost: ICMP echo reply, id 12786, seq 4, length 520
+12:07:19.622113 IP fra16s14-in-f2.1e100.net.https > 192.168.43.12.59132: Flags [F.], seq 1, ack 78, win 1442, options [nop,nop,TS val 1210845978 ecr 2899662463], length 0
+12:07:19.622171 IP 192.168.43.12.59132 > fra16s14-in-f2.1e100.net.https: Flags [.], ack 2, win 314, options [nop,nop,TS val 2899662567 ecr 1210845978], length 0
+12:07:19.626249 IP server-143-204-101-110.fra50.r.cloudfront.net.https > 192.168.43.12.33826: Flags [F.], seq 1, ack 78, win 1424, options [nop,nop,TS val 1210845984 ecr 1189100266], length 0
+12:07:19.626304 IP 192.168.43.12.33826 > server-143-204-101-110.fra50.r.cloudfront.net.https: Flags [.], ack 2, win 316, options [nop,nop,TS val 1189100376 ecr 1210845984], length 0
+12:07:19.626580 IP fra16s18-in-f1.1e100.net.https > 192.168.43.12.40580: Flags [F.], seq 1, ack 78, win 1443, options [nop,nop,TS val 1210845985 ecr 1794442369], length 0
+12:07:19.626615 IP 192.168.43.12.40580 > fra16s18-in-f1.1e100.net.https: Flags [.], ack 2, win 358, options [nop,nop,TS val 1794442481 ecr 1210845985], length 0
+12:07:19.636563 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 56569 2/0/0 PTR fra16s18-in-f1.1e100.net., PTR fra16s18-in-f129.1e100.net. (114)
+12:07:19.636812 IP voyager.domain > localhost.59767: 64544 2/0/0 PTR fra16s18-in-f1.1e100.net., PTR fra16s18-in-f129.1e100.net. (114)
+12:07:19.637779 IP localhost.46663 > voyager.domain: 41980+ PTR? 81.66.134.195.in-addr.arpa. (44)
+12:07:19.638006 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 62457+ PTR? 81.66.134.195.in-addr.arpa. (44)
+12:07:19.639534 IP edge-star-shv-01-ams3.facebook.com.https > 192.168.43.12.33656: Flags [R.], seq 41, ack 64, win 0, length 0
+12:07:19.683860 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 62457 NXDomain 0/1/0 (101)
+12:07:19.684108 IP voyager.domain > localhost.46663: 41980 NXDomain 0/1/0 (101)
+12:07:19.813439 IP localhost > localhost: ICMP echo request, id 12786, seq 5, length 520
+12:07:19.813465 IP localhost > localhost: ICMP echo reply, id 12786, seq 5, length 520
+12:07:20.017657 IP localhost > localhost: ICMP echo request, id 12786, seq 6, length 520
+12:07:20.017682 IP localhost > localhost: ICMP echo reply, id 12786, seq 6, length 520
+12:07:20.083254 ARP, Request who-has 195.134.66.14 tell 195.134.66.1, length 46
+12:07:20.221726 IP localhost > localhost: ICMP echo request, id 12786, seq 7, length 520
+12:07:20.221752 IP localhost > localhost: ICMP echo reply, id 12786, seq 7, length 520
+12:07:20.366976 IP library.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 421
+12:07:20.378286 IP library.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 421
+12:07:20.378310 IP library.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 421
+12:07:20.378825 IP library.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 421
+12:07:20.378847 IP library.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 421
+12:07:20.379351 IP library.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 421
+12:07:20.424498 ARP, Request who-has ivan.di.uoa.gr tell 195.134.66.1, length 46
+12:07:20.425450 IP localhost > localhost: ICMP echo request, id 12786, seq 8, length 520
+12:07:20.425475 IP localhost > localhost: ICMP echo reply, id 12786, seq 8, length 520
+12:07:20.515017 IP 192.168.43.12.56676 > 151.101.1.69.https: Flags [P.], seq 2072596049:2072596095, ack 2686935769, win 1178, options [nop,nop,TS val 1720395805 ecr 1210793681], length 46
+12:07:20.515147 IP 192.168.43.12.56672 > 151.101.1.69.https: Flags [P.], seq 3589894316:3589894362, ack 4230688383, win 1118, options [nop,nop,TS val 1720395805 ecr 1210793673], length 46
+12:07:20.515317 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446 > xx-fbcdn6-shv-01-ams3.fbcdn.net.https: Flags [P.], seq 1756284104:1756284143, ack 3836367048, win 557, options [nop,nop,TS val 853980035 ecr 1210794469], length 39
+12:07:20.515812 IP 192.168.43.12.56676 > 151.101.1.69.https: Flags [FP.], seq 46:77, ack 1, win 1178, options [nop,nop,TS val 1720395806 ecr 1210793681], length 31
+12:07:20.516197 IP 192.168.43.12.56672 > 151.101.1.69.https: Flags [FP.], seq 46:77, ack 1, win 1118, options [nop,nop,TS val 1720395806 ecr 1210793673], length 31
+12:07:20.516482 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446 > xx-fbcdn6-shv-01-ams3.fbcdn.net.https: Flags [FP.], seq 39:63, ack 1, win 557, options [nop,nop,TS val 853980037 ecr 1210794469], length 24
+12:07:20.521958 IP localhost.42916 > voyager.domain: 11860+ PTR? 110.101.204.143.in-addr.arpa. (46)
+12:07:20.522221 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 52822+ PTR? 110.101.204.143.in-addr.arpa. (46)
+12:07:20.584902 IP thassos.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 218
+12:07:20.586389 IP thassos.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 218
+12:07:20.586413 IP thassos.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 218
+12:07:20.589694 ARP, Request who-has 195.134.66.221 tell 195.134.66.1, length 46
+12:07:20.629642 IP localhost > localhost: ICMP echo request, id 12786, seq 9, length 520
+12:07:20.629668 IP localhost > localhost: ICMP echo reply, id 12786, seq 9, length 520
+12:07:20.662196 IP adorno.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 168
+12:07:20.662217 IP adorno.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 168
+12:07:20.662227 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:20.665545 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446 > xx-fbcdn6-shv-01-ams3.fbcdn.net.https: Flags [FP.], seq 39:63, ack 1, win 557, options [nop,nop,TS val 853980186 ecr 1210794469], length 24
+12:07:20.681669 IP 151.101.1.69.https > 192.168.43.12.56676: Flags [.], ack 46, win 1486, options [nop,nop,TS val 1210847043 ecr 1720395805], length 0
+12:07:20.682971 IP 151.101.1.69.https > 192.168.43.12.56672: Flags [.], ack 46, win 1465, options [nop,nop,TS val 1210847046 ecr 1720395805], length 0
+12:07:20.684720 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [.], ack 39, win 1469, options [nop,nop,TS val 1210847049 ecr 853980035], length 0
+12:07:20.685712 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [.], ack 64, win 1471, options [nop,nop,TS val 1210847050 ecr 853980037], length 0
+12:07:20.689073 IP 151.101.1.69.https > 192.168.43.12.56676: Flags [.], ack 78, win 1488, options [nop,nop,TS val 1210847052 ecr 1720395806], length 0
+12:07:20.689150 IP 151.101.1.69.https > 192.168.43.12.56672: Flags [.], ack 78, win 1467, options [nop,nop,TS val 1210847052 ecr 1720395806], length 0
+12:07:20.702517 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [.], ack 64, win 1471, options [nop,nop,TS val 1210847058 ecr 853980037], length 0
+12:07:20.722243 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [P.], seq 1:40, ack 64, win 1471, options [nop,nop,TS val 1210847086 ecr 853980037], length 39
+12:07:20.722302 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446 > xx-fbcdn6-shv-01-ams3.fbcdn.net.https: Flags [R], seq 1756284168, win 0, length 0
+12:07:20.722357 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [F.], seq 40, ack 64, win 1471, options [nop,nop,TS val 1210847086 ecr 853980037], length 0
+12:07:20.722376 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446 > xx-fbcdn6-shv-01-ams3.fbcdn.net.https: Flags [R], seq 1756284168, win 0, length 0
+12:07:20.728806 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 52822 1/0/0 PTR server-143-204-101-110.fra50.r.cloudfront.net. (105)
+12:07:20.729042 IP voyager.domain > localhost.42916: 11860 1/0/0 PTR server-143-204-101-110.fra50.r.cloudfront.net. (105)
+12:07:20.729565 IP localhost.42818 > voyager.domain: 28836+ PTR? 2.91.13.31.in-addr.arpa. (41)
+12:07:20.729797 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 64605+ PTR? 2.91.13.31.in-addr.arpa. (41)
+12:07:20.730824 IP 151.101.1.69.https > 192.168.43.12.56672: Flags [P.], seq 1:32, ack 78, win 1467, options [nop,nop,TS val 1210847094 ecr 1720395806], length 31
+12:07:20.730881 IP 192.168.43.12.56672 > 151.101.1.69.https: Flags [R], seq 3589894394, win 0, length 0
+12:07:20.731448 IP 151.101.1.69.https > 192.168.43.12.56672: Flags [F.], seq 32, ack 78, win 1467, options [nop,nop,TS val 1210847094 ecr 1720395806], length 0
+12:07:20.731506 IP 192.168.43.12.56672 > 151.101.1.69.https: Flags [R], seq 3589894394, win 0, length 0
+12:07:20.742038 IP 151.101.1.69.https > 192.168.43.12.56676: Flags [P.], seq 1:32, ack 78, win 1488, options [nop,nop,TS val 1210847104 ecr 1720395806], length 31
+12:07:20.742095 IP 192.168.43.12.56676 > 151.101.1.69.https: Flags [R], seq 2072596127, win 0, length 0
+12:07:20.742260 IP 151.101.1.69.https > 192.168.43.12.56676: Flags [F.], seq 32, ack 78, win 1488, options [nop,nop,TS val 1210847104 ecr 1720395806], length 0
+12:07:20.742275 IP 192.168.43.12.56676 > 151.101.1.69.https: Flags [R], seq 2072596127, win 0, length 0
+12:07:20.761078 IP6 xx-fbcdn6-shv-01-ams3.fbcdn.net.https > 2a02:1388:9e:a37c:3464:d170:5678:7d74.41446: Flags [R.], seq 41, ack 64, win 0, length 0
+12:07:20.782241 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 64605 1/0/0 PTR edge-star-shv-01-ams3.facebook.com. (89)
+12:07:20.782490 IP voyager.domain > localhost.42818: 28836 1/0/0 PTR edge-star-shv-01-ams3.facebook.com. (89)
+12:07:20.782962 IP localhost.54878 > voyager.domain: 39480+ PTR? 2.22.217.172.in-addr.arpa. (43)
+12:07:20.783197 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 39770+ PTR? 2.22.217.172.in-addr.arpa. (43)
+12:07:20.822144 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 39770 1/0/0 PTR fra16s14-in-f2.1e100.net. (81)
+12:07:20.822382 IP voyager.domain > localhost.54878: 39480 1/0/0 PTR fra16s14-in-f2.1e100.net. (81)
+12:07:20.823742 IP localhost.48868 > voyager.domain: 10422+ PTR? 14.66.134.195.in-addr.arpa. (44)
+12:07:20.823986 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 33666+ PTR? 14.66.134.195.in-addr.arpa. (44)
+12:07:20.833654 IP localhost > localhost: ICMP echo request, id 12786, seq 10, length 520
+12:07:20.833679 IP localhost > localhost: ICMP echo reply, id 12786, seq 10, length 520
+12:07:20.853919 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1306:1580, ack 6172, win 349, options [nop,nop,TS val 1323935279 ecr 581062008], length 274
+12:07:20.856863 IP localhost > localhost: ICMP echo request, id 12791, seq 1, length 520
+12:07:20.856889 IP localhost > localhost: ICMP echo reply, id 12791, seq 1, length 520
+12:07:20.868172 ARP, Request who-has euklides.di.uoa.gr tell 195.134.66.1, length 46
+12:07:20.891373 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 33666 NXDomain 0/1/0 (101)
+12:07:20.891609 IP voyager.domain > localhost.48868: 10422 NXDomain 0/1/0 (101)
+12:07:20.892170 IP localhost.55314 > voyager.domain: 40452+ PTR? 69.1.101.151.in-addr.arpa. (43)
+12:07:20.892379 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 47098+ PTR? 69.1.101.151.in-addr.arpa. (43)
+12:07:20.902341 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6172:6226, ack 1580, win 17160, options [nop,nop,TS val 581062469 ecr 1323935279], length 54
+12:07:20.902425 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6226, win 349, options [nop,nop,TS val 1323935328 ecr 581062469], length 0
+12:07:21.027533 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 47098 NXDomain 0/1/0 (103)
+12:07:21.027787 IP voyager.domain > localhost.55314: 40452 NXDomain 0/1/0 (103)
+12:07:21.028300 IP localhost.52341 > voyager.domain: 23206+ PTR? 1.0.0.0.0.0.0.0.c.0.0.b.e.c.a.f.5.0.0.0.b.1.0.f.0.8.8.2.3.0.a.2.ip6.arpa. (90)
+12:07:21.028554 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 8896+ PTR? 1.0.0.0.0.0.0.0.c.0.0.b.e.c.a.f.5.0.0.0.b.1.0.f.0.8.8.2.3.0.a.2.ip6.arpa. (90)
+12:07:21.047387 IP mpagasas.di.uoa.gr.57621 > 195.134.66.255.57621: UDP, length 44
+12:07:21.057660 IP localhost > localhost: ICMP echo request, id 12791, seq 2, length 520
+12:07:21.057688 IP localhost > localhost: ICMP echo reply, id 12791, seq 2, length 520
+12:07:21.107430 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 8896 1/0/0 PTR xx-fbcdn6-shv-01-ams3.fbcdn.net. (135)
+12:07:21.107694 IP voyager.domain > localhost.52341: 23206 1/0/0 PTR xx-fbcdn6-shv-01-ams3.fbcdn.net. (135)
+12:07:21.261368 IP localhost > localhost: ICMP echo request, id 12791, seq 3, length 520
+12:07:21.261392 IP localhost > localhost: ICMP echo reply, id 12791, seq 3, length 520
+12:07:21.426084 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:21.465418 IP localhost > localhost: ICMP echo request, id 12791, seq 4, length 520
+12:07:21.465453 IP localhost > localhost: ICMP echo reply, id 12791, seq 4, length 520
+12:07:21.516034 IP 192.168.43.12.47632 > fra15s11-in-f14.1e100.net.https: Flags [P.], seq 2103043594:2103043640, ack 2710300242, win 358, options [nop,nop,TS val 1781999479 ecr 1210794443], length 46
+12:07:21.516171 IP 192.168.43.12.56016 > zrh04s06-in-f130.1e100.net.https: Flags [P.], seq 3241266208:3241266254, ack 990320809, win 1774, options [nop,nop,TS val 753739191 ecr 1210794469], length 46
+12:07:21.517422 IP 192.168.43.12.47632 > fra15s11-in-f14.1e100.net.https: Flags [FP.], seq 46:77, ack 1, win 358, options [nop,nop,TS val 1781999481 ecr 1210794443], length 31
+12:07:21.517796 IP 192.168.43.12.56016 > zrh04s06-in-f130.1e100.net.https: Flags [FP.], seq 46:77, ack 1, win 1774, options [nop,nop,TS val 753739193 ecr 1210794469], length 31
+12:07:21.545928 IP localhost.54808 > voyager.domain: 50544+ PTR? 126.66.134.195.in-addr.arpa. (45)
+12:07:21.546195 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 14540+ PTR? 126.66.134.195.in-addr.arpa. (45)
+12:07:21.565094 IP fra15s11-in-f14.1e100.net.https > 192.168.43.12.47632: Flags [.], ack 46, win 1485, options [nop,nop,TS val 1210847928 ecr 1781999479], length 0
+12:07:21.568906 IP zrh04s06-in-f130.1e100.net.https > 192.168.43.12.56016: Flags [.], ack 46, win 1458, options [nop,nop,TS val 1210847931 ecr 753739191], length 0
+12:07:21.570886 IP fra15s11-in-f14.1e100.net.https > 192.168.43.12.47632: Flags [.], ack 78, win 1487, options [nop,nop,TS val 1210847933 ecr 1781999481], length 0
+12:07:21.572019 IP zrh04s06-in-f130.1e100.net.https > 192.168.43.12.56016: Flags [.], ack 78, win 1460, options [nop,nop,TS val 1210847934 ecr 753739193], length 0
+12:07:21.577536 IP6 fe80::d397:abdd:9fc2:5355 > fe80::8eeb:c6ff:fe85:f3fa: ICMP6, neighbor solicitation, who has fe80::8eeb:c6ff:fe85:f3fa, length 32
+12:07:21.577670 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 14540 1/0/0 PTR thassos.di.uoa.gr. (76)
+12:07:21.578038 IP voyager.domain > localhost.54808: 50544 1/0/0 PTR thassos.di.uoa.gr. (76)
+12:07:21.578541 IP localhost.35801 > voyager.domain: 52002+ PTR? 47.66.134.195.in-addr.arpa. (44)
+12:07:21.578766 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 41211+ PTR? 47.66.134.195.in-addr.arpa. (44)
+12:07:21.580132 IP6 fe80::8eeb:c6ff:fe85:f3fa > fe80::d397:abdd:9fc2:5355: ICMP6, neighbor advertisement, tgt is fe80::8eeb:c6ff:fe85:f3fa, length 32
+12:07:21.648418 IP fra15s11-in-f14.1e100.net.https > 192.168.43.12.47632: Flags [F.], seq 1, ack 78, win 1487, options [nop,nop,TS val 1210847970 ecr 1781999481], length 0
+12:07:21.648483 IP 192.168.43.12.47632 > fra15s11-in-f14.1e100.net.https: Flags [.], ack 2, win 358, options [nop,nop,TS val 1781999612 ecr 1210847970], length 0
+12:07:21.648538 IP zrh04s06-in-f130.1e100.net.https > 192.168.43.12.56016: Flags [F.], seq 1, ack 78, win 1460, options [nop,nop,TS val 1210847971 ecr 753739193], length 0
+12:07:21.648551 IP 192.168.43.12.56016 > zrh04s06-in-f130.1e100.net.https: Flags [.], ack 2, win 1774, options [nop,nop,TS val 753739324 ecr 1210847971], length 0
+12:07:21.669649 IP localhost > localhost: ICMP echo request, id 12791, seq 5, length 520
+12:07:21.669676 IP localhost > localhost: ICMP echo reply, id 12791, seq 5, length 520
+12:07:21.670602 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 41211 1/0/0 PTR adorno.di.uoa.gr. (74)
+12:07:21.670840 IP voyager.domain > localhost.35801: 52002 1/0/0 PTR adorno.di.uoa.gr. (74)
+12:07:21.672312 IP localhost.47489 > voyager.domain: 54494+ PTR? 244.66.134.195.in-addr.arpa. (45)
+12:07:21.672503 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 22729+ PTR? 244.66.134.195.in-addr.arpa. (45)
+12:07:21.747418 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 22729 1/0/0 PTR mpagasas.di.uoa.gr. (77)
+12:07:21.747658 IP voyager.domain > localhost.47489: 54494 1/0/0 PTR mpagasas.di.uoa.gr. (77)
+12:07:21.748178 IP localhost.35994 > voyager.domain: 13961+ PTR? 174.16.217.172.in-addr.arpa. (45)
+12:07:21.748361 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 17627+ PTR? 174.16.217.172.in-addr.arpa. (45)
+12:07:21.827587 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 17627 2/0/0 PTR fra15s11-in-f14.1e100.net., PTR fra15s11-in-f174.1e100.net. (115)
+12:07:21.827837 IP voyager.domain > localhost.35994: 13961 2/0/0 PTR fra15s11-in-f14.1e100.net., PTR fra15s11-in-f174.1e100.net. (115)
+12:07:21.828273 IP localhost.43533 > voyager.domain: 63561+ PTR? 130.16.217.172.in-addr.arpa. (45)
+12:07:21.828453 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 12005+ PTR? 130.16.217.172.in-addr.arpa. (45)
+12:07:21.856404 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 12005 2/0/0 PTR zrh04s06-in-f130.1e100.net., PTR fra15s46-in-f2.1e100.net. (114)
+12:07:21.856653 IP voyager.domain > localhost.43533: 63561 2/0/0 PTR zrh04s06-in-f130.1e100.net., PTR fra15s46-in-f2.1e100.net. (114)
+12:07:21.873633 IP localhost > localhost: ICMP echo request, id 12791, seq 6, length 520
+12:07:21.873659 IP localhost > localhost: ICMP echo reply, id 12791, seq 6, length 520
+12:07:22.077618 IP localhost > localhost: ICMP echo request, id 12791, seq 7, length 520
+12:07:22.077645 IP localhost > localhost: ICMP echo reply, id 12791, seq 7, length 520
+12:07:22.123539 ARP, Request who-has mpithikotsis.di.uoa.gr tell 195.134.66.1, length 46
+12:07:22.281628 IP localhost > localhost: ICMP echo request, id 12791, seq 8, length 520
+12:07:22.281651 IP localhost > localhost: ICMP echo reply, id 12791, seq 8, length 520
+12:07:22.424411 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:22.485646 IP localhost > localhost: ICMP echo request, id 12791, seq 9, length 520
+12:07:22.485672 IP localhost > localhost: ICMP echo reply, id 12791, seq 9, length 520
+12:07:22.501836 ARP, Request who-has blade.di.uoa.gr tell 195.134.66.1, length 46
+12:07:22.515862 ARP, Request who-has iason.di.uoa.gr tell 195.134.66.1, length 46
+12:07:22.530460 ARP, Request who-has aiani.di.uoa.gr tell 195.134.66.1, length 46
+12:07:22.570156 IP localhost.38820 > voyager.domain: 20548+ PTR? a.f.3.f.5.8.e.f.f.f.6.c.b.e.e.8.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+12:07:22.570361 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 11653+ PTR? a.f.3.f.5.8.e.f.f.f.6.c.b.e.e.8.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+12:07:22.664935 IP rudie.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 346
+12:07:22.665175 IP rudie.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 346
+12:07:22.689504 IP localhost > localhost: ICMP echo request, id 12791, seq 10, length 520
+12:07:22.689514 IP localhost > localhost: ICMP echo reply, id 12791, seq 10, length 520
+12:07:22.697304 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1580:1854, ack 6226, win 349, options [nop,nop,TS val 1323937122 ecr 581062469], length 274
+12:07:22.697834 IP localhost > localhost: ICMP echo request, id 12794, seq 1, length 520
+12:07:22.697849 IP localhost > localhost: ICMP echo reply, id 12794, seq 1, length 520
+12:07:22.705949 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 11653 NXDomain 0/1/0 (154)
+12:07:22.706136 IP voyager.domain > localhost.38820: 20548 NXDomain 0/1/0 (154)
+12:07:22.706426 IP localhost.42623 > voyager.domain: 42289+ PTR? 5.5.3.5.2.c.f.9.d.d.b.a.7.9.3.d.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+12:07:22.706594 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 28740+ PTR? 5.5.3.5.2.c.f.9.d.d.b.a.7.9.3.d.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+12:07:22.758038 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6226:6280, ack 1854, win 17696, options [nop,nop,TS val 581062934 ecr 1323937122], length 54
+12:07:22.758123 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6280, win 349, options [nop,nop,TS val 1323937183 ecr 581062934], length 0
+12:07:22.901721 IP localhost > localhost: ICMP echo request, id 12794, seq 2, length 520
+12:07:22.901748 IP localhost > localhost: ICMP echo reply, id 12794, seq 2, length 520
+12:07:22.947908 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 28740 NXDomain 0/1/0 (154)
+12:07:22.948171 IP voyager.domain > localhost.42623: 42289 NXDomain 0/1/0 (154)
+12:07:22.949193 IP localhost.56046 > voyager.domain: 1068+ PTR? 29.66.134.195.in-addr.arpa. (44)
+12:07:22.949437 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 17401+ PTR? 29.66.134.195.in-addr.arpa. (44)
+12:07:22.987447 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 17401 1/0/0 PTR mpithikotsis.di.uoa.gr. (80)
+12:07:22.987684 IP 195.134.66.175.17500 > 255.255.255.255.17500: UDP, length 191
+12:07:22.987693 IP voyager.domain > localhost.56046: 1068 1/0/0 PTR mpithikotsis.di.uoa.gr. (80)
+12:07:22.988195 IP localhost.56555 > voyager.domain: 49135+ PTR? 151.66.134.195.in-addr.arpa. (45)
+12:07:22.988431 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 56997+ PTR? 151.66.134.195.in-addr.arpa. (45)
+12:07:22.993199 IP 195.134.66.175.17500 > 195.134.66.255.17500: UDP, length 191
+12:07:22.993222 IP 195.134.66.175.17500 > 255.255.255.255.17500: UDP, length 191
+12:07:22.993228 IP 195.134.66.175.17500 > 255.255.255.255.17500: UDP, length 191
+12:07:22.993231 IP 195.134.66.175.17500 > 255.255.255.255.17500: UDP, length 191
+12:07:22.993626 IP 195.134.66.175.17500 > 255.255.255.255.17500: UDP, length 191
+12:07:23.030480 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 56997 1/0/0 PTR blade.di.uoa.gr. (74)
+12:07:23.030716 IP voyager.domain > localhost.56555: 49135 1/0/0 PTR blade.di.uoa.gr. (74)
+12:07:23.031162 IP localhost.55863 > voyager.domain: 54790+ PTR? 52.66.134.195.in-addr.arpa. (44)
+12:07:23.031403 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 25649+ PTR? 52.66.134.195.in-addr.arpa. (44)
+12:07:23.105761 IP localhost > localhost: ICMP echo request, id 12794, seq 3, length 520
+12:07:23.105787 IP localhost > localhost: ICMP echo reply, id 12794, seq 3, length 520
+12:07:23.107064 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 25649 1/0/0 PTR iason.di.uoa.gr. (73)
+12:07:23.107309 IP voyager.domain > localhost.55863: 54790 1/0/0 PTR iason.di.uoa.gr. (73)
+12:07:23.107756 IP localhost.46250 > voyager.domain: 12307+ PTR? 163.66.134.195.in-addr.arpa. (45)
+12:07:23.107990 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 55120+ PTR? 163.66.134.195.in-addr.arpa. (45)
+12:07:23.133520 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:23.140426 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 55120 1/0/0 PTR aiani.di.uoa.gr. (74)
+12:07:23.140663 IP voyager.domain > localhost.46250: 12307 1/0/0 PTR aiani.di.uoa.gr. (74)
+12:07:23.309627 IP localhost > localhost: ICMP echo request, id 12794, seq 4, length 520
+12:07:23.309653 IP localhost > localhost: ICMP echo reply, id 12794, seq 4, length 520
+12:07:23.513778 IP localhost > localhost: ICMP echo request, id 12794, seq 5, length 520
+12:07:23.513803 IP localhost > localhost: ICMP echo reply, id 12794, seq 5, length 520
+12:07:23.574627 ARP, Request who-has 192.168.43.12 tell 192.168.43.1, length 28
+12:07:23.574670 ARP, Reply 192.168.43.12 is-at 3c:a0:67:35:96:75 (oui Unknown), length 28
+12:07:23.593890 IP localhost.39831 > voyager.domain: 30892+ PTR? 145.66.134.195.in-addr.arpa. (45)
+12:07:23.594158 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 61624+ PTR? 145.66.134.195.in-addr.arpa. (45)
+12:07:23.651606 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 61624 1/0/0 PTR rudie.di.uoa.gr. (74)
+12:07:23.651856 IP voyager.domain > localhost.39831: 30892 1/0/0 PTR rudie.di.uoa.gr. (74)
+12:07:23.652563 IP localhost.41884 > voyager.domain: 39851+ PTR? 175.66.134.195.in-addr.arpa. (45)
+12:07:23.652792 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 46933+ PTR? 175.66.134.195.in-addr.arpa. (45)
+12:07:23.717758 IP localhost > localhost: ICMP echo request, id 12794, seq 6, length 520
+12:07:23.717784 IP localhost > localhost: ICMP echo reply, id 12794, seq 6, length 520
+12:07:23.747865 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 46933 NXDomain 0/1/0 (102)
+12:07:23.748112 IP voyager.domain > localhost.41884: 39851 NXDomain 0/1/0 (102)
+12:07:23.921660 IP localhost > localhost: ICMP echo request, id 12794, seq 7, length 520
+12:07:23.921673 IP localhost > localhost: ICMP echo reply, id 12794, seq 7, length 520
+12:07:24.125718 IP localhost > localhost: ICMP echo request, id 12794, seq 8, length 520
+12:07:24.125744 IP localhost > localhost: ICMP echo reply, id 12794, seq 8, length 520
+12:07:24.133556 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:24.163306 ARP, Request who-has cassandra.di.uoa.gr tell 195.134.66.1, length 46
+12:07:24.169392 ARP, Request who-has 195.134.66.174 tell 195.134.66.1, length 46
+12:07:24.170746 ARP, Request who-has mow.di.uoa.gr tell 195.134.66.1, length 46
+12:07:24.178192 IP aggeliki.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 131
+12:07:24.180853 IP aggeliki.di.uoa.gr.17500 > 195.134.66.255.17500: UDP, length 131
+12:07:24.181103 IP aggeliki.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 131
+12:07:24.181358 IP aggeliki.di.uoa.gr.17500 > 255.255.255.255.17500: UDP, length 131
+12:07:24.185046 ARP, Request who-has proton.di.uoa.gr tell 195.134.66.1, length 46
+12:07:24.254712 IP maya.di.uoa.gr.netbios-dgm > 195.134.66.255.netbios-dgm: NBT UDP PACKET(138)
+12:07:24.329535 IP localhost > localhost: ICMP echo request, id 12794, seq 9, length 520
+12:07:24.329558 IP localhost > localhost: ICMP echo reply, id 12794, seq 9, length 520
+12:07:24.500959 ARP, Request who-has vasso.di.uoa.gr tell 195.134.66.1, length 46
+12:07:24.532136 ARP, Request who-has meltemi.di.uoa.gr tell 195.134.66.1, length 46
+12:07:24.533598 IP localhost > localhost: ICMP echo request, id 12794, seq 10, length 520
+12:07:24.533624 IP localhost > localhost: ICMP echo reply, id 12794, seq 10, length 520
+12:07:24.552251 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 1854:2128, ack 6280, win 349, options [nop,nop,TS val 1323938977 ecr 581062934], length 274
+12:07:24.554960 IP localhost > localhost: ICMP echo request, id 12797, seq 1, length 520
+12:07:24.554985 IP localhost > localhost: ICMP echo reply, id 12797, seq 1, length 520
+12:07:24.557999 IP6 fe80::8eeb:c6ff:fe85:f3fa > 2a02:1388:9e:a37c:3464:d170:5678:7d74: ICMP6, neighbor solicitation, who has 2a02:1388:9e:a37c:3464:d170:5678:7d74, length 32
+12:07:24.558074 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74 > fe80::8eeb:c6ff:fe85:f3fa: ICMP6, neighbor advertisement, tgt is 2a02:1388:9e:a37c:3464:d170:5678:7d74, length 24
+12:07:24.594519 ARP, Request who-has 195.134.66.221 tell 195.134.66.1, length 46
+12:07:24.618101 IP localhost.46341 > voyager.domain: 58404+ PTR? 174.66.134.195.in-addr.arpa. (45)
+12:07:24.618376 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 64125+ PTR? 174.66.134.195.in-addr.arpa. (45)
+12:07:24.619935 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6280:6334, ack 2128, win 18232, options [nop,nop,TS val 581063397 ecr 1323938977], length 54
+12:07:24.620022 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6334, win 349, options [nop,nop,TS val 1323939045 ecr 581063397], length 0
+12:07:24.659303 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 64125 NXDomain 0/1/0 (102)
+12:07:24.659552 IP voyager.domain > localhost.46341: 58404 NXDomain 0/1/0 (102)
+12:07:24.659995 IP localhost.34080 > voyager.domain: 47828+ PTR? 26.66.134.195.in-addr.arpa. (44)
+12:07:24.660233 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 42360+ PTR? 26.66.134.195.in-addr.arpa. (44)
+12:07:24.706542 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 42360 1/0/0 PTR mow.di.uoa.gr. (71)
+12:07:24.706780 IP voyager.domain > localhost.34080: 47828 1/0/0 PTR mow.di.uoa.gr. (71)
+12:07:24.707231 IP localhost.35858 > voyager.domain: 31153+ PTR? 48.66.134.195.in-addr.arpa. (44)
+12:07:24.707470 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 60414+ PTR? 48.66.134.195.in-addr.arpa. (44)
+12:07:24.757819 IP localhost > localhost: ICMP echo request, id 12797, seq 2, length 520
+12:07:24.757845 IP localhost > localhost: ICMP echo reply, id 12797, seq 2, length 520
+12:07:24.759943 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 60414 1/0/0 PTR aggeliki.di.uoa.gr. (76)
+12:07:24.760188 IP voyager.domain > localhost.35858: 31153 1/0/0 PTR aggeliki.di.uoa.gr. (76)
+12:07:24.760667 IP localhost.39226 > voyager.domain: 45912+ PTR? 49.66.134.195.in-addr.arpa. (44)
+12:07:24.760905 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 48815+ PTR? 49.66.134.195.in-addr.arpa. (44)
+12:07:24.866769 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 48815 1/0/0 PTR proton.di.uoa.gr. (74)
+12:07:24.867020 IP voyager.domain > localhost.39226: 45912 1/0/0 PTR proton.di.uoa.gr. (74)
+12:07:24.867511 IP localhost.45839 > voyager.domain: 41566+ PTR? 147.66.134.195.in-addr.arpa. (45)
+12:07:24.867756 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 30987+ PTR? 147.66.134.195.in-addr.arpa. (45)
+12:07:24.900576 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 30987 1/0/0 PTR meltemi.di.uoa.gr. (76)
+12:07:24.900815 IP voyager.domain > localhost.45839: 41566 1/0/0 PTR meltemi.di.uoa.gr. (76)
+12:07:24.961622 IP localhost > localhost: ICMP echo request, id 12797, seq 3, length 520
+12:07:24.961649 IP localhost > localhost: ICMP echo reply, id 12797, seq 3, length 520
+12:07:24.986890 ARP, Request who-has iason.di.uoa.gr tell 195.134.66.1, length 46
+12:07:25.133537 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:25.165651 IP localhost > localhost: ICMP echo request, id 12797, seq 4, length 520
+12:07:25.165679 IP localhost > localhost: ICMP echo reply, id 12797, seq 4, length 520
+12:07:25.172794 IP 195.134.66.169.17500 > 255.255.255.255.17500: UDP, length 218
+12:07:25.172816 IP 195.134.66.169.17500 > 195.134.66.255.17500: UDP, length 218
+12:07:25.312349 ARP, Request who-has monty.di.uoa.gr tell monty.di.uoa.gr, length 46
+12:07:25.315105 ARP, Request who-has cicero.di.uoa.gr tell monty.di.uoa.gr, length 46
+12:07:25.369737 IP localhost > localhost: ICMP echo request, id 12797, seq 5, length 520
+12:07:25.369761 IP localhost > localhost: ICMP echo reply, id 12797, seq 5, length 520
+12:07:25.573812 IP localhost > localhost: ICMP echo request, id 12797, seq 6, length 520
+12:07:25.573838 IP localhost > localhost: ICMP echo reply, id 12797, seq 6, length 520
+12:07:25.642563 IP localhost.45716 > voyager.domain: 12089+ PTR? 169.66.134.195.in-addr.arpa. (45)
+12:07:25.642827 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 65517+ PTR? 169.66.134.195.in-addr.arpa. (45)
+12:07:25.711946 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 65517 NXDomain 0/1/0 (102)
+12:07:25.712143 IP voyager.domain > localhost.45716: 12089 NXDomain 0/1/0 (102)
+12:07:25.712498 IP localhost.54140 > voyager.domain: 35729+ PTR? 232.66.134.195.in-addr.arpa. (45)
+12:07:25.712681 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 17113+ PTR? 232.66.134.195.in-addr.arpa. (45)
+12:07:25.777836 IP localhost > localhost: ICMP echo request, id 12797, seq 7, length 520
+12:07:25.777861 IP localhost > localhost: ICMP echo reply, id 12797, seq 7, length 520
+12:07:25.827615 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 17113 1/0/0 PTR monty.di.uoa.gr. (74)
+12:07:25.827844 IP voyager.domain > localhost.54140: 35729 1/0/0 PTR monty.di.uoa.gr. (74)
+12:07:25.828256 IP localhost.44116 > voyager.domain: 36045+ PTR? 138.66.134.195.in-addr.arpa. (45)
+12:07:25.828476 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 7154+ PTR? 138.66.134.195.in-addr.arpa. (45)
+12:07:25.835974 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:25.835996 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:25.857786 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 7154 1/0/0 PTR cicero.di.uoa.gr. (75)
+12:07:25.858032 IP voyager.domain > localhost.44116: 36045 1/0/0 PTR cicero.di.uoa.gr. (75)
+12:07:25.902272 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:25.981754 IP localhost > localhost: ICMP echo request, id 12797, seq 8, length 520
+12:07:25.981780 IP localhost > localhost: ICMP echo reply, id 12797, seq 8, length 520
+12:07:26.185642 IP localhost > localhost: ICMP echo request, id 12797, seq 9, length 520
+12:07:26.185669 IP localhost > localhost: ICMP echo reply, id 12797, seq 9, length 520
+12:07:26.370593 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:26.370617 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:26.389602 IP localhost > localhost: ICMP echo request, id 12797, seq 10, length 520
+12:07:26.389628 IP localhost > localhost: ICMP echo reply, id 12797, seq 10, length 520
+12:07:26.404890 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 2128:2402, ack 6334, win 349, options [nop,nop,TS val 1323940830 ecr 581063397], length 274
+12:07:26.412078 IP localhost > localhost: ICMP echo request, id 12800, seq 1, length 520
+12:07:26.412086 IP localhost > localhost: ICMP echo reply, id 12800, seq 1, length 520
+12:07:26.470963 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6334:6388, ack 2402, win 18768, options [nop,nop,TS val 581063860 ecr 1323940830], length 54
+12:07:26.471047 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6388, win 349, options [nop,nop,TS val 1323940896 ecr 581063860], length 0
+12:07:26.484750 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:26.582073 ARP, Request who-has daedalus.di.uoa.gr tell 195.134.66.1, length 46
+12:07:26.613545 IP localhost > localhost: ICMP echo request, id 12800, seq 2, length 520
+12:07:26.613571 IP localhost > localhost: ICMP echo reply, id 12800, seq 2, length 520
+12:07:26.666469 IP localhost.44666 > voyager.domain: 40251+ PTR? 53.66.134.195.in-addr.arpa. (44)
+12:07:26.666735 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 49916+ PTR? 53.66.134.195.in-addr.arpa. (44)
+12:07:26.707672 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 49916 1/0/0 PTR daedalus.di.uoa.gr. (76)
+12:07:26.707896 IP voyager.domain > localhost.44666: 40251 1/0/0 PTR daedalus.di.uoa.gr. (76)
+12:07:26.716990 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:26.817452 IP localhost > localhost: ICMP echo request, id 12800, seq 3, length 520
+12:07:26.817474 IP localhost > localhost: ICMP echo reply, id 12800, seq 3, length 520
+12:07:27.009373 ARP, Request who-has cassandra.di.uoa.gr tell 195.134.66.1, length 46
+12:07:27.021646 IP localhost > localhost: ICMP echo request, id 12800, seq 4, length 520
+12:07:27.021671 IP localhost > localhost: ICMP echo reply, id 12800, seq 4, length 520
+12:07:27.225692 IP localhost > localhost: ICMP echo request, id 12800, seq 5, length 520
+12:07:27.225718 IP localhost > localhost: ICMP echo reply, id 12800, seq 5, length 520
+12:07:27.371273 ARP, Request who-has stratos.di.uoa.gr tell 195.134.66.217, length 46
+12:07:27.371294 ARP, Request who-has stella.di.uoa.gr tell 195.134.66.217, length 46
+12:07:27.414861 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:27.429649 IP localhost > localhost: ICMP echo request, id 12800, seq 6, length 520
+12:07:27.429676 IP localhost > localhost: ICMP echo reply, id 12800, seq 6, length 520
+12:07:27.484937 ARP, Request who-has stratos.di.uoa.gr tell library.di.uoa.gr, length 46
+12:07:27.633613 IP localhost > localhost: ICMP echo request, id 12800, seq 7, length 520
+12:07:27.633640 IP localhost > localhost: ICMP echo reply, id 12800, seq 7, length 520
+12:07:27.837667 IP localhost > localhost: ICMP echo request, id 12800, seq 8, length 520
+12:07:27.837694 IP localhost > localhost: ICMP echo reply, id 12800, seq 8, length 520
+12:07:28.041852 IP localhost > localhost: ICMP echo request, id 12800, seq 9, length 520
+12:07:28.041878 IP localhost > localhost: ICMP echo reply, id 12800, seq 9, length 520
+12:07:28.079491 ARP, Request who-has 195.134.66.254 tell 195.134.66.1, length 46
+12:07:28.219881 ARP, Request who-has 195.134.66.143 tell 195.134.66.1, length 46
+12:07:28.245695 IP localhost > localhost: ICMP echo request, id 12800, seq 10, length 520
+12:07:28.245722 IP localhost > localhost: ICMP echo reply, id 12800, seq 10, length 520
+12:07:28.247985 ARP, Request who-has 195.134.66.132 tell 195.134.66.1, length 46
+12:07:28.263645 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [P.], seq 2402:2676, ack 6388, win 349, options [nop,nop,TS val 1323942689 ecr 581063860], length 274
+12:07:28.264361 IP localhost > localhost: ICMP echo request, id 12803, seq 1, length 520
+12:07:28.264367 IP localhost > localhost: ICMP echo reply, id 12803, seq 1, length 520
+12:07:28.311665 ARP, Request who-has metis.di.uoa.gr tell 195.134.66.1, length 46
+12:07:28.332477 IP fabulous.di.uoa.gr.9092 > 192.168.43.12.46752: Flags [P.], seq 6388:6442, ack 2676, win 19304, options [nop,nop,TS val 581064327 ecr 1323942689], length 54
+12:07:28.332561 IP 192.168.43.12.46752 > fabulous.di.uoa.gr.9092: Flags [.], ack 6442, win 349, options [nop,nop,TS val 1323942758 ecr 581064327], length 0
+12:07:28.335447 ARP, Request who-has goofy.di.uoa.gr tell 195.134.66.1, length 46
+12:07:28.425465 ARP, Request who-has 195.134.66.110 tell maya.di.uoa.gr, length 46
+12:07:28.465695 IP localhost > localhost: ICMP echo request, id 12803, seq 2, length 520
+12:07:28.465720 IP localhost > localhost: ICMP echo reply, id 12803, seq 2, length 520
+12:07:28.669695 IP localhost > localhost: ICMP echo request, id 12803, seq 3, length 520
+12:07:28.669721 IP localhost > localhost: ICMP echo reply, id 12803, seq 3, length 520
+12:07:28.713708 IP localhost.45247 > voyager.domain: 52935+ PTR? 254.66.134.195.in-addr.arpa. (45)
+12:07:28.713859 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 23679+ PTR? 254.66.134.195.in-addr.arpa. (45)
+12:07:28.770876 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 23679 NXDomain 0/1/0 (102)
+12:07:28.771118 IP voyager.domain > localhost.45247: 52935 NXDomain 0/1/0 (102)
+12:07:28.771572 IP localhost.59581 > voyager.domain: 35657+ PTR? 143.66.134.195.in-addr.arpa. (45)
+12:07:28.771810 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 60378+ PTR? 143.66.134.195.in-addr.arpa. (45)
+12:07:28.867542 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 60378 NXDomain 0/1/0 (102)
+12:07:28.867788 IP voyager.domain > localhost.59581: 35657 NXDomain 0/1/0 (102)
+12:07:28.868255 IP localhost.57418 > voyager.domain: 61257+ PTR? 132.66.134.195.in-addr.arpa. (45)
+12:07:28.868491 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 61426+ PTR? 132.66.134.195.in-addr.arpa. (45)
+12:07:28.873627 IP localhost > localhost: ICMP echo request, id 12803, seq 4, length 520
+12:07:28.873653 IP localhost > localhost: ICMP echo reply, id 12803, seq 4, length 520
+12:07:28.910169 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 61426 NXDomain 0/1/0 (102)
+12:07:28.910407 IP voyager.domain > localhost.57418: 61257 NXDomain 0/1/0 (102)
+12:07:28.911156 IP localhost.52627 > voyager.domain: 35263+ PTR? 100.66.134.195.in-addr.arpa. (45)
+12:07:28.911357 IP6 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240 > anycastdns1.cosmote.net.domain: 14197+ PTR? 100.66.134.195.in-addr.arpa. (45)
+12:07:28.948875 IP6 anycastdns1.cosmote.net.domain > 2a02:1388:9e:a37c:3464:d170:5678:7d74.34240: 14197 1/0/0 PTR goofy.di.uoa.gr. (74)
+12:07:28.949114 IP voyager.domain > localhost.52627: 35263 1/0/0 PTR goofy.di.uoa.gr. (74)
+12:07:29.077683 IP localhost > localhost: ICMP echo request, id 12803, seq 5, length 520
+12:07:29.077711 IP localhost > localhost: ICMP echo reply, id 12803, seq 5, length 520
+12:07:29.281412 IP localhost > localhost: ICMP echo request, id 12803, seq 6, length 520
+12:07:29.281434 IP localhost > localhost: ICMP echo reply, id 12803, seq 6, length 520
+12:07:29.405528 ARP, Request who-has cassandra.di.uoa.gr tell 195.134.66.1, length 46
+12:07:29.485654 IP localhost > localhost: ICMP echo request, id 12803, seq 7, length 520
+12:07:29.485680 IP localhost > localhost: ICMP echo reply, id 12803, seq 7, length 520
+12:07:29.669861 ARP, Request who-has 195.134.66.214 tell esperos.di.uoa.gr, length 46
+12:07:29.689685 IP localhost > localhost: ICMP echo request, id 12803, seq 8, length 520
+12:07:29.689712 IP localhost > localhost: ICMP echo reply, id 12803, seq 8, length 520
+
