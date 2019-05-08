@@ -1,8 +1,0 @@
-prefix=/home/pi/Desktop/ros_workspace/devel
-
-Name: location_manager
-Description: Description of location_manager
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/pi/Desktop/ros_workspace/devel/lib 
-Requires: 

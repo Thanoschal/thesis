@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/pi/Desktop/ros_workspace/build"
+export PWD="/home/pi/Desktop/thesis/ros_workspace/build"

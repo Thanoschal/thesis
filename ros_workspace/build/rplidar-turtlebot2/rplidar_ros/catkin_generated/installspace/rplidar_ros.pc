@@ -1,0 +1,8 @@
+prefix=/home/pi/Desktop/thesis/ros_workspace/install
+
+Name: rplidar_ros
+Description: Description of rplidar_ros
+Version: 1.5.5
+Cflags: 
+Libs: -L/home/pi/Desktop/thesis/ros_workspace/install/lib 
+Requires: 

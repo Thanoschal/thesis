@@ -1,8 +1,8 @@
-prefix=/home/pi/Desktop/ros_workspace/install
+prefix=/home/pi/Desktop/thesis/ros_workspace/install
 
 Name: sysinfo
 Description: Description of sysinfo
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/pi/Desktop/ros_workspace/install/lib 
+Libs: -L/home/pi/Desktop/thesis/ros_workspace/install/lib 
 Requires: 

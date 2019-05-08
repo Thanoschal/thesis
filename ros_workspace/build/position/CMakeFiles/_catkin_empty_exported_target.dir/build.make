@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/ros_workspace/build
+CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ position/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_expor
 .PHONY : position/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 position/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/pi/Desktop/ros_workspace/build/position && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/pi/Desktop/thesis/ros_workspace/build/position && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : position/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 position/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/pi/Desktop/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/ros_workspace/src /home/pi/Desktop/ros_workspace/src/position /home/pi/Desktop/ros_workspace/build /home/pi/Desktop/ros_workspace/build/position /home/pi/Desktop/ros_workspace/build/position/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/position /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/position /home/pi/Desktop/thesis/ros_workspace/build/position/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : position/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

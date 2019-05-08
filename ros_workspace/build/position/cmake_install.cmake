@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Desktop/ros_workspace/src/position
+# Install script for directory: /home/pi/Desktop/thesis/ros_workspace/src/position
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Desktop/ros_workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/Desktop/thesis/ros_workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Desktop/ros_workspace/build/position/catkin_generated/installspace/position.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/build/position/catkin_generated/installspace/position.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/position/cmake" TYPE FILE FILES
-    "/home/pi/Desktop/ros_workspace/build/position/catkin_generated/installspace/positionConfig.cmake"
-    "/home/pi/Desktop/ros_workspace/build/position/catkin_generated/installspace/positionConfig-version.cmake"
+    "/home/pi/Desktop/thesis/ros_workspace/build/position/catkin_generated/installspace/positionConfig.cmake"
+    "/home/pi/Desktop/thesis/ros_workspace/build/position/catkin_generated/installspace/positionConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/position" TYPE FILE FILES "/home/pi/Desktop/ros_workspace/src/position/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/position" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/src/position/package.xml")
 endif()
 
