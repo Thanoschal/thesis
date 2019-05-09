@@ -16,9 +16,10 @@ from kafka import KafkaProducer
 class CPU(object):
     cpu = 0    
     ts = 0
-    def __init__(self,c,ts):
+    def __init__(self,c,ts,lat):
         self.cpu = c
         self.ts = ts
+        self.latency = lat
         
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
@@ -45,7 +46,9 @@ def main():
         st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         
         cpu = psutil.cpu_percent(interval=1)
-        c = CPU(cpu,st)
+        
+        millis = int(round(time.time() * 1000))
+        c = CPU(cpu,st,str(millis))
         cpuj = c.toJSON()
         
         print cpuj

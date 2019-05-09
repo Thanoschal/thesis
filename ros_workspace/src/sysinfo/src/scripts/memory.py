@@ -16,9 +16,10 @@ from kafka import KafkaProducer
 class Memory(object):
     memory = 0    
     ts = 0
-    def __init__(self,m,ts):
+    def __init__(self,m,ts,lat):
         self.memory = m
         self.ts = ts
+        self.latency = lat
         
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)    
@@ -47,7 +48,9 @@ def main():
         st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         
         memoryUse = psutil.virtual_memory()[3]/1073741824.0 #GB
-        mem = Memory(memoryUse,st)
+        
+        millis = int(round(time.time() * 1000))
+        mem = Memory(memoryUse,st,str(millis))
         memj = mem.toJSON()
         
         print memj

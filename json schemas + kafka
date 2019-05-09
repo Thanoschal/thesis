@@ -22,7 +22,8 @@ position schema
 	"orientationw": 0, 
 	"positionx": 0, 
 	"positiony": 0,
-	"tst": "2019-02-08 11:31:47"
+	"tst": "2019-02-08 11:31:47",
+	"latency" : "12312324124" //millis from 1970
 }
 
 kafka topic : turtle_location
@@ -37,7 +38,8 @@ battery schema
 {
 
     "battery": 150, 
-    "ts": "2019-02-08 11:43:54"
+    "ts": "2019-02-08 11:43:54",
+    "latency" : "12312324124" //millis from 1970
 
 }
 
@@ -52,7 +54,8 @@ cpu schema
 {
 
     "ts": "2019-02-08 11:43:54", 
-    "memory": 1.3398818969726562
+    "memory": 1.3398818969726562,
+    "latency" : "12312324124" //millis from 1970
 
 }
 
@@ -67,7 +70,8 @@ memory schema
 {
 
     "cpu": 14.5, 
-    "ts": "2019-02-08 11:43:54"
+    "ts": "2019-02-08 11:43:54",
+    "latency" : "12312324124" //millis from 1970
 
 }
 
@@ -87,7 +91,8 @@ net schema
     "ts": "2019-02-08 11:43:54"
     "qual": 0,
     "snr": 0,
-    "trans": 0
+    "trans": 0,
+    "latency" : "12312324124" //millis from 1970
 
 }
 
@@ -106,7 +111,8 @@ goto schema
 	"orientationw": 0, 
 	"positionx": 0, 
 	"positiony": 0,
-	"tst": "2019-02-08 11:31:47"
+	"tst": "2019-02-08 11:31:47",
+	"latency" : "12312324124" //millis from 1970
 }
 
 kafka topic : turtle_goto

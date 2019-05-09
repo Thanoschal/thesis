@@ -24,9 +24,10 @@ def handler(signum, frame):
 class KobukiBattery(object):
     battery = 0    
     ts = 0
-    def __init__(self,b,ts):
+    def __init__(self,b,ts,lat):
         self.battery = b
         self.ts = ts
+        self.latency = lat
         
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
@@ -47,7 +48,8 @@ def SensorPowerCB(data):
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     
-    kbat = KobukiBattery(kbattery,st)
+    millis = int(round(time.time() * 1000))
+    kbat = KobukiBattery(kbattery,st, str(millis))
     batj = kbat.toJSON()
     
     print batj

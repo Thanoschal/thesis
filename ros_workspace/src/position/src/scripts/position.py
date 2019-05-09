@@ -27,7 +27,7 @@ class Location(object):
     orw = 0
     ts = 0
     
-    def __init__(self,px,py,ox,oy,oz,ow,ts):
+    def __init__(self,px,py,ox,oy,oz,ow,ts,lat):
         self.posx = px
         self.posy = py
         self.orx = ox
@@ -35,6 +35,7 @@ class Location(object):
         self.orz = oz
         self.orw = ow
         self.ts = ts
+        self.latency = lat
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
@@ -53,7 +54,8 @@ def PositionCB(data):
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     
-    loc = Location(px,py,ox,oy,oz,ow,st)
+    millis = int(round(time.time() * 1000))
+    loc = Location(px,py,ox,oy,oz,ow,st,str(millis))
     locj = loc.toJSON()
     
     #put kafka producer here

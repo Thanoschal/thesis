@@ -166,8 +166,9 @@ def main():
             quality = 0
             level = 0
         
-          
-        x = Record(sent, received, loss, quality, level)
+        millis = int(round(time.time() * 1000))
+        
+        x = Record(sent, received, loss, quality, level, str(millis))
         
         j = x.toJSON()
         producer.send('turtle_net',j)
