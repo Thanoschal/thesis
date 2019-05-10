@@ -13,7 +13,6 @@ def main():
     
     for message in consumer:
         print message.value
-  		break
 
     
   

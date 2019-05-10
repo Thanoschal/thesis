@@ -16,12 +16,12 @@ position schema
 ###################
 
 {
-	"orientationz": 0, 
-	"orientationx": 0, 
-	"orientationy": 0, 
-	"orientationw": 0, 
-	"positionx": 0, 
-	"positiony": 0,
+	"orz": 0.0, 
+	"orx": 0.0, 
+	"ory": 0.0, 
+	"orw": 0.0, 
+	"posx": 0.0, 
+	"posy": 0.0,
 	"tst": "2019-02-08 11:31:47",
 	"latency" : "12312324124" //millis from 1970
 }
@@ -37,7 +37,7 @@ battery schema
 
 {
 
-    "battery": 150, 
+    "battery": 150.0, 
     "ts": "2019-02-08 11:43:54",
     "latency" : "12312324124" //millis from 1970
 
@@ -54,7 +54,7 @@ cpu schema
 {
 
     "ts": "2019-02-08 11:43:54", 
-    "memory": 1.3398818969726562,
+    "memory": 1.3,
     "latency" : "12312324124" //millis from 1970
 
 }
@@ -86,12 +86,12 @@ net schema
 
 {
 
-    "loss": 0,
-    "recei": 0,
+    "loss": 0.0,
+    "received": 0,
     "ts": "2019-02-08 11:43:54"
-    "qual": 0,
-    "snr": 0,
-    "trans": 0,
+    "quality": 0,
+    "level": 0,
+    "sent": 0,
     "latency" : "12312324124" //millis from 1970
 
 }
@@ -105,12 +105,12 @@ goto schema
 ###################
 
 {
-	"orientationz": 0, 
-	"orientationx": 0, 
-	"orientationy": 0, 
-	"orientationw": 0, 
-	"positionx": 0, 
-	"positiony": 0,
+	"orz": 0.0, 
+	"orx": 0.0, 
+	"ory": 0.0, 
+	"orw": 0.0, 
+	"posx": 0.0, 
+	"posy": 0.0,
 	"tst": "2019-02-08 11:31:47",
 	"latency" : "12312324124" //millis from 1970
 }
