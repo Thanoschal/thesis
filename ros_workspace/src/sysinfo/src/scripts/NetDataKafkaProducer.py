@@ -23,7 +23,7 @@ def main():
     signal.signal(signal.SIGINT, handler)	
 
     interval = "0.3"
-    host = "192.168.43.157"
+    host = "192.168.43.21"
     size = "64"
     count = "20"
     interface = "wlx000f54110e16"
