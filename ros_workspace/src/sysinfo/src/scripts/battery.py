@@ -42,7 +42,7 @@ def SensorPowerCB(data):
 
     rate = 1
     
-    kobuki_base_max_charge = 160
+    kobuki_base_max_charge = 165
     kbattery = str(round(float(data.battery) / float(kobuki_base_max_charge) * 100))
     
     ts = time.time()

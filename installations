@@ -32,8 +32,8 @@ tar xvjf SensorKinect093-Bin-Linux-x64-v5.1.2.1.tar.bz2
 cd Sensor-Bin-Linux-x64-v5.1.2.1/
 sudo ./install.sh
 
-export TURTLEBOT_BASE=create
-export TURTLEBOT_STACKS=circles
+export TURTLEBOT_BASE=kobuki
+export TURTLEBOT_STACKS=hexagons
 export TURTLEBOT_3D_SENSOR=kinect
 export TURTLEBOT_SERIAL_PORT=/dev/ttyUSB0
 export TURTLEBOT_BATTERY=/proc/acpi/battery/BAT1

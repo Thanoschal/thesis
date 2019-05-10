@@ -35,10 +35,10 @@ def main():
 #    print "Number of measurements: " + measurements
 #    print "Wireless interface is: " + interface
     
-    f = open("data.csv", "w")
+    #f = open("data.csv", "w")
     
-    f.write("Transmitted Packets\tReceived Packets\tLoss(%)\tSNR(-dB)\tQuality(x/70)\n")
-    time.sleep(0.5)
+    #f.write("Transmitted Packets\tReceived Packets\tLoss(%)\tSNR(-dB)\tQuality(x/70)\n")
+    #time.sleep(0.5)
     
     #start the kafka producer on netdata topic
     #######################################################
@@ -84,13 +84,13 @@ def main():
         counter = 0
         for it in packets:
             if "transmitted" in it:
-                f.write(pnumbers[counter] + ";")
+                #f.write(pnumbers[counter] + ";")
                 sent = pnumbers[counter]
             if "received" in it:
-                f.write(pnumbers[counter] + ";")
+                #f.write(pnumbers[counter] + ";")
                 received = pnumbers[counter]
             if "loss" in it:
-                f.write(pnumbers[counter] + ";")
+                #f.write(pnumbers[counter] + ";")
                 loss = pnumbers[counter]
             
             counter = counter + 1
@@ -107,14 +107,14 @@ def main():
         if flag is 1:        
             for t in output2:
                 if "Quality" in t:
-                    f.write(confnumbers[2] + ";")
+                    #f.write(confnumbers[2] + ";")
                     quality = confnumbers[2]
                 if "level" in t:
-                    f.write(confnumbers[0] + "\n")
+                    #f.write(confnumbers[0] + "\n")
                     level = confnumbers[0] 
         else:
-            f.write("0" + ";")
-            f.write("0" + "\n")
+            #f.write("0" + ";")
+            #f.write("0" + "\n")
             quality = 0
             level = 0
         
@@ -130,7 +130,7 @@ def main():
     
     #end for
        
-    f.close()
+    #f.close()
     
 #######################################################
 

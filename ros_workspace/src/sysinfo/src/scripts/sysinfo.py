@@ -37,7 +37,7 @@ class KobukiBattery(object):
 
 def SensorPowerCB(data):
 
-    kobuki_base_max_charge = 160
+    kobuki_base_max_charge = 165
     kbattery = str(round(float(data.battery) / float(self.kobuki_base_max_charge) * 100))
     kbat = KobukiBattery(kbattery)
     batj = json.dumps(kbat.__dict__)
