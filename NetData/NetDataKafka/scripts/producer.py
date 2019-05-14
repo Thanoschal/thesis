@@ -32,17 +32,17 @@ class Location(object):
 
 def main():
     
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'],value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
     
     
     
     for i in range(20):
-        x = Location(0.0 , 0.0 , 0.0 , 0.0 , 0.0, 0.0 , 0.0)
+        x = Location(0.1 , 0.2 , 0.3 , 0.4 , 0.5, 0.6 , 0.7)
         
         j = x.toJSON()
-        producer.send('turtle_goto',j)
+        producer.send('test_topic',j)
         
-        time.sleep(4)
+        time.sleep(1)
         
 	
     #consumer = KafkaConsumer(bootstrap_servers='localhost:9092')

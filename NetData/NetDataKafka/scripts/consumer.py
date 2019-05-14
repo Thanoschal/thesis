@@ -9,8 +9,8 @@ import json
 
 def main():
 	
-    consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092', value_deserializer=lambda m: json.loads(m.decode('utf-8')))
-    consumer.subscribe(['turtle_net'])
+    consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092')
+    consumer.subscribe(['test_topic'])
     
     for message in consumer:
         
