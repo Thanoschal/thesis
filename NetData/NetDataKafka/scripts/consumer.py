@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-from record import Record
 from kafka import KafkaProducer
 from kafka import KafkaConsumer
 from kafka import TopicPartition
@@ -14,15 +13,9 @@ def main():
     
     for message in consumer:
         
-        rec = Record()
         x = json.loads(message.value)
         print x
-        rec = Record(x["sent"], x["received"], x["loss"], x["quality"], x["level"])
-        print rec
-  
 
-    
-  
 if __name__== "__main__":
     main()
 
