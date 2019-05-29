@@ -13,7 +13,7 @@ import datetime
 from kafka import KafkaProducer
 import signal
 
-producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'] , value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 
 def handler(signum, frame):
     print 'Signal handler called with signal', signum
@@ -50,11 +50,12 @@ def SensorPowerCB(data):
     
     millis = int(round(time.time() * 1000))
     kbat = KobukiBattery(kbattery,st, str(millis))
-    batj = kbat.toJSON()
     
-    print batj
+    bjson = json.dumps(kbat.__dict__)
+    
+    print bjson
 
-    producer.send('turtle_battery',batj)
+    producer.send('turtle_battery',bjson)
 
     time.sleep(rate)
 

@@ -12,7 +12,7 @@ import time
 import datetime
 from kafka import KafkaProducer
 
-producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'] , value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 
 
 #####################################################
@@ -56,10 +56,10 @@ def PositionCB(data):
     
     millis = int(round(time.time() * 1000))
     loc = Location(px,py,ox,oy,oz,ow,st,str(millis))
-    locj = loc.toJSON()
+    ljson = json.dumps(loc.__dict__)
     
     #put kafka producer here
-    producer.send('turtle_location',locj)
+    producer.send('turtle_location',ljson)
     
     print locj
     

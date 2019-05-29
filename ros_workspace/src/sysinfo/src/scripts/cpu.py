@@ -38,7 +38,7 @@ def main():
     signal.signal(signal.SIGINT, handler)
     rate = 1
     
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'] , value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
     
     while(True):
     
@@ -49,11 +49,12 @@ def main():
         
         millis = int(round(time.time() * 1000))
         c = CPU(cpu,st,str(millis))
-        cpuj = c.toJSON()
         
-        print cpuj
+        cjson = json.dumps(c.__dict__)
         
-        producer.send('turtle_cpu',cpuj)
+        print cjson
+                
+        producer.send('turtle_cpu',cjson)
         
         time.sleep(rate)
         

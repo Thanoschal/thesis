@@ -122,11 +122,11 @@ def main():
         
         x = Record(sent, received, loss, quality, level, str(millis))
         
-        j = x.toJSON()
+        njson = json.dumps(x.__dict__)
+        
+        print njson
 
-        print j
-
-        producer.send('turtle_net',j)
+        producer.send('turtle_net',njson)
     
     #end for
        
