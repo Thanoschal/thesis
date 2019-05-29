@@ -19,13 +19,6 @@ producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 #position class
 
 class Location(object):
-    posx = 0
-    posy = 0
-    orx = 0
-    ory = 0
-    orz = 0
-    orw = 0
-    ts = 0
     
     def __init__(self,px,py,ox,oy,oz,ow,ts,lat):
         self.posx = px
@@ -63,7 +56,6 @@ def PositionCB(data):
     
     print ljson
     
-    time.sleep(0.5)
 
 
 #####################################################
