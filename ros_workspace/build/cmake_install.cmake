@@ -122,6 +122,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/pi/Desktop/thesis/ros_workspace/build/tbot/cmake_install.cmake")
   include("/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/cmake_install.cmake")
   include("/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/cmake_install.cmake")
+  include("/home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/cmake_install.cmake")
 
 endif()
 

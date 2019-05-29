@@ -23,7 +23,7 @@ def main():
     signal.signal(signal.SIGINT, handler)	
 
     interval = "0.3"
-    host = "192.168.43.21"
+    host = "192.168.43.133"
     size = "64"
     count = "20"
     interface = "wlx000f54110e16"
@@ -44,7 +44,7 @@ def main():
     #######################################################
     #######################################################
     
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'] , value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
     
     #######################################################
     #######################################################

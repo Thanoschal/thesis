@@ -61,7 +61,7 @@ def PositionCB(data):
     #put kafka producer here
     producer.send('turtle_location',ljson)
     
-    print locj
+    print ljson
     
     time.sleep(0.5)
 

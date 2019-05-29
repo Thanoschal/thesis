@@ -1,0 +1,8 @@
+prefix=/home/pi/Desktop/thesis/ros_workspace/install
+
+Name: video_stream_opencv
+Description: Description of video_stream_opencv
+Version: 1.1.5
+Cflags: -I/home/pi/Desktop/thesis/ros_workspace/install/include
+Libs: -L/home/pi/Desktop/thesis/ros_workspace/install/lib 
+Requires: 

@@ -1,2 +1,2 @@
-position:rplidar-turtlebot2/rplidar_ros:rplidar-turtlebot2/turtlebot_le2i:sysinfo:tbot
+position:rplidar-turtlebot2/rplidar_ros:rplidar-turtlebot2/turtlebot_le2i:sysinfo:tbot:video_stream_opencv
 -DCATKIN_DEVEL_PREFIX=/home/pi/Desktop/thesis/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/pi/Desktop/thesis/ros_workspace/install -G Unix Makefiles
