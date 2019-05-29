@@ -14,8 +14,8 @@ ls /tmp/
 
 
 ssh -X  pi@192.168.43.207
-
+raspberry
 
 
 roslaunch turtlebot_navigation amcl_demo.launch map_file:=/tmp/my_map.yaml
-
+roslaunch turtlebot_rviz_launchers view_navigation.launch --screen

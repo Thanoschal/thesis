@@ -108,10 +108,10 @@ def main():
             for t in output2:
                 if "Quality" in t:
                     #f.write(confnumbers[2] + ";")
-                    quality = confnumbers[2]
+                    quality = confnumbers[0]
                 if "level" in t:
                     #f.write(confnumbers[0] + "\n")
-                    level = confnumbers[0] 
+                    level = confnumbers[2] 
         else:
             #f.write("0" + ";")
             #f.write("0" + "\n")
