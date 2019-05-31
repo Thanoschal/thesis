@@ -1,0 +1,10 @@
+#setup on workstation
+
+export ROS_MASTER_URI=http://192.168.43.207:11311 (ip of raspberry(master))
+export ROS_HOSTNAME=192.168.43.12                 (ip of workstation)
+
+
+#setup on raspberry (roscore)
+
+export ROS_MASTER_URI=http://localhost:11311 
+export ROS_HOSTNAME=192.168.43.207           (ip of raspberry(master))
