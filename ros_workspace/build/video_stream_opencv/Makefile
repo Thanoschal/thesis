@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,50 +66,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -133,16 +89,60 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/progress.marks
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles 0
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/progress.marks
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/clean
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/preinstall
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/preinstall
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test: video_stream_
 
 # fast build rule for target.
 _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build
 .PHONY : _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast
 
 # Convenience name for target.
 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
 
 # Convenience name for target.
@@ -192,222 +192,12 @@ _run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test: video_stream_
 
 # fast build rule for target.
 _run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build
 .PHONY : _run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast
 
 # Convenience name for target.
-video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
-
-# Convenience name for target.
-_run_tests_video_stream_opencv_rostest_test_test_video_file.test: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
-
-.PHONY : _run_tests_video_stream_opencv_rostest_test_test_video_file.test
-
-# fast build rule for target.
-_run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build
-.PHONY : _run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
-
-# Convenience name for target.
-_run_tests_video_stream_opencv_rostest: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
-
-.PHONY : _run_tests_video_stream_opencv_rostest
-
-# fast build rule for target.
-_run_tests_video_stream_opencv_rostest/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/build
-.PHONY : _run_tests_video_stream_opencv_rostest/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
-
-# Convenience name for target.
-run_tests_video_stream_opencv_rostest: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
-
-.PHONY : run_tests_video_stream_opencv_rostest
-
-# fast build rule for target.
-run_tests_video_stream_opencv_rostest/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/build
-.PHONY : run_tests_video_stream_opencv_rostest/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_nodejs: video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_eus: video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-
-.PHONY : nodelet_generate_messages_eus
-
-# fast build rule for target.
-nodelet_generate_messages_eus/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/build
-.PHONY : nodelet_generate_messages_eus/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_eus: video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
-
-.PHONY : bond_generate_messages_eus
-
-# fast build rule for target.
-bond_generate_messages_eus/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/build
-.PHONY : bond_generate_messages_eus/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
-
-# Convenience name for target.
-run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
-
-.PHONY : run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test
-
-# fast build rule for target.
-run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build
-.PHONY : run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
-
-# Convenience name for target.
-_run_tests_video_stream_opencv: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
-
-.PHONY : _run_tests_video_stream_opencv
-
-# fast build rule for target.
-_run_tests_video_stream_opencv/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/build
-.PHONY : _run_tests_video_stream_opencv/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_lisp: video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
-
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_py: video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_lisp: video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-# Convenience name for target.
 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/rule
 
 # Convenience name for target.
@@ -417,132 +207,27 @@ clean_test_results_video_stream_opencv: video_stream_opencv/CMakeFiles/clean_tes
 
 # fast build rule for target.
 clean_test_results_video_stream_opencv/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build
 .PHONY : clean_test_results_video_stream_opencv/fast
 
 # Convenience name for target.
-video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
 
 # Convenience name for target.
-nodelet_generate_messages_nodejs: video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+_run_tests_video_stream_opencv_rostest_test_test_video_file.test: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
 
-.PHONY : nodelet_generate_messages_nodejs
+.PHONY : _run_tests_video_stream_opencv_rostest_test_test_video_file.test
 
 # fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
-
-# Convenience name for target.
-run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
-
-.PHONY : run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test
-
-# fast build rule for target.
-run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build
-.PHONY : run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_eus
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/video_stream_node.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
-
-# Convenience name for target.
-video_stream_node: video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
-
-.PHONY : video_stream_node
-
-# fast build rule for target.
-video_stream_node/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/build
-.PHONY : video_stream_node/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-# Convenience name for target.
-video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
-
-# Convenience name for target.
-video_stream_opencv_gencfg: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
-
-.PHONY : video_stream_opencv_gencfg
-
-# fast build rule for target.
-video_stream_opencv_gencfg/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build
-.PHONY : video_stream_opencv_gencfg/fast
+_run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build
+.PHONY : _run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast
 
 # Convenience name for target.
 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/rule
 
 # Convenience name for target.
@@ -552,57 +237,132 @@ run_tests_video_stream_opencv_rostest_test_test_video_file.test: video_stream_op
 
 # fast build rule for target.
 run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_video_file.test.dir/build
 .PHONY : run_tests_video_stream_opencv_rostest_test_test_video_file.test/fast
 
 # Convenience name for target.
-video_stream_opencv/CMakeFiles/small.mp4.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/small.mp4.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/small.mp4.dir/rule
+video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
 
 # Convenience name for target.
-small.mp4: video_stream_opencv/CMakeFiles/small.mp4.dir/rule
+_run_tests_video_stream_opencv_rostest: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/rule
 
-.PHONY : small.mp4
+.PHONY : _run_tests_video_stream_opencv_rostest
 
 # fast build rule for target.
-small.mp4/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/small.mp4.dir/build.make video_stream_opencv/CMakeFiles/small.mp4.dir/build
-.PHONY : small.mp4/fast
+_run_tests_video_stream_opencv_rostest/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv_rostest.dir/build
+.PHONY : _run_tests_video_stream_opencv_rostest/fast
 
 # Convenience name for target.
-video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
 
 # Convenience name for target.
-nodelet_generate_messages_cpp: video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+run_tests_video_stream_opencv_rostest: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/rule
 
-.PHONY : nodelet_generate_messages_cpp
+.PHONY : run_tests_video_stream_opencv_rostest
 
 # fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
+run_tests_video_stream_opencv_rostest/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest.dir/build
+.PHONY : run_tests_video_stream_opencv_rostest/fast
 
 # Convenience name for target.
-video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
-.PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
+video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
 
 # Convenience name for target.
-video_stream_opencv: video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
+_run_tests_video_stream_opencv: video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/rule
 
-.PHONY : video_stream_opencv
+.PHONY : _run_tests_video_stream_opencv
 
 # fast build rule for target.
-video_stream_opencv/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build
-.PHONY : video_stream_opencv/fast
+_run_tests_video_stream_opencv/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/_run_tests_video_stream_opencv.dir/build
+.PHONY : _run_tests_video_stream_opencv/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_eus: video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
+
+# Convenience name for target.
+run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/rule
+
+.PHONY : run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test
+
+# fast build rule for target.
+run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build
+.PHONY : run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_nodejs: video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+.PHONY : bond_generate_messages_nodejs
+
+# fast build rule for target.
+bond_generate_messages_nodejs/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_py: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_py/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -612,12 +372,147 @@ bond_generate_messages_cpp: video_stream_opencv/CMakeFiles/bond_generate_message
 
 # fast build rule for target.
 bond_generate_messages_cpp/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_cpp.dir/build
 .PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
+video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/video_stream_node.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
+
+# Convenience name for target.
+video_stream_node: video_stream_opencv/CMakeFiles/video_stream_node.dir/rule
+
+.PHONY : video_stream_node
+
+# fast build rule for target.
+video_stream_node/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/build
+.PHONY : video_stream_node/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_eus: video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_nodejs: video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+.PHONY : nodelet_generate_messages_nodejs
+
+# fast build rule for target.
+nodelet_generate_messages_nodejs/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+.PHONY : nodelet_generate_messages_nodejs/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_eus: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/build.make video_stream_opencv/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_cpp: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_lisp: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_lisp/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+# Convenience name for target.
 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/rule:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/rule
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/rule
 .PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/rule
 
 # Convenience name for target.
@@ -627,8 +522,113 @@ run_tests_video_stream_opencv: video_stream_opencv/CMakeFiles/run_tests_video_st
 
 # fast build rule for target.
 run_tests_video_stream_opencv/fast:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/build
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv.dir/build
 .PHONY : run_tests_video_stream_opencv/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_gencfg: video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
+
+# Convenience name for target.
+video_stream_opencv_gencfg: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/rule
+
+.PHONY : video_stream_opencv_gencfg
+
+# fast build rule for target.
+video_stream_opencv_gencfg/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build
+.PHONY : video_stream_opencv_gencfg/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_nodejs: video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make video_stream_opencv/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
+
+# Convenience name for target.
+video_stream_opencv: video_stream_opencv/CMakeFiles/video_stream_opencv.dir/rule
+
+.PHONY : video_stream_opencv
+
+# fast build rule for target.
+video_stream_opencv/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build
+.PHONY : video_stream_opencv/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
+
+# Convenience name for target.
+run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/rule
+
+.PHONY : run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test
+
+# fast build rule for target.
+run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build.make video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test.dir/build
+.PHONY : run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make video_stream_opencv/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
+video_stream_opencv/CMakeFiles/small.mp4.dir/rule:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 video_stream_opencv/CMakeFiles/small.mp4.dir/rule
+.PHONY : video_stream_opencv/CMakeFiles/small.mp4.dir/rule
+
+# Convenience name for target.
+small.mp4: video_stream_opencv/CMakeFiles/small.mp4.dir/rule
+
+.PHONY : small.mp4
+
+# fast build rule for target.
+small.mp4/fast:
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/small.mp4.dir/build.make video_stream_opencv/CMakeFiles/small.mp4.dir/build
+.PHONY : small.mp4/fast
 
 src/video_stream.o: src/video_stream.cpp.o
 
@@ -636,7 +636,7 @@ src/video_stream.o: src/video_stream.cpp.o
 
 # target to build an object file
 src/video_stream.cpp.o:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.o
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.o
 .PHONY : src/video_stream.cpp.o
 
 src/video_stream.i: src/video_stream.cpp.i
@@ -645,7 +645,7 @@ src/video_stream.i: src/video_stream.cpp.i
 
 # target to preprocess a source file
 src/video_stream.cpp.i:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.i
 .PHONY : src/video_stream.cpp.i
 
 src/video_stream.s: src/video_stream.cpp.s
@@ -654,7 +654,7 @@ src/video_stream.s: src/video_stream.cpp.s
 
 # target to generate assembly for a file
 src/video_stream.cpp.s:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_opencv.dir/build.make video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.s
 .PHONY : src/video_stream.cpp.s
 
 src/video_stream_node.o: src/video_stream_node.cpp.o
@@ -663,7 +663,7 @@ src/video_stream_node.o: src/video_stream_node.cpp.o
 
 # target to build an object file
 src/video_stream_node.cpp.o:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
 .PHONY : src/video_stream_node.cpp.o
 
 src/video_stream_node.i: src/video_stream_node.cpp.i
@@ -672,7 +672,7 @@ src/video_stream_node.i: src/video_stream_node.cpp.i
 
 # target to preprocess a source file
 src/video_stream_node.cpp.i:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
 .PHONY : src/video_stream_node.cpp.i
 
 src/video_stream_node.s: src/video_stream_node.cpp.s
@@ -681,7 +681,7 @@ src/video_stream_node.s: src/video_stream_node.cpp.s
 
 # target to generate assembly for a file
 src/video_stream_node.cpp.s:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(MAKE) -f video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
 .PHONY : src/video_stream_node.cpp.s
 
 # Help Target
@@ -691,43 +691,43 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... install"
+	@echo "... install/local"
 	@echo "... _run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test"
 	@echo "... _run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test"
+	@echo "... clean_test_results_video_stream_opencv"
 	@echo "... _run_tests_video_stream_opencv_rostest_test_test_video_file.test"
-	@echo "... install/local"
+	@echo "... run_tests_video_stream_opencv_rostest_test_test_video_file.test"
+	@echo "... test"
 	@echo "... _run_tests_video_stream_opencv_rostest"
 	@echo "... run_tests_video_stream_opencv_rostest"
-	@echo "... bond_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_eus"
+	@echo "... _run_tests_video_stream_opencv"
+	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_eus"
 	@echo "... run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test"
-	@echo "... _run_tests_video_stream_opencv"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... bond_generate_messages_py"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... clean_test_results_video_stream_opencv"
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test"
+	@echo "... bond_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... test"
-	@echo "... video_stream_node"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... video_stream_opencv_gencfg"
-	@echo "... run_tests_video_stream_opencv_rostest_test_test_video_file.test"
-	@echo "... small.mp4"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... video_stream_opencv"
 	@echo "... bond_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... video_stream_node"
+	@echo "... nodelet_generate_messages_eus"
+	@echo "... install"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... install/strip"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... bond_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... list_install_components"
 	@echo "... run_tests_video_stream_opencv"
+	@echo "... edit_cache"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... video_stream_opencv_gencfg"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... video_stream_opencv"
+	@echo "... run_tests_video_stream_opencv_rostest_test_test_mjpg_stream.test"
+	@echo "... nodelet_generate_messages_lisp"
+	@echo "... small.mp4"
 	@echo "... src/video_stream.o"
 	@echo "... src/video_stream.i"
 	@echo "... src/video_stream.s"
@@ -745,6 +745,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

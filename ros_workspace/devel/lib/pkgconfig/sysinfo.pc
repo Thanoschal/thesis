@@ -1,8 +1,8 @@
-prefix=/home/pi/Desktop/thesis/ros_workspace/devel
+prefix=/home/thanos/Desktop/thesis/ros_workspace/devel
 
 Name: sysinfo
 Description: Description of sysinfo
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/pi/Desktop/thesis/ros_workspace/devel/lib 
+Libs: -L/home/thanos/Desktop/thesis/ros_workspace/devel/lib 
 Requires: 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Include any dependencies generated for this target.
 include video_stream_opencv/CMakeFiles/video_stream_node.dir/depend.make
@@ -58,17 +58,17 @@ include video_stream_opencv/CMakeFiles/video_stream_node.dir/progress.make
 include video_stream_opencv/CMakeFiles/video_stream_node.dir/flags.make
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: video_stream_opencv/CMakeFiles/video_stream_node.dir/flags.make
-video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp
+video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp > CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp > CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream_node.cpp -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o.requires:
 
@@ -88,54 +88,54 @@ video_stream_node_OBJECTS = \
 # External object files for target video_stream_node
 video_stream_node_EXTERNAL_OBJECTS =
 
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcv_bridge.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_core3.so.3.3.1
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_imgproc3.so.3.3.1
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_imgcodecs3.so.3.3.1
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libimage_transport.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcamera_info_manager.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcamera_calibration_parsers.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libnodeletlib.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libuuid.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libbondcpp.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libtinyxml2.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libclass_loader.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/libPocoFoundation.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libdl.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroslib.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librospack.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libpython2.7.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_program_options.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libtinyxml.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroscpp.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/liblog4cxx.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_regex.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librostime.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcpp_common.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_system.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_thread.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_chrono.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libboost_atomic.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libpthread.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/video_stream_node.dir/link.txt --verbose=$(VERBOSE)
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/build.make
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libimage_transport.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcamera_info_manager.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcamera_calibration_parsers.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libnodeletlib.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libbondcpp.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libclass_loader.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/libPocoFoundation.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroslib.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librospack.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroscpp.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/librostime.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /opt/ros/kinetic/lib/libcpp_common.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream: video_stream_opencv/CMakeFiles/video_stream_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/video_stream_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-video_stream_opencv/CMakeFiles/video_stream_node.dir/build: /home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream
+video_stream_opencv/CMakeFiles/video_stream_node.dir/build: /home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream
 
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/build
 
@@ -144,10 +144,10 @@ video_stream_opencv/CMakeFiles/video_stream_node.dir/requires: video_stream_open
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/requires
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/video_stream_node.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/video_stream_node.dir/cmake_clean.cmake
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/clean
 
 video_stream_opencv/CMakeFiles/video_stream_node.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_node.dir/depend
 

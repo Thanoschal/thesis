@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Utility rule file for clean_test_results_video_stream_opencv.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
 include video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/progress.make
 
 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/pi/Desktop/thesis/ros_workspace/build/test_results/video_stream_opencv
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/thanos/Desktop/thesis/ros_workspace/build/test_results/video_stream_opencv
 
 clean_test_results_video_stream_opencv: video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv
 clean_test_results_video_stream_opencv: video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build.make
@@ -67,10 +67,10 @@ video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build:
 .PHONY : video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/build
 
 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_video_stream_opencv.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_video_stream_opencv.dir/cmake_clean.cmake
 .PHONY : video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/clean
 
 video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : video_stream_opencv/CMakeFiles/clean_test_results_video_stream_opencv.dir/depend
 

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "rplidar_ros"
-PROJECT_SPACE_DIR = "/home/pi/Desktop/thesis/ros_workspace/install"
+PROJECT_SPACE_DIR = "/home/thanos/Desktop/thesis/ros_workspace/install"
 PROJECT_VERSION = "1.5.5"

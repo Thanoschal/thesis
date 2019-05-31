@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/client.cpp
+/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/ros/ros.h
+/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv
+# Install script for directory: /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Desktop/thesis/ros_workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/thanos/Desktop/thesis/ros_workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,34 +33,34 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/video_stream_opencv" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/video_stream_opencv" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/__init__.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE DIRECTORY FILES "/home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE DIRECTORY FILES "/home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencv.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencv.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv/cmake" TYPE FILE FILES
-    "/home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig.cmake"
-    "/home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig-version.cmake"
+    "/home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig.cmake"
+    "/home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -70,7 +70,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE EXECUTABLE FILES "/home/pi/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE EXECUTABLE FILES "/home/thanos/Desktop/thesis/ros_workspace/devel/lib/video_stream_opencv/video_stream")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream")
     file(RPATH_CHANGE
@@ -84,14 +84,14 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE PROGRAM FILES "/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/scripts/test_video_resource.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE PROGRAM FILES "/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/scripts/test_video_resource.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE DIRECTORY FILES "/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE DIRECTORY FILES "/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/launch")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/nodelet_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/nodelet_plugins.xml")
 endif()
 

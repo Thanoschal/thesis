@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

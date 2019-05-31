@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/client.cpp" "/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o"
+  "/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/client.cpp" "/home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNodeClient.dir/src/client.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/./sdk/include"
-  "/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/./sdk/src"
+  "/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/./sdk/include"
+  "/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/./sdk/src"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

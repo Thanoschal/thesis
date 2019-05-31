@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream.cpp" "/home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.o"
+  "/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream.cpp" "/home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_opencv.dir/src/video_stream.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/pi/Desktop/thesis/ros_workspace/devel/include"
+  "/home/thanos/Desktop/thesis/ros_workspace/devel/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"

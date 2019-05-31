@@ -1,8 +1,8 @@
-# Install script for directory: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/turtlebot_le2i
+# Install script for directory: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/turtlebot_le2i
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/Desktop/thesis/ros_workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/thanos/Desktop/thesis/ros_workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2i.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2i.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_le2i/cmake" TYPE FILE FILES
-    "/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2iConfig.cmake"
-    "/home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2iConfig-version.cmake"
+    "/home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2iConfig.cmake"
+    "/home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/turtlebot_le2i/catkin_generated/installspace/turtlebot_le2iConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_le2i" TYPE FILE FILES "/home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/turtlebot_le2i/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_le2i" TYPE FILE FILES "/home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/turtlebot_le2i/package.xml")
 endif()
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Include any dependencies generated for this target.
 include rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/depend.make
@@ -58,17 +58,17 @@ include rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/progress.make
 include rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/src/node.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/src/node.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/src/node.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp > CMakeFiles/rplidarNode.dir/src/node.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp > CMakeFiles/rplidarNode.dir/src/node.cpp.i
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/src/node.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp -o CMakeFiles/rplidarNode.dir/src/node.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/src/node.cpp -o CMakeFiles/rplidarNode.dir/src/node.cpp.s
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o.requires:
 
@@ -82,17 +82,17 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o.provide
 
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.i
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/timer.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.s
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o.requires:
 
@@ -106,17 +106,17 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/tim
 
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp > CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.i
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/arch/linux/net_serial.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.s
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o.requires:
 
@@ -130,17 +130,17 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net
 
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp > CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp > CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.i
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/hal/thread.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.s
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o.requires:
 
@@ -154,17 +154,17 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp
 
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/flags.make
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o -c /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o: /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o -c /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp > CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.i
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros/sdk/src/rplidar_driver.cpp -o CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.s
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o.requires:
 
@@ -188,37 +188,37 @@ rplidarNode_OBJECTS = \
 # External object files for target rplidarNode
 rplidarNode_EXTERNAL_OBJECTS =
 
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/build.make
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libroscpp.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/liblog4cxx.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_regex.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librostime.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libcpp_common.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_system.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_thread.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_chrono.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libboost_atomic.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libpthread.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidarNode.dir/link.txt --verbose=$(VERBOSE)
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/src/node.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/timer.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/arch/linux/net_serial.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/hal/thread.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/sdk/src/rplidar_driver.cpp.o
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/build.make
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libroscpp.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/librostime.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /opt/ros/kinetic/lib/libcpp_common.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode: rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rplidarNode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/build: /home/pi/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode
+rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/build: /home/thanos/Desktop/thesis/ros_workspace/devel/lib/rplidar_ros/rplidarNode
 
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/build
 
@@ -231,10 +231,10 @@ rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/requires: rplidar-turt
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/requires
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -P CMakeFiles/rplidarNode.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros && $(CMAKE_COMMAND) -P CMakeFiles/rplidarNode.dir/cmake_clean.cmake
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/clean
 
 rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros /home/pi/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/rplidar-turtlebot2/rplidar_ros /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros /home/thanos/Desktop/thesis/ros_workspace/build/rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rplidar-turtlebot2/rplidar_ros/CMakeFiles/rplidarNode.dir/depend
 

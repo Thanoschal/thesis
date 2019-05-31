@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream.cpp
+/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/src/video_stream.cpp
 ros/ros.h
 -
 nodelet/nodelet.h

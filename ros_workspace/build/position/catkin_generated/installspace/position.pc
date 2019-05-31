@@ -1,8 +1,8 @@
-prefix=/home/pi/Desktop/thesis/ros_workspace/install
+prefix=/home/thanos/Desktop/thesis/ros_workspace/install
 
 Name: position
 Description: Description of position
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/pi/Desktop/thesis/ros_workspace/install/lib 
+Libs: -L/home/thanos/Desktop/thesis/ros_workspace/install/lib 
 Requires: 

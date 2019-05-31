@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Utility rule file for run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
 include video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/progress.make
 
 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/pi/Desktop/thesis/ros_workspace/build/test_results/video_stream_opencv/rostest-test_test_rtsp_stream.xml "/opt/ros/kinetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv --package=video_stream_opencv --results-filename test_test_rtsp_stream.xml --results-base-dir \"/home/pi/Desktop/thesis/ros_workspace/build/test_results\" /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/test/test_rtsp_stream.test "
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/thanos/Desktop/thesis/ros_workspace/build/test_results/video_stream_opencv/rostest-test_test_rtsp_stream.xml "/opt/ros/kinetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv --package=video_stream_opencv --results-filename test_test_rtsp_stream.xml --results-base-dir \"/home/thanos/Desktop/thesis/ros_workspace/build/test_results\" /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/test/test_rtsp_stream.test "
 
 run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test
 run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test: video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build.make
@@ -67,10 +67,10 @@ video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_r
 .PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/build
 
 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/cmake_clean.cmake
 .PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/clean
 
 video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : video_stream_opencv/CMakeFiles/run_tests_video_stream_opencv_rostest_test_test_rtsp_stream.test.dir/depend
 

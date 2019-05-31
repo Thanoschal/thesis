@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/thesis/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/thanos/Desktop/thesis/ros_workspace/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/thesis/ros_workspace/build
+CMAKE_BINARY_DIR = /home/thanos/Desktop/thesis/ros_workspace/build
 
 # Utility rule file for video_stream_opencv_gencfg.
 
 # Include the progress variables for this target.
 include video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/progress.make
 
-video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
+video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
 
 
-/home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/cfg/VideoStream.cfg
-/home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/VideoStream.cfg: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h /home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py"
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && ../catkin_generated/env_cached.sh /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv/cfg/VideoStream.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv
+/home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/cfg/VideoStream.cfg
+/home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thanos/Desktop/thesis/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/VideoStream.cfg: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h /home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py"
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && ../catkin_generated/env_cached.sh /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv/cfg/VideoStream.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv
 
-/home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox
+/home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox
 
-/home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox
+/home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox
 
-/home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
+/home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
 
-/home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc
+/home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc
 
 video_stream_opencv_gencfg: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg
-video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
-video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox
-video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox
-video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
-video_stream_opencv_gencfg: /home/pi/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc
+video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/include/video_stream_opencv/VideoStreamConfig.h
+video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.dox
+video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig-usage.dox
+video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py
+video_stream_opencv_gencfg: /home/thanos/Desktop/thesis/ros_workspace/devel/share/video_stream_opencv/docs/VideoStreamConfig.wikidoc
 video_stream_opencv_gencfg: video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build.make
 
 .PHONY : video_stream_opencv_gencfg
@@ -91,10 +91,10 @@ video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build: video_strea
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/build
 
 video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/clean:
-	cd /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/video_stream_opencv_gencfg.dir/cmake_clean.cmake
+	cd /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv && $(CMAKE_COMMAND) -P CMakeFiles/video_stream_opencv_gencfg.dir/cmake_clean.cmake
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/clean
 
 video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/depend:
-	cd /home/pi/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/thesis/ros_workspace/src /home/pi/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/pi/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thanos/Desktop/thesis/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thanos/Desktop/thesis/ros_workspace/src /home/thanos/Desktop/thesis/ros_workspace/src/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv /home/thanos/Desktop/thesis/ros_workspace/build/video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : video_stream_opencv/CMakeFiles/video_stream_opencv_gencfg.dir/depend
 
