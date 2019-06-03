@@ -14,7 +14,7 @@ press PS button to connect over bluetooth
 
 
 Connect USB
-sudo apt-get install ros-indigo-ps3joy
+sudo apt-get install ros-kinetic-ps3joy
 roscd ps3joy
 sudo /usr/sbin/sixpair
 

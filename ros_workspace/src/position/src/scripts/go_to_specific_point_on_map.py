@@ -9,6 +9,8 @@ from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 import actionlib
 from actionlib_msgs.msg import *
 from geometry_msgs.msg import Pose, Point, Quaternion
+from kafka import KafkaConsumer
+from kafka import TopicPartition
 
 class GoToPose():
     
@@ -63,32 +65,31 @@ if __name__ == '__main__':
     rospy.init_node('nav_goto', anonymous=False)
     navigator = GoToPose()
     
-    while(True):
+    consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092')
+    consumer.assign([TopicPartition('turtle_goto', 0)])
+    print "Waiting..."
+    
+    for msg in consumer:
+    
+        print msg.value
         
-        position = {'x': 0.0, 'y' : 0.0}
-        quaternion = {'r1' : 0.000, 'r2' : 0.000, 'r3' : 0.000, 'r4' : 1.000}
+        posx = msg.value[4]
+        posy = msg.value['posy']
         
+        break
+        """
         ox = 0
         oy = 0
         oz = 0
-        ow = 1
+        ow = 0.5
         
-        print "---Give the location of the goal---"
-        x = input("x : ")
-        y = input("y : ")
-        print "---Would you like to give the quaternion?---"
-        answer = raw_input("yes/no : ")
-        if answer == "yes":
-            print "---Give the quaternion of the goal---"
-            ox = input("ox : ")
-            oy = input("oy : ")
-            oz = input("oz : ")
-            ow = input("ow : ")
-       
+        position = {'posx': 0.0, 'posy' : 0.0}
+        quaternion = {'orx' : 0.000, 'orxy' : 0.000, 'orz' : 0.000, 'orw' : 1.000}
+        
         # Customize the following values so they are appropriate for your location
         
-        position['x'] = x
-        position['y'] = y
+        position['x'] = posx
+        position['y'] = posy
         quaternion['r1'] = ox
         quaternion['r2'] = oy
         quaternion['r3'] = oz
@@ -110,6 +111,4 @@ if __name__ == '__main__':
         if answer == "no":
             print "au revoir..."
             break
-        
-    #end while
-
+    """
