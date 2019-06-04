@@ -11,6 +11,7 @@ from actionlib_msgs.msg import *
 from geometry_msgs.msg import Pose, Point, Quaternion
 from kafka import KafkaConsumer
 from kafka import TopicPartition
+import json
 
 class GoToPose():
     
@@ -62,8 +63,8 @@ class GoToPose():
 
 if __name__ == '__main__':
 
-    rospy.init_node('nav_goto', anonymous=False)
-    navigator = GoToPose()
+    #rospy.init_node('nav_goto', anonymous=False)
+    #navigator = GoToPose()
     
     consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092')
     consumer.assign([TopicPartition('turtle_goto', 0)])
@@ -73,20 +74,17 @@ if __name__ == '__main__':
     
         print msg.value
         
-        posx = msg.value[4]
-        posy = msg.value['posy']
+        valuejson = json.loads(msg.value)
         
-        break
-        """
-        ox = 0
-        oy = 0
-        oz = 0
-        ow = 0.5
+        posx = valuejson['posx']
+        posy = valuejson['posy']
+        ox = valuejson['orx']
+        oy = valuejson['ory']
+        oz = valuejson['orz']
+        ow = valuejson['orw']
         
         position = {'posx': 0.0, 'posy' : 0.0}
         quaternion = {'orx' : 0.000, 'orxy' : 0.000, 'orz' : 0.000, 'orw' : 1.000}
-        
-        # Customize the following values so they are appropriate for your location
         
         position['x'] = posx
         position['y'] = posy
@@ -95,20 +93,19 @@ if __name__ == '__main__':
         quaternion['r3'] = oz
         quaternion['r4'] = ow
         
-        rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])
-        success = navigator.goto(position, quaternion)
+        #rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])
+        #success = navigator.goto(position, quaternion)
 
-        if success:
-            rospy.loginfo("Hooray, reached the desired pose")
-        else:
-            rospy.loginfo("The base failed to reach the desired pose")
+        #if success:
+        #    rospy.loginfo("Hooray, reached the desired pose")
+        #else:
+        #    rospy.loginfo("The base failed to reach the desired pose")
 
         # Sleep to give the last log messages time to be sent
-        rospy.sleep(1)
+        #rospy.sleep(1)
         
         print "Do you want to give another goal?"
         answer = raw_input("yes/no : ")
         if answer == "no":
             print "au revoir..."
             break
-    """

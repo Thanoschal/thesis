@@ -1,0 +1,5 @@
+cd $HOME/catkin_ws/src
+git clone https://github.com/Slamtec/rplidar_ros.git
+git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
+
+
