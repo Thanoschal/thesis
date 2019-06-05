@@ -17,5 +17,5 @@ ssh -X  pi@192.168.43.207
 raspberry
 
 
-roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/thanos/Desktop/base.yaml
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/thanos/Desktop/basement.yaml
 roslaunch turtlebot_rviz_launchers view_navigation.launch --screen

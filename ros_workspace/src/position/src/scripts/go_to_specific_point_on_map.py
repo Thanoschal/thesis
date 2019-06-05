@@ -63,8 +63,8 @@ class GoToPose():
 
 if __name__ == '__main__':
 
-    #rospy.init_node('nav_goto', anonymous=False)
-    #navigator = GoToPose()
+    rospy.init_node('nav_goto', anonymous=False)
+    navigator = GoToPose()
     
     consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092')
     consumer.assign([TopicPartition('turtle_goto', 0)])
@@ -76,12 +76,12 @@ if __name__ == '__main__':
         
         valuejson = json.loads(msg.value)
         
-        posx = valuejson['posx']
-        posy = valuejson['posy']
-        ox = valuejson['orx']
-        oy = valuejson['ory']
-        oz = valuejson['orz']
-        ow = valuejson['orw']
+        posx = float(valuejson['posx'])
+        posy = float(valuejson['posy'])
+        ox = float(valuejson['orx'])
+        oy = float(valuejson['ory'])
+        oz = float(valuejson['orz'])
+        ow = float(valuejson['orw'])
         
         position = {'posx': 0.0, 'posy' : 0.0}
         quaternion = {'orx' : 0.000, 'orxy' : 0.000, 'orz' : 0.000, 'orw' : 1.000}
@@ -93,16 +93,16 @@ if __name__ == '__main__':
         quaternion['r3'] = oz
         quaternion['r4'] = ow
         
-        #rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])
-        #success = navigator.goto(position, quaternion)
+        rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])
+        success = navigator.goto(position, quaternion)
 
-        #if success:
-        #    rospy.loginfo("Hooray, reached the desired pose")
-        #else:
-        #    rospy.loginfo("The base failed to reach the desired pose")
+        if success:
+            rospy.loginfo("Hooray, reached the desired pose")
+        else:
+            rospy.loginfo("The base failed to reach the desired pose")
 
-        # Sleep to give the last log messages time to be sent
-        #rospy.sleep(1)
+        #Sleep to give the last log messages time to be sent
+        rospy.sleep(1)
         
         print "Do you want to give another goal?"
         answer = raw_input("yes/no : ")
