@@ -40,7 +40,7 @@ def main():
     signal.signal(signal.SIGINT, handler)
     rate = 1
     
-    #producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 
     
     while(True):
@@ -72,7 +72,7 @@ def main():
         
         print tjson
                 
-        producer.send('turtle_temperature',hjson)
+        producer.send('turtle_temperature',tjson)
         
         time.sleep(rate)
         

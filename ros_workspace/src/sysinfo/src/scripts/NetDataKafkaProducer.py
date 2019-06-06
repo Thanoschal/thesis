@@ -23,10 +23,12 @@ def main():
     signal.signal(signal.SIGINT, handler)	
 
     interval = "0.3"
-    host = "192.168.43.133"
+    host = "192.168.43.66"
     size = "64"
     count = "20"
     interface = "wlx000f54110e16"
+    #"wlp3s0"
+    #"wlx000f54110e16"
     
 #    print "Interval between sending packets: " + interval + " sec."
 #    print "Host is: " + host
@@ -45,7 +47,7 @@ def main():
     #######################################################
     
     producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
-    
+    print "Succesfully opened producer"
     #######################################################
     #######################################################
     

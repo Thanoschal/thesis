@@ -103,9 +103,10 @@ if __name__ == '__main__':
 
         #Sleep to give the last log messages time to be sent
         rospy.sleep(1)
-        
+        """
         print "Do you want to give another goal?"
         answer = raw_input("yes/no : ")
         if answer == "no":
             print "au revoir..."
             break
+        """
