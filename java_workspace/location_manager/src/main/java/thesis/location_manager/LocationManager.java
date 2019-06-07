@@ -67,13 +67,15 @@ public class LocationManager {
 					ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("turtle_goto" , gotoJSON);
 					producer.send(record);
 
-					double distance = 10.0;
+					double distanceP = 10.0;
+					double distanceQ = 10.0;
 					
-					while(distance > 0.1) {
+					while(distanceP > 0.2 || distanceQ > 2) {
 						
 						
 						ConsumerRecords<Long, String> consumerRecords = consumer.poll(10);
 						if (consumerRecords.count() == 0) {
+							//System.out.println("NO location messages...");
 							continue;
 						}
 						
@@ -84,9 +86,11 @@ public class LocationManager {
 						
 						Goto location = mapper.readValue(loc, Goto.class);
 						
-						distance = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distanceP = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distanceQ = DistanceCalc.distanceCalculation(location.getOry(), location.getOrw(), destination.getOrz(), destination.getOrw());
 						
-						System.out.println("Robot is traveling... distance from goal: " + distance);
+						System.out.println("Robot is traveling... distance from goal: " + distanceP);
+						System.out.println("Robot is rotating... distance from goal: " + distanceQ);
 
 						consumer.commitAsync();
 
@@ -123,13 +127,14 @@ public class LocationManager {
 					ProducerRecord<Long, String> record = new ProducerRecord<Long, String>("turtle_goto" , gotoJSON);
 					producer.send(record);
 
-					double distance = 10.0;
+					double distanceP = 10.0;
+					double distanceQ = 10.0;
 					
-					while(distance > 0.1) {
-						
-						
+					while(distanceP > 0.2 || distanceQ > 2) {
+
 						ConsumerRecords<Long, String> consumerRecords = consumer.poll(10);
 						if (consumerRecords.count() == 0) {
+							//System.out.println("NO location messages...");
 							continue;
 						}
 						
@@ -140,9 +145,11 @@ public class LocationManager {
 						
 						Goto location = mapper.readValue(loc, Goto.class);
 						
-						distance = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distanceP = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distanceQ = DistanceCalc.distanceCalculation(location.getOry(), location.getOrw(), destination.getOrz(), destination.getOrw());
 						
-						System.out.println("Robot is traveling... distance from goal: " + distance);
+						System.out.println("Robot is traveling... distance from goal: " + distanceP);
+						System.out.println("Robot is rotating... distance from goal: " + distanceQ);
 
 						consumer.commitAsync();
 
