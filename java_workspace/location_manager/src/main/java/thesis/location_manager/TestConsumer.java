@@ -12,7 +12,7 @@ public class TestConsumer {
 	@SuppressWarnings({ "deprecation", "rawtypes" })
 	public static void main(String[] args) {
 		
-		Consumer<Long, String> consumer = ConsumerCreator.createConsumer("turtle_location");
+		Consumer<Long, String> consumer = ConsumerCreator.createConsumer("turtle_goto");
 
 		while (true) {
 

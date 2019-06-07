@@ -25,7 +25,7 @@ public class ProducerCreator {
 
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
-        return new KafkaProducer<>(props);
+        return new KafkaProducer<Long, String>(props);
 
     }
 

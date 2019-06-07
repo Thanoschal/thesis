@@ -29,7 +29,7 @@ class Location(object):
         self.ory = oy
         self.orz = oz
         self.orw = ow
-        self.ts = ts
+        self.tst = ts
         self.latency = lat
 
     def toJSON(self):

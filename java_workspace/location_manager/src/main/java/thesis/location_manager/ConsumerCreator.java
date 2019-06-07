@@ -35,7 +35,7 @@ public class ConsumerCreator {
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, KafkaConstants.OFFSET_LATEST);
 
         Consumer<Long, String> consumer =
-                new KafkaConsumer<>(props);
+                new KafkaConsumer<Long, String>(props);
 
         // Subscribe to the topic
         consumer.subscribe(Collections.singletonList(topic_name));

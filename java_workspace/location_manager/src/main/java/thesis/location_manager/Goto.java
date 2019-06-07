@@ -11,6 +11,8 @@ public class Goto {
 	String tst;
 	long latency;
 	
+	public Goto(){}
+	
 	public Goto(double orx, double ory,  double orz, double orw, double posx, double posy ,String tst ,long latency) {
 		this.orx = orx;
 		this.ory = ory;
