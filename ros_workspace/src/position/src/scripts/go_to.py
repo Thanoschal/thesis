@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-# TurtleBot must have minimal.launch & amcl_demo.launch
-# running prior to starting this script
-# For simulation: launch gazebo world & amcl_demo prior to run this script
-
+import signal
 import rospy
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 import actionlib
@@ -12,6 +9,56 @@ from geometry_msgs.msg import Pose, Point, Quaternion
 from kafka import KafkaConsumer
 from kafka import TopicPartition
 import json
+import cv2
+from std_msgs.msg import String
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
+
+
+######################################################################################
+######################################################################################
+
+def handler(signum, frame):
+    rospy.loginfo("Exiting...")
+    sys.exit()
+    
+######################################################################################
+######################################################################################
+
+class TakePhoto:
+    def __init__(self):
+
+        self.bridge = CvBridge()
+        self.image_received = False
+
+        # Connect image topic
+        img_topic = "/camera/rgb/image_raw"
+        self.image_sub = rospy.Subscriber(img_topic, Image, self.callback)
+
+        # Allow up to one second to connection
+        rospy.sleep(1)
+
+    def callback(self, data):
+
+        # Convert image to OpenCV format
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
+        except CvBridgeError as e:
+            print(e)
+
+        self.image_received = True
+        self.image = cv_image
+
+    def take_picture(self, img_title):
+        if self.image_received:
+            # Save an image
+            cv2.imwrite(img_title, self.image)
+            return True
+        else:
+            return False
+
+######################################################################################
+######################################################################################
 
 class GoToPose():
     
@@ -61,18 +108,24 @@ class GoToPose():
         rospy.loginfo("Stop")
         rospy.sleep(1)
 
+######################################################################################
+######################################################################################
+
+
 if __name__ == '__main__':
+
+    signal.signal(signal.SIGINT, handler)
 
     rospy.init_node('nav_goto', anonymous=False)
     navigator = GoToPose()
     
     consumer = KafkaConsumer(bootstrap_servers='195.134.71.250:9092')
     consumer.assign([TopicPartition('turtle_goto', 0)])
-    print "Waiting..."
+    rospy.loginfo("Waiting...")
+    
+    counter = 0
     
     for msg in consumer:
-    
-        print msg.value
         
         valuejson = json.loads(msg.value)
         
@@ -97,16 +150,21 @@ if __name__ == '__main__':
         success = navigator.goto(position, quaternion)
 
         if success:
-            rospy.loginfo("Hooray, reached the desired pose")
+            rospy.loginfo("Robot reached the given destination point!")
+            
+            camera = TakePhoto()
+            img_title = "point" + str(counter) + ".jpg"
+            if camera.take_picture(img_title):
+                rospy.loginfo("Saved image " + img_title)
+            else:
+                rospy.loginfo("No images received")
+                
+            counter = counter + 1
         else:
             rospy.loginfo("The base failed to reach the desired pose")
 
         #Sleep to give the last log messages time to be sent
         rospy.sleep(1)
-        """
-        print "Do you want to give another goal?"
-        answer = raw_input("yes/no : ")
-        if answer == "no":
-            print "au revoir..."
-            break
-        """
+
+######################################################################################
+######################################################################################

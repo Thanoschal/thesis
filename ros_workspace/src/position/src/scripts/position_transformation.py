@@ -14,6 +14,7 @@ import json
 import time
 import datetime
 from kafka import KafkaProducer
+import signal
 
 producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 
@@ -44,6 +45,9 @@ def handler(signum, frame):
 #####################################################
 
 if __name__ == '__main__':
+    
+    signal.signal(signal.SIGINT, handler)
+    
     rospy.init_node('turtle_tf_listener')
 
     listener = tf.TransformListener()
