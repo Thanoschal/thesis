@@ -84,7 +84,7 @@ public class LocationManager {
 						
 						Goto location = mapper.readValue(loc, Goto.class);
 						
-						distance = DistanceCalculation.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distance = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
 						
 						System.out.println("Robot is traveling... distance from goal: " + distance);
 
@@ -140,7 +140,7 @@ public class LocationManager {
 						
 						Goto location = mapper.readValue(loc, Goto.class);
 						
-						distance = DistanceCalculation.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
+						distance = DistanceCalc.distanceCalculation(location.getPosx(), location.getPosy(), destination.getPosx(), destination.getPosy());
 						
 						System.out.println("Robot is traveling... distance from goal: " + distance);
 
