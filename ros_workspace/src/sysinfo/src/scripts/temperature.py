@@ -49,24 +49,15 @@ def main():
         st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         
         heat = psutil.sensors_temperatures()
-        
-        coretemp = heat['coretemp']
-        
-        mean_temperature = 0
-        temperatures = []
-        cores = 0
-          
-        for cpu in coretemp:
-            temperatures.append(re.findall('\d+',str(cpu))[1])
-            cores = cores + 1
-        
-        for t in temperatures:
-            mean_temperature = mean_temperature + float(t)
-        
-        mean_temperature = round(float(mean_temperature)/float(cores) , 1)
+
+        coretemp = heat['cpu-thermal']
+        cpu = coretemp[0]
+
+        temperature = re.findall('\d+\.\d+',str(cpu))[0]
+
         millis = int(round(time.time() * 1000))
         
-        t = Temperature(mean_temperature,st,str(millis))
+        t = Temperature(temperature,st,str(millis))
         
         tjson = json.dumps(t.__dict__)
         

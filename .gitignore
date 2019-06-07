@@ -1,3 +1,5 @@
 # Don't track content of these folders
 ros_workspace/build
 ros_workspace/devel
+ros_workspace/src/sysinfo/src/scripts/temperature.py
+java_workspace/location_manager/target
