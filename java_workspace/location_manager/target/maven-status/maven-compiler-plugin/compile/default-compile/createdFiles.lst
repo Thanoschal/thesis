@@ -1,7 +1,0 @@
-thesis/location_manager/ProducerCreator.class
-thesis/location_manager/ConsumerCreator.class
-thesis/location_manager/Goto.class
-thesis/location_manager/TestProducer.class
-thesis/location_manager/KafkaConstants.class
-thesis/location_manager/LocationManager.class
-thesis/location_manager/TestConsumer.class
