@@ -14,14 +14,14 @@ from kafka import KafkaProducer
 import signal
 
 producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
-
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
-    print "Now exiting..."
-    sys.exit()
+print "Started the kafka producer"
+kobuki_base_max_charge = 165
 
 #####################################################
-class KobukiBattery(object):
+#####################################################
+            
+            
+class Battery(object):
     battery = 0    
     ts = 0
     def __init__(self,b,ts,lat):
@@ -33,43 +33,48 @@ class KobukiBattery(object):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
 
 #####################################################
-
 #####################################################
-#callback function
 
-def SensorPowerCB(data):
-	
+class KobukiBattery:
+    def __init__(self):
+        self.battery = None
+        self.ts = None
+        self.latency = None
+        self.state = None
 
-    rate = 1
-    
-    kobuki_base_max_charge = 165
-    kbattery = str(round(float(data.battery) / float(kobuki_base_max_charge) * 100))
-    
-    ts = time.time()
-    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-    
-    millis = int(round(time.time() * 1000))
-    kbat = KobukiBattery(kbattery,st, str(millis))
-    
-    bjson = json.dumps(kbat.__dict__)
-    
-    print bjson
+    def batery_callback(self, data):
+        self.battery = str(round(float(data.battery) / float(kobuki_base_max_charge) * 100))
+        timest = time.time()
+        ts = datetime.datetime.fromtimestamp(timest).strftime('%Y-%m-%d %H:%M:%S')
+        lattency = int(round(time.time() * 1000))
+        self.send_data()
 
-    producer.send('turtle_battery',bjson)
+    def ost_callback(self, data):
+        self.state = data.state
+        self.send_data()
 
-    time.sleep(rate)
-
-
+    def send_data(self):
+        if self.battery is not None and self.state is not None:
+            pass
+        else:
+            if self.state == 1:
+                print "Active OST state...sending data"
+                kbat = Battery(battery,ts,lattency)
+                bjson = json.dumps(kbat.__dict__) 
+                print bjson
+                producer.send('turtle_battery',bjson)
+            else:
+                print "Passive OST state... stalling"
+                
+#####################################################
 #####################################################
 #starting the node
 def main():
     
-    signal.signal(signal.SIGINT, handler)
-    
-    rospy.init_node("kobuki_battery")		
-
-    rospy.Subscriber("/mobile_base/sensors/core",SensorState,SensorPowerCB)
-
+    kobukiBat = KobukiBattery()
+    rospy.init_node("kobuki_battery")
+    rospy.Subscriber("/mobile_base/sensors/core", SensorState, kobukiBat.battery_callback)
+    rospy.Subscriber("ost_state", ostmsg, kobukiBat.ost_callback)
     rospy.spin();
 
 #######################################################
