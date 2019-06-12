@@ -12,6 +12,8 @@ import datetime
 import signal, os
 from kafka import KafkaProducer
 
+producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+
 #####################################################
 class CPU(object):
     cpu = 0    
@@ -26,6 +28,31 @@ class CPU(object):
         
 #####################################################
 
+#####################################################
+#callback function
+
+def CPUconsumption(data):
+	
+    rate = 1
+
+    ts = time.time()
+    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    
+    cpu = psutil.cpu_percent(interval=1)
+    
+    millis = int(round(time.time() * 1000))
+    c = CPU(cpu,st,str(millis))
+    
+    cjson = json.dumps(c.__dict__)
+    
+    print cjson
+            
+    producer.send('turtle_cpu',cjson)
+
+    time.sleep(rate)
+
+#####################################################
+
 def handler(signum, frame):
     print 'Signal handler called with signal', signum
     print "Now exiting..."
@@ -36,29 +63,14 @@ def handler(signum, frame):
 def main():
     
     signal.signal(signal.SIGINT, handler)
-    rate = 1
     
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+    rospy.init_node("kobuki_cpu")		
+
+    rospy.Subscriber("/mobile_base/sensors/core",SensorState,CPUconsumption)
+
+    rospy.spin();
     
-    while(True):
     
-        ts = time.time()
-        st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-        
-        cpu = psutil.cpu_percent(interval=1)
-        
-        millis = int(round(time.time() * 1000))
-        c = CPU(cpu,st,str(millis))
-        
-        cjson = json.dumps(c.__dict__)
-        
-        print cjson
-                
-        producer.send('turtle_cpu',cjson)
-        
-        time.sleep(rate)
-        
-    #end while
 #######################################################
 
 
