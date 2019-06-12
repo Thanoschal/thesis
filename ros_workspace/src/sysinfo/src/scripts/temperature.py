@@ -12,7 +12,10 @@ import datetime
 import signal, os
 import re
 from kafka import KafkaProducer
+from sysinfo.msg import ostmsg
 
+producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+print "Started the kafka producer"
 
 #####################################################
 class Temperature(object):
@@ -27,24 +30,12 @@ class Temperature(object):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
         
 #####################################################
-
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
-    print "Now exiting..."
-    sys.exit()
-
-#####################################################
 #starting the node
-def main():
+def temperatureCallback(data):
     
-    signal.signal(signal.SIGINT, handler)
-    rate = 1
-    
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+    if data.state == 1:
 
-    
-    while(True):
-    
+        print "Active OST state...sending data"
         ts = time.time()
         st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         
@@ -65,9 +56,23 @@ def main():
                 
         producer.send('turtle_temperature',tjson)
         
-        time.sleep(rate)
+    else:
+        print "Passive OST state... stalling"
         
-    #end while
+
+#####################################################
+#starting the node
+def main():
+    
+    signal.signal(signal.SIGINT, handler)
+    
+    rospy.init_node("kobuki_temperature")		
+
+    rospy.Subscriber("ost_state",ostmsg,Memory)
+
+    rospy.spin();
+    
+    
 #######################################################
 
 

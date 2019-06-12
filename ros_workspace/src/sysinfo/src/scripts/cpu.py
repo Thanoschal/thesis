@@ -11,8 +11,10 @@ import time
 import datetime
 import signal, os
 from kafka import KafkaProducer
+from sysinfo.msg import ostmsg
 
 producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+print "Started the kafka producer"
 
 #####################################################
 class CPU(object):
@@ -33,40 +35,36 @@ class CPU(object):
 
 def CPUconsumption(data):
 	
-    rate = 1
-
-    ts = time.time()
-    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    if data.state == 1:
     
-    cpu = psutil.cpu_percent(interval=1)
+        print "Active OST state...sending data"
     
-    millis = int(round(time.time() * 1000))
-    c = CPU(cpu,st,str(millis))
+        ts = time.time()
+        st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+        
+        cpu = psutil.cpu_percent(interval=1)
+        
+        millis = int(round(time.time() * 1000))
+        c = CPU(cpu,st,str(millis))
+        
+        cjson = json.dumps(c.__dict__)
+        
+        print cjson
+                
+        producer.send('turtle_cpu',cjson)
     
-    cjson = json.dumps(c.__dict__)
-    
-    print cjson
-            
-    producer.send('turtle_cpu',cjson)
+    else:
+        print "Passive OST state... stalling"
+        
 
-    time.sleep(rate)
-
-#####################################################
-
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
-    print "Now exiting..."
-    sys.exit()
 
 #####################################################
 #starting the node
 def main():
     
-    signal.signal(signal.SIGINT, handler)
-    
     rospy.init_node("kobuki_cpu")		
 
-    rospy.Subscriber("/mobile_base/sensors/core",SensorState,CPUconsumption)
+    rospy.Subscriber("ost_state",ostmsg,CPUconsumption)
 
     rospy.spin();
     

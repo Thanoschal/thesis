@@ -11,6 +11,10 @@ import time
 import datetime
 import signal, os
 from kafka import KafkaProducer
+from sysinfo.msg import ostmsg
+
+producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092']) 
+print "Started the kafka producer"
 
 #####################################################
 class Memory(object):
@@ -25,24 +29,13 @@ class Memory(object):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)    
 
 #####################################################
-
-#####################################################
-
-def handler(signum, frame):
-    print 'Signal handler called with signal', signum
-    print "Now exiting..."
-    sys.exit()
-
 #####################################################
 #starting the node
-def main():
+def memoryConsumption(data):
     
-    signal.signal(signal.SIGINT, handler)
-    rate = 1
+    if data.state == 1:
     
-    producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])    
-    
-    while(True):
+        print "Active OST state...sending data"
     
         ts = time.time()
         st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
@@ -57,9 +50,22 @@ def main():
         
         producer.send('turtle_memory',mjson)
         
-        time.sleep(rate)
-    #end while
-#######################################################
+    else:
+        print "Passive OST state... stalling"
+ 
+    
+
+#####################################################
+#starting the node
+def main():
+    
+    rospy.init_node("kobuki_memory")		
+
+    rospy.Subscriber("ost_state",ostmsg,memoryConsumption)
+
+    rospy.spin();
+       
+#####################################################
 
 
 if __name__== "__main__":
