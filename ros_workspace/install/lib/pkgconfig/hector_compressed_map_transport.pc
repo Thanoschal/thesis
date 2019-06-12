@@ -1,8 +1,0 @@
-prefix=/home/thanos/Desktop/thesis/ros_workspace/install
-
-Name: hector_compressed_map_transport
-Description: Description of hector_compressed_map_transport
-Version: 0.3.5
-Cflags: 
-Libs: -L/home/thanos/Desktop/thesis/ros_workspace/install/lib 
-Requires: 

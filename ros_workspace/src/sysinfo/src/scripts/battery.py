@@ -12,6 +12,7 @@ import time
 import datetime
 from kafka import KafkaProducer
 import signal
+from sysinfo.msg import ostmsg
 
 producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
 print "Started the kafka producer"
@@ -42,30 +43,35 @@ class KobukiBattery:
         self.latency = None
         self.state = None
 
-    def batery_callback(self, data):
+    def battery_callback(self, data):
         self.battery = str(round(float(data.battery) / float(kobuki_base_max_charge) * 100))
         timest = time.time()
         ts = datetime.datetime.fromtimestamp(timest).strftime('%Y-%m-%d %H:%M:%S')
         lattency = int(round(time.time() * 1000))
         self.send_data()
+        time.sleep(1)
 
     def ost_callback(self, data):
         self.state = data.state
         self.send_data()
 
     def send_data(self):
-        if self.battery is not None and self.state is not None:
+        if (self.battery is None) or (self.state is None):
             pass
         else:
+            #print "sending!!"
+            #print self.battery
+            #print self.state
+            
             if self.state == 1:
                 print "Active OST state...sending data"
-                kbat = Battery(battery,ts,lattency)
+                kbat = Battery(self.battery,self.ts,self.latency)
                 bjson = json.dumps(kbat.__dict__) 
                 print bjson
                 producer.send('turtle_battery',bjson)
             else:
                 print "Passive OST state... stalling"
-                
+               
 #####################################################
 #####################################################
 #starting the node
