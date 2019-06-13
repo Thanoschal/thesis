@@ -64,11 +64,9 @@ def temperatureCallback(data):
 #starting the node
 def main():
     
-    signal.signal(signal.SIGINT, handler)
-    
     rospy.init_node("kobuki_temperature")		
 
-    rospy.Subscriber("ost_state",ostmsg,Memory)
+    rospy.Subscriber("ost_state",ostmsg,temperatureCallback)
 
     rospy.spin();
     

@@ -18,10 +18,10 @@ from kafka import KafkaProducer
 import subprocess
 
 interval = "0.3"
-host = "192.168.43.66"
+host = "192.168.43.215"
 size = "64"
 count = "20"
-interface = "wlp3s0"
+interface = "wlx000f54110e16"
 #"wlp3s0"
 #"wlx000f54110e16"   
 
@@ -153,12 +153,13 @@ def main():
         L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped=DesicionMake(i, q_i, L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped)
         print active
         
-        if active==False:
-            msg.state = 0
+        #if active==False:
+            #msg.state = 0
             
-        else:
-            msg.state = 1
+       #else:
+            #msg.state = 1
         
+        msg.state = 1
         pub.publish(msg)
         
         r.sleep()
