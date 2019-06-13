@@ -153,13 +153,14 @@ def main():
         L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped=DesicionMake(i, q_i, L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped)
         print active
         
-        #if active==False:
-            #msg.state = 0
+        if active==False:
+            msg.state = 0
             
-       #else:
-            #msg.state = 1
+       else:
+            msg.state = 1
         
-        msg.state = 1
+        #msg.state = 1
+
         pub.publish(msg)
         
         r.sleep()
@@ -177,7 +178,7 @@ def getQuality(SNR,Loss,Qual):
     q=0.0
     #tSNR=-1*SNR
     minSNR=-99.0
-    maxSNR = -57.0
+    maxSNR = -45.0
     SNRi=1- m.fabs((( maxSNR - SNR) / ( minSNR - maxSNR)))
     q=0.4*(100-Loss)+0.3*Qual+0.4*(SNRi*100)
     return q
