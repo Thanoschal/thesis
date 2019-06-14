@@ -1,7 +1,10 @@
+ssh -X 192.168.43.207
+raspberry
+
 roslaunch turtlebot_bringup minimal.launch
 
 roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/pi/Desktop/thesis/maps/experiments_map.yaml
-roslaunch turtlebot_rviz_launchers view_navigation.launch --screen
+roslaunch turtlebot_rviz_launchers view_navigation.launch
 rosrun tf tf_echo /map /base_link
 
 rosrun position position_transformation.py
@@ -12,3 +15,5 @@ rosrun sysinfo cpu.py
 rosrun sysinfo batter.py
 rosrun sysinfo temperature.py
 rosrun sysinfo ost.py
+
+
