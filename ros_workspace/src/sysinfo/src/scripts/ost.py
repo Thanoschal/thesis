@@ -18,7 +18,7 @@ from kafka import KafkaProducer
 import subprocess
 
 interval = "0.3"
-host = "192.168.43.215"
+host = "192.168.43.78"
 size = "64"
 count = "20"
 interface = "wlx000f54110e16"
@@ -57,7 +57,7 @@ def main():
     f=LDS_ost(CLUSTERS,10)
     #r_star = min(f)
     r_star=numpy.argmin(f)
-    MAXTHRESHOLD=60
+    MAXTHRESHOLD=30
     
     ################################################
     ################################################
@@ -155,8 +155,7 @@ def main():
         
         if active==False:
             msg.state = 0
-            
-       else:
+        else:
             msg.state = 1
         
         #msg.state = 1
@@ -294,7 +293,7 @@ def LDS(x,gamma,N):
 ##########################################
 
 def DesicionMake(round,q_i,L1,ST1,ST3,thesh,change,changes,C,index,f,sum,t,active,badcounter,r_star,x_star,stopped,position_stopped):
-    MAXTHRESHOLD=60
+    MAXTHRESHOLD=30
 
     q_curr = m.pow(10, -9)
 
@@ -315,10 +314,15 @@ def DesicionMake(round,q_i,L1,ST1,ST3,thesh,change,changes,C,index,f,sum,t,activ
     ST1.append(sum)
     t = sum - min(ST1)
     i=round
-    if i > 1:
+    if (i-change) > 1:
         if active == False:
             if badcounter == MAXTHRESHOLD:
                 active = True
+                changes.append(i)
+                badcounter = 0
+                sum = 0.0
+                index.append(i)
+                change = i
             x_star, stopped, position_stopped = LDS_function(badcounter, r_star, q_i, x_star)
             print("xstar {} stopped{} position_stopped{}".format(x_star, stopped, position_stopped))
             if stopped == True:
@@ -335,7 +339,7 @@ def DesicionMake(round,q_i,L1,ST1,ST3,thesh,change,changes,C,index,f,sum,t,activ
             print(t)
             C.append(active)
 
-    if i > 3:
+    if (i-change) > 3:
         if CH(C, len(C) - 1) == True:
             changes.append(i)
             badcounter = 0
