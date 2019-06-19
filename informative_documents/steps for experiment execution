@@ -1,4 +1,4 @@
-ssh -X 192.168.43.207
+ssh -X pi@192.168.43.207
 raspberry
 
 roslaunch turtlebot_bringup minimal.launch
@@ -12,7 +12,7 @@ rosrun position go_to.py
 
 rosrun sysinfo memory.py
 rosrun sysinfo cpu.py
-rosrun sysinfo batter.py
+rosrun sysinfo battery.py
 rosrun sysinfo temperature.py
 rosrun sysinfo ost.py
 
