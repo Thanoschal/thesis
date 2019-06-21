@@ -149,7 +149,7 @@ def main():
         q_i = getQuality(int(level), int(loss), int(quality))
         
         print q_i
-        
+         ############## LDS ##################################        
         L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped=DesicionMake(i, q_i, L1, ST1, ST3, thesh, change, changes, C, index, f, sum, t, active, badcounter, r_star, x_star, stopped, position_stopped)
         print active
         
@@ -157,9 +157,17 @@ def main():
             msg.state = 0
         else:
             msg.state = 1
-        
-        #msg.state = 1
+        ########################################################
 
+        ###############Threshold ###################
+        #if q_i>45:
+        #    msg.state = 0
+        #else:
+        #    msg.state = 1
+        
+        #################No change
+        #msg.state = 1
+        
         pub.publish(msg)
         
         r.sleep()
