@@ -160,7 +160,7 @@ def main():
         ########################################################
 
         ###############Threshold ###################
-        #if q_i>45:
+        #if q_i<45:
         #    msg.state = 0
         #else:
         #    msg.state = 1
@@ -331,14 +331,14 @@ def DesicionMake(round,q_i,L1,ST1,ST3,thesh,change,changes,C,index,f,sum,t,activ
                 sum = 0.0
                 index.append(i)
                 change = i
-            x_star, stopped, position_stopped = LDS_function(badcounter, r_star, q_i, x_star)
-            print("xstar {} stopped{} position_stopped{}".format(x_star, stopped, position_stopped))
-            if stopped == True:
-                active = True
-                stopped = False
-                position_stopped = -1
-                print("LDS STOPPED ^^^^^^^^^^^^^^^^")
-                x_star = 0.0
+           # x_star, stopped, position_stopped = LDS_function(badcounter, r_star, q_i, x_star)
+            #print("xstar {} stopped{} position_stopped{}".format(x_star, stopped, position_stopped))
+            #if stopped == True:
+            #    active = True
+             #   stopped = False
+              #  position_stopped = -1
+              #  print("LDS STOPPED ^^^^^^^^^^^^^^^^")
+              #  x_star = 0.0
             badcounter = badcounter + 1
             C.append(active)
         else:
