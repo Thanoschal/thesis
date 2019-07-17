@@ -16,8 +16,11 @@ import datetime
 from kafka import KafkaProducer
 from sysinfo.msg import ostmsg
 
+rospy.init_node('turtle_tf_listener')
 producer = KafkaProducer(bootstrap_servers=['195.134.71.250:9092'])
+print "Consumer opened succesfully"
 listener = tf.TransformListener()
+
 
 #####################################################
 #position class
@@ -63,13 +66,14 @@ def TransformationCB(data):
     #put kafka producer here
     producer.send('turtle_location',ljson)
 
-
 #####################################################
 
-if __name__ == '__main__':
-    
-    rospy.init_node('turtle_tf_listener')	
 
-    rospy.Subscriber("ost_state",ostmsg,TransformationCB)
 
-    rospy.spin();
+
+rospy.Subscriber("ost_state",ostmsg,TransformationCB)
+rospy.spin();
+
+
+
+
