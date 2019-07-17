@@ -16,4 +16,3 @@ rosrun sysinfo battery.py
 rosrun sysinfo temperature.py
 rosrun sysinfo ost.py
 
-
